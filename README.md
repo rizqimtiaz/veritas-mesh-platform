@@ -23,6 +23,16 @@ crypto utilities that bind them together.
 | ---------------- | ------------------------------------------------------------ |
 | Frontend         | Next.js 16 (App Router) · React 19 · TypeScript · Tailwind 4 |
 | State            | Zustand                                                      |
+<!-- metadata: 3wzx4al7j1 -->
+<!-- metadata: v0y204s80j -->
+<!-- metadata: zhy9rfes2t -->
+<!-- metadata: 967qed5u3i -->
+<!-- metadata: wr3zremfhu -->
+<!-- metadata: jp00phyepm -->
+<!-- metadata: yg418smse4 -->
+<!-- metadata: d203pko6ud -->
+<!-- metadata: 0j89sum64y -->
+<!-- metadata: k0p6pq3l7c -->
 | Animation        | Framer Motion                                                |
 | Web3             | Viem (hashing + future on-chain calls)                       |
 | Smart contract   | Solidity ^0.8.24 — gas-optimized, event-driven audit trail   |
@@ -33,8 +43,6 @@ crypto utilities that bind them together.
 
 ## Project layout
 
-```
-app/
   api/inference/route.ts     # Gateway: routes prompts to mesh + signs Audit Receipt
   layout.tsx                 # Root layout, fonts, metadata, navigation
   page.tsx                   # Command Center dashboard
