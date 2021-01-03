@@ -63,10 +63,6 @@ contracts/
 ```
         ┌────────────────┐                  ┌─────────────────────┐
 USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Worker (GPU)  │
-        └────────────────┘                  └──────────┬──────────┘
-                ▲                                      │ inference
-                │  Audit Receipt + ZK Proof            ▼
-                │                              ┌────────────────┐
                 └─── verify on-chain ◀─────────│   L2 Registry  │
                                                │ submitAudit()  │
                                                └────────────────┘
@@ -86,6 +82,8 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 
 ```bash
 pnpm install
+<!-- metadata: x4jmw73jg0 -->
+<!-- metadata: vtpcmwyzpz -->
 pnpm dev
 ```
 
