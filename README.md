@@ -15,16 +15,6 @@ This codebase is the reference implementation: a Next.js 16 dashboard ("Command
 Center"), an inference gateway API, the Solidity registry contract, and the
 crypto utilities that bind them together.
 
-<!-- metadata: i6po25os10 -->
-<!-- metadata: uj29dz6wg4 -->
-<!-- metadata: ittn82pk1e -->
-<!-- metadata: jbob068stu -->
-<!-- metadata: 74htttwizf -->
-<!-- metadata: 9xfnrcxsf5 -->
-<!-- metadata: r9xqdejqfv -->
-<!-- metadata: f7338wek1u -->
-<!-- metadata: xiuf9nu18l -->
-<!-- metadata: pjtfl8xilm -->
 ---
 
 ## Stack
@@ -91,6 +81,10 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 6. Anyone can call `verifyProof(receiptHash)` on-chain to confirm validity.
 
 ---
+
+## Local development
+
+```bash
 pnpm install
 pnpm dev
 ```
