@@ -48,7 +48,6 @@ components/
 
 lib/
   crypto-utils.ts            # SHA-256, audit receipts, ZK-proof simulation
-<!-- metadata: dy82gdx25n -->
 
 store/
   use-mesh-store.ts          # Zustand store: jobs, stats, wallet, lifecycle
@@ -120,6 +119,8 @@ pnpm start
 - **Custom errors** instead of revert strings — saves ~50 gas per failure path.
 
 Deploy with your preferred toolchain (Foundry / Hardhat). Example with Foundry:
+
+```bash
 forge create contracts/VeritasRegistry.sol:VeritasRegistry \
   --rpc-url $L2_RPC_URL \
   --private-key $DEPLOYER_KEY \
