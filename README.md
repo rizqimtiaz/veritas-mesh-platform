@@ -67,10 +67,6 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
                 ▲                                      │ inference
                 │  Audit Receipt + ZK Proof            ▼
                 │                              ┌────────────────┐
-<!-- metadata: xz2q1fuqnx -->
-<!-- metadata: 96gcvlktm1 -->
-<!-- metadata: zh2noygyej -->
-<!-- metadata: qcax0aved7 -->
                 └─── verify on-chain ◀─────────│   L2 Registry  │
                                                │ submitAudit()  │
                                                └────────────────┘
@@ -91,6 +87,9 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 ```bash
 pnpm install
 pnpm dev
+```
+
+Then open <http://localhost:3000>.
 
 The app works fully end-to-end without any external services — the L2 calls are
 simulated by `lib/crypto-utils.ts` and `app/api/inference/route.ts`. To wire up
