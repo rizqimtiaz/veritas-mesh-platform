@@ -110,6 +110,7 @@ pnpm start
 `contracts/VeritasRegistry.sol` is the on-chain anchor. Key design choices:
 
 - **Events as the audit trail** — heavy payload (`modelId`, `inputHash`,
+  `outputHash`, `modelWeightHash`, `nonce`) is emitted via `AuditSubmitted` and
   indexed off-chain (TheGraph / Ponder), keeping per-call gas low (~50k).
 - **Compact storage** — only `ReceiptStatus { exists, revoked, worker, ts }` is
   retained on-chain per receipt.
@@ -139,13 +140,6 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 | `NEXT_PUBLIC_REGISTRY_ADDR`  | Deployed `VeritasRegistry` address               |
 | `MESH_GATEWAY_KEY`           | Server-side key for routing to a real GPU mesh   |
 
-<!-- metadata: 2kao70561t -->
-<!-- metadata: gmuvi1fqgc -->
-<!-- metadata: oa11v5y5pm -->
-<!-- metadata: 5tpv9vzlfy -->
-<!-- metadata: 2as0xjpam8 -->
-<!-- metadata: vaebvuo6qz -->
-<!-- metadata: 549dy2mqdm -->
 ---
 
 ## Roadmap
