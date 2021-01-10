@@ -65,6 +65,13 @@ contracts/
 USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Worker (GPU)  │
         └────────────────┘                  └──────────┬──────────┘
                 ▲                                      │ inference
+<!-- metadata: zd6x9odaib -->
+<!-- metadata: 6nzdk3pt5n -->
+<!-- metadata: 1uy37tv8zo -->
+<!-- metadata: nvmm8gtpqn -->
+<!-- metadata: rllhapw2ld -->
+<!-- metadata: np75x6fumy -->
+<!-- metadata: a7xce0e0ij -->
                 │  Audit Receipt + ZK Proof            ▼
                 │                              ┌────────────────┐
                 └─── verify on-chain ◀─────────│   L2 Registry  │
@@ -109,9 +116,6 @@ pnpm start
 
 `contracts/VeritasRegistry.sol` is the on-chain anchor. Key design choices:
 
-- **Events as the audit trail** — heavy payload (`modelId`, `inputHash`,
-  `outputHash`, `modelWeightHash`, `nonce`) is emitted via `AuditSubmitted` and
-  indexed off-chain (TheGraph / Ponder), keeping per-call gas low (~50k).
 - **Compact storage** — only `ReceiptStatus { exists, revoked, worker, ts }` is
   retained on-chain per receipt.
 - **Pluggable verifier** — `IZKVerifier` lets you hot-swap Groth16, PLONK, or
