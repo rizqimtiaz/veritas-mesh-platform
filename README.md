@@ -38,6 +38,9 @@ app/
   api/inference/route.ts     # Gateway: routes prompts to mesh + signs Audit Receipt
   layout.tsx                 # Root layout, fonts, metadata, navigation
   page.tsx                   # Command Center dashboard
+  globals.css                # Terminal-Core theme (obsidian + neon amber)
+
+components/
   mesh-navigation.tsx        # Sticky command bar with live block height + wallet
   inference-terminal.tsx     # Prompt input + animated system log
   verified-feed.tsx          # Real-time table of verified inferences
@@ -151,8 +154,4 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 
 ## License
 
-<!-- metadata: 59ob9t004h -->
-<!-- metadata: 6fmfxros74 -->
-<!-- metadata: w2j9uk5ab6 -->
-<!-- metadata: mh0i7zpqtj -->
 MIT — see [`LICENSE`](./LICENSE).
