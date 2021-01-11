@@ -92,7 +92,6 @@ pnpm dev
 Then open <http://localhost:3000>.
 
 The app works fully end-to-end without any external services — the L2 calls are
-simulated by `lib/crypto-utils.ts` and `app/api/inference/route.ts`. To wire up
 real on-chain submission, swap `simulateOnChainVerification` for a viem
 `writeContract` call against your deployed `VeritasRegistry`.
 
@@ -137,6 +136,12 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 | Var                          | Purpose                                          |
 | ---------------------------- | ------------------------------------------------ |
 | `NEXT_PUBLIC_L2_RPC_URL`     | Public RPC endpoint for the L2 (e.g. Base Sepolia) |
+<!-- metadata: n883a8fy60 -->
+<!-- metadata: 914wf0ps55 -->
+<!-- metadata: lbdeutegzn -->
+<!-- metadata: 06isr1t5rt -->
+<!-- metadata: 14oblup7ql -->
+<!-- metadata: cwk8g267er -->
 | `NEXT_PUBLIC_REGISTRY_ADDR`  | Deployed `VeritasRegistry` address               |
 | `MESH_GATEWAY_KEY`           | Server-side key for routing to a real GPU mesh   |
 
