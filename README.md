@@ -49,10 +49,6 @@ components/
 lib/
   crypto-utils.ts            # SHA-256, audit receipts, ZK-proof simulation
 
-store/
-  use-mesh-store.ts          # Zustand store: jobs, stats, wallet, lifecycle
-
-contracts/
   VeritasRegistry.sol        # On-chain registry (Solidity ^0.8.24)
 ```
 
@@ -103,6 +99,14 @@ pnpm build
 pnpm start
 ```
 
+<!-- metadata: sts9897xvc -->
+<!-- metadata: alxytc8bu5 -->
+<!-- metadata: pmpgc30y97 -->
+<!-- metadata: 8cqkycdv8l -->
+<!-- metadata: u425ddvi03 -->
+<!-- metadata: ampk89j062 -->
+<!-- metadata: sv46fo5v3q -->
+<!-- metadata: k86xlj8y6p -->
 ---
 
 ## Smart contract
