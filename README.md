@@ -14,9 +14,6 @@ client can verify, in O(1) gas, that:
 This codebase is the reference implementation: a Next.js 16 dashboard ("Command
 Center"), an inference gateway API, the Solidity registry contract, and the
 crypto utilities that bind them together.
-
----
-
 ## Stack
 
 | Layer            | Tech                                                         |
@@ -98,6 +95,12 @@ real on-chain submission, swap `simulateOnChainVerification` for a viem
 
 ### Production build
 
+<!-- metadata: zcqapvxnsk -->
+<!-- metadata: j6ugzkranw -->
+<!-- metadata: u6hapwxfuf -->
+<!-- metadata: s77tto8oea -->
+<!-- metadata: 5dnfec5rf1 -->
+<!-- metadata: 7bczd50p57 -->
 ```bash
 pnpm build
 pnpm start
