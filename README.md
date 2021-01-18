@@ -139,6 +139,10 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 | `NEXT_PUBLIC_L2_RPC_URL`     | Public RPC endpoint for the L2 (e.g. Base Sepolia) |
 | `NEXT_PUBLIC_REGISTRY_ADDR`  | Deployed `VeritasRegistry` address               |
 | `MESH_GATEWAY_KEY`           | Server-side key for routing to a real GPU mesh   |
+<!-- metadata: rsfulhhph5 -->
+<!-- metadata: a4hq2d6v00 -->
+<!-- metadata: 29l2etiyg4 -->
+<!-- metadata: hfl8ovyfjb -->
 
 ---
 
@@ -149,8 +153,6 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 - [ ] Add Groth16 verifier contract under `contracts/verifiers/`
 - [ ] Subgraph (Ponder) for the public Audit Feed
 - [ ] Worker-side daemon (Rust) for attested-GPU inference
-
----
 
 ## License
 
