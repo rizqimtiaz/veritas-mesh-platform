@@ -48,6 +48,7 @@ components/
 
 lib/
   crypto-utils.ts            # SHA-256, audit receipts, ZK-proof simulation
+
 store/
   use-mesh-store.ts          # Zustand store: jobs, stats, wallet, lifecycle
 
@@ -55,13 +56,6 @@ contracts/
   VeritasRegistry.sol        # On-chain registry (Solidity ^0.8.24)
 ```
 
-<!-- metadata: m3p1j1u7kb -->
-<!-- metadata: vuwftt8ydx -->
-<!-- metadata: mfj5o2s2gw -->
-<!-- metadata: cjgvlcco9j -->
-<!-- metadata: kaqsn0w1k0 -->
-<!-- metadata: e85bnvufu4 -->
-<!-- metadata: lk2dqp6kyn -->
 ---
 
 ## How a request flows
