@@ -41,6 +41,7 @@ app/
   globals.css                # Terminal-Core theme (obsidian + neon amber)
 
 components/
+  mesh-navigation.tsx        # Sticky command bar with live block height + wallet
   inference-terminal.tsx     # Prompt input + animated system log
   verified-feed.tsx          # Real-time table of verified inferences
   mesh-stats.tsx             # Network telemetry cards
@@ -71,10 +72,6 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
                                                └────────────────┘
 ```
 
-<!-- metadata: 9lx7qhnfh3 -->
-<!-- metadata: hqn019dkeh -->
-<!-- metadata: mikpihy9xj -->
-<!-- metadata: 488t89a1u5 -->
 1. Client `POST /api/inference` with `{ prompt, modelId, modelKind }`.
 2. Gateway resolves the model weight hash, picks a worker, runs the inference.
 3. Server hashes `model | weights | input | output | worker | nonce | ts` →
