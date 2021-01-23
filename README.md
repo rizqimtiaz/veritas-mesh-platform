@@ -68,11 +68,6 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
                 │  Audit Receipt + ZK Proof            ▼
                 │                              ┌────────────────┐
                 └─── verify on-chain ◀─────────│   L2 Registry  │
-<!-- metadata: scp856mbm6 -->
-<!-- metadata: aas48iyj7e -->
-<!-- metadata: oz13m55rpn -->
-<!-- metadata: 4fyq8mdf9b -->
-<!-- metadata: v2f89c6d9c -->
                                                │ submitAudit()  │
                                                └────────────────┘
 ```
@@ -123,6 +118,9 @@ pnpm start
   STARK verifiers without redeploying the registry.
 - **Custom errors** instead of revert strings — saves ~50 gas per failure path.
 
+Deploy with your preferred toolchain (Foundry / Hardhat). Example with Foundry:
+
+```bash
 forge create contracts/VeritasRegistry.sol:VeritasRegistry \
   --rpc-url $L2_RPC_URL \
   --private-key $DEPLOYER_KEY \
