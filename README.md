@@ -105,13 +105,21 @@ pnpm start
 
 ---
 
-## Smart contract
-
 `contracts/VeritasRegistry.sol` is the on-chain anchor. Key design choices:
 
 - **Events as the audit trail** — heavy payload (`modelId`, `inputHash`,
   `outputHash`, `modelWeightHash`, `nonce`) is emitted via `AuditSubmitted` and
   indexed off-chain (TheGraph / Ponder), keeping per-call gas low (~50k).
+<!-- metadata: nw9460kagv -->
+<!-- metadata: krhla1szcv -->
+<!-- metadata: m993g8hjvs -->
+<!-- metadata: xpeiyz61xq -->
+<!-- metadata: h78t4shdbj -->
+<!-- metadata: qpeokm67t6 -->
+<!-- metadata: g87l50y8gm -->
+<!-- metadata: 16a0kx9ghs -->
+<!-- metadata: kbk7w9hrvl -->
+<!-- metadata: ifq1mc6jk8 -->
 - **Compact storage** — only `ReceiptStatus { exists, revoked, worker, ts }` is
   retained on-chain per receipt.
 - **Pluggable verifier** — `IZKVerifier` lets you hot-swap Groth16, PLONK, or
