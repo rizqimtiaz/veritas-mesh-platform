@@ -55,15 +55,6 @@ store/
 contracts/
   VeritasRegistry.sol        # On-chain registry (Solidity ^0.8.24)
 ```
-<!-- metadata: im8ff0244x -->
-<!-- metadata: g53hyshgss -->
-<!-- metadata: lp1r3tugqv -->
-<!-- metadata: h7zj2zdrga -->
-<!-- metadata: 67978qt7hf -->
-<!-- metadata: ur7h7bg6tc -->
-<!-- metadata: x57oxpskhg -->
-<!-- metadata: 0ufvixsune -->
-<!-- metadata: udk6x3f0xp -->
 
 ---
 
@@ -103,6 +94,9 @@ Then open <http://localhost:3000>.
 The app works fully end-to-end without any external services — the L2 calls are
 simulated by `lib/crypto-utils.ts` and `app/api/inference/route.ts`. To wire up
 real on-chain submission, swap `simulateOnChainVerification` for a viem
+`writeContract` call against your deployed `VeritasRegistry`.
+
+### Production build
 
 ```bash
 pnpm build
