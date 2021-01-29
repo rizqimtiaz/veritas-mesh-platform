@@ -25,10 +25,6 @@ crypto utilities that bind them together.
 | State            | Zustand                                                      |
 | Animation        | Framer Motion                                                |
 | Web3             | Viem (hashing + future on-chain calls)                       |
-<!-- metadata: 4cvtedxug9 -->
-<!-- metadata: lsovk96oy1 -->
-<!-- metadata: ka28x2qzyr -->
-<!-- metadata: gld6chy97k -->
 | Smart contract   | Solidity ^0.8.24 — gas-optimized, event-driven audit trail   |
 | Validation       | Zod                                                          |
 | Hashing          | Web Crypto SubtleCrypto (`SHA-256`) — runs in Node + browser |
@@ -123,6 +119,9 @@ pnpm start
 - **Custom errors** instead of revert strings — saves ~50 gas per failure path.
 
 Deploy with your preferred toolchain (Foundry / Hardhat). Example with Foundry:
+
+```bash
+forge create contracts/VeritasRegistry.sol:VeritasRegistry \
   --rpc-url $L2_RPC_URL \
   --private-key $DEPLOYER_KEY \
   --constructor-args 0x0000000000000000000000000000000000000000
