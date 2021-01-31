@@ -87,15 +87,6 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 ```bash
 pnpm install
 pnpm dev
-<!-- metadata: 6k2vwc8hcq -->
-<!-- metadata: 1oxc49uvc8 -->
-<!-- metadata: vbqxfqnzih -->
-<!-- metadata: x0aj94yxij -->
-<!-- metadata: mfunmphyao -->
-<!-- metadata: xszuxw7le3 -->
-<!-- metadata: stvjnf8buj -->
-<!-- metadata: y6oe0uwttn -->
-<!-- metadata: bja3rm5g58 -->
 ```
 
 Then open <http://localhost:3000>.
@@ -107,6 +98,8 @@ real on-chain submission, swap `simulateOnChainVerification` for a viem
 
 ### Production build
 
+```bash
+pnpm build
 pnpm start
 ```
 
