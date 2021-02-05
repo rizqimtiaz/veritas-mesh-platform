@@ -122,6 +122,9 @@ Deploy with your preferred toolchain (Foundry / Hardhat). Example with Foundry:
 
 ```bash
 forge create contracts/VeritasRegistry.sol:VeritasRegistry \
+  --rpc-url $L2_RPC_URL \
+  --private-key $DEPLOYER_KEY \
+  --constructor-args 0x0000000000000000000000000000000000000000
 ```
 
 ---
@@ -134,11 +137,6 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 | Var                          | Purpose                                          |
 | ---------------------------- | ------------------------------------------------ |
 | `NEXT_PUBLIC_L2_RPC_URL`     | Public RPC endpoint for the L2 (e.g. Base Sepolia) |
-<!-- metadata: js9gf540ts -->
-<!-- metadata: b55i59lkfv -->
-<!-- metadata: mde6zfvfo7 -->
-<!-- metadata: 6pev6brdvm -->
-<!-- metadata: kegz2iyepq -->
 | `NEXT_PUBLIC_REGISTRY_ADDR`  | Deployed `VeritasRegistry` address               |
 | `MESH_GATEWAY_KEY`           | Server-side key for routing to a real GPU mesh   |
 
