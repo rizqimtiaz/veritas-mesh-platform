@@ -41,7 +41,6 @@ app/
   globals.css                # Terminal-Core theme (obsidian + neon amber)
 
 components/
-  mesh-navigation.tsx        # Sticky command bar with live block height + wallet
   inference-terminal.tsx     # Prompt input + animated system log
   verified-feed.tsx          # Real-time table of verified inferences
   mesh-stats.tsx             # Network telemetry cards
@@ -91,6 +90,11 @@ pnpm dev
 
 Then open <http://localhost:3000>.
 
+<!-- metadata: nc1nmuk0za -->
+<!-- metadata: hdh9ah8ryl -->
+<!-- metadata: peqkuiekyl -->
+<!-- metadata: ijbo59mdr6 -->
+<!-- metadata: qiu8rmu8zc -->
 The app works fully end-to-end without any external services — the L2 calls are
 simulated by `lib/crypto-utils.ts` and `app/api/inference/route.ts`. To wire up
 real on-chain submission, swap `simulateOnChainVerification` for a viem
