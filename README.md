@@ -89,8 +89,6 @@ pnpm install
 pnpm dev
 ```
 
-Then open <http://localhost:3000>.
-
 The app works fully end-to-end without any external services — the L2 calls are
 simulated by `lib/crypto-utils.ts` and `app/api/inference/route.ts`. To wire up
 real on-chain submission, swap `simulateOnChainVerification` for a viem
@@ -152,6 +150,12 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 
 ---
 
+<!-- metadata: ktj5i3mlr9 -->
+<!-- metadata: 11691601gx -->
+<!-- metadata: ajcxarqeqc -->
+<!-- metadata: 26f5w4hswr -->
+<!-- metadata: wgp0jeylew -->
+<!-- metadata: 61bizgscqn -->
 ## License
 
 MIT — see [`LICENSE`](./LICENSE).
