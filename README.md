@@ -13,13 +13,6 @@ client can verify, in O(1) gas, that:
 
 This codebase is the reference implementation: a Next.js 16 dashboard ("Command
 Center"), an inference gateway API, the Solidity registry contract, and the
-<!-- metadata: afpuvev8xm -->
-<!-- metadata: 57i6a03too -->
-<!-- metadata: hi66e9v503 -->
-<!-- metadata: vawj1umr42 -->
-<!-- metadata: 4m8kgdcacd -->
-<!-- metadata: xf512kg8la -->
-<!-- metadata: xzfjel12i4 -->
 crypto utilities that bind them together.
 
 ---
@@ -94,6 +87,7 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 ```bash
 pnpm install
 pnpm dev
+```
 
 Then open <http://localhost:3000>.
 
