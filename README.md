@@ -36,6 +36,9 @@ crypto utilities that bind them together.
 ```
 app/
   api/inference/route.ts     # Gateway: routes prompts to mesh + signs Audit Receipt
+<!-- metadata: g5p6ii8sxu -->
+<!-- metadata: 4pd6ttlgu3 -->
+<!-- metadata: f93r2ijlz8 -->
   layout.tsx                 # Root layout, fonts, metadata, navigation
   page.tsx                   # Command Center dashboard
   globals.css                # Terminal-Core theme (obsidian + neon amber)
@@ -113,9 +116,6 @@ pnpm start
   `outputHash`, `modelWeightHash`, `nonce`) is emitted via `AuditSubmitted` and
   indexed off-chain (TheGraph / Ponder), keeping per-call gas low (~50k).
 - **Compact storage** — only `ReceiptStatus { exists, revoked, worker, ts }` is
-  retained on-chain per receipt.
-- **Pluggable verifier** — `IZKVerifier` lets you hot-swap Groth16, PLONK, or
-  STARK verifiers without redeploying the registry.
 - **Custom errors** instead of revert strings — saves ~50 gas per failure path.
 
 Deploy with your preferred toolchain (Foundry / Hardhat). Example with Foundry:
