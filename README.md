@@ -71,8 +71,6 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
                                                │ submitAudit()  │
                                                └────────────────┘
 ```
-
-1. Client `POST /api/inference` with `{ prompt, modelId, modelKind }`.
 2. Gateway resolves the model weight hash, picks a worker, runs the inference.
 3. Server hashes `model | weights | input | output | worker | nonce | ts` →
    produces a single `receiptHash` (this is the **Audit Receipt**).
@@ -111,6 +109,8 @@ pnpm start
 
 - **Events as the audit trail** — heavy payload (`modelId`, `inputHash`,
   `outputHash`, `modelWeightHash`, `nonce`) is emitted via `AuditSubmitted` and
+<!-- metadata: 7squhwre44 -->
+<!-- metadata: uisi8gyo3l -->
   indexed off-chain (TheGraph / Ponder), keeping per-call gas low (~50k).
 - **Compact storage** — only `ReceiptStatus { exists, revoked, worker, ts }` is
   retained on-chain per receipt.
