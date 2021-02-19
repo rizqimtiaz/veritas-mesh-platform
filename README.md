@@ -112,12 +112,6 @@ pnpm start
 - **Events as the audit trail** — heavy payload (`modelId`, `inputHash`,
   `outputHash`, `modelWeightHash`, `nonce`) is emitted via `AuditSubmitted` and
   indexed off-chain (TheGraph / Ponder), keeping per-call gas low (~50k).
-<!-- metadata: x1sbhym0sn -->
-<!-- metadata: 81ylxpyg6l -->
-<!-- metadata: fi5493tnoz -->
-<!-- metadata: 5v6tt8x1k9 -->
-<!-- metadata: 4beryrnk0i -->
-<!-- metadata: 4mht2lqlkk -->
 - **Compact storage** — only `ReceiptStatus { exists, revoked, worker, ts }` is
   retained on-chain per receipt.
 - **Pluggable verifier** — `IZKVerifier` lets you hot-swap Groth16, PLONK, or
@@ -140,6 +134,8 @@ forge create contracts/VeritasRegistry.sol:VeritasRegistry \
 This project runs without any env vars by default. To wire up real services,
 copy `.env.example` to `.env.local` and fill in the values you need.
 
+| Var                          | Purpose                                          |
+| ---------------------------- | ------------------------------------------------ |
 | `NEXT_PUBLIC_L2_RPC_URL`     | Public RPC endpoint for the L2 (e.g. Base Sepolia) |
 | `NEXT_PUBLIC_REGISTRY_ADDR`  | Deployed `VeritasRegistry` address               |
 | `MESH_GATEWAY_KEY`           | Server-side key for routing to a real GPU mesh   |
