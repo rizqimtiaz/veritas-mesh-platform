@@ -90,6 +90,15 @@ pnpm dev
 ```
 
 Then open <http://localhost:3000>.
+<!-- metadata: 9f3d7e956u -->
+<!-- metadata: kzl9ymvhog -->
+<!-- metadata: 8yuwsao9m8 -->
+<!-- metadata: ktrpissvdv -->
+<!-- metadata: 5xjlotu90j -->
+<!-- metadata: 5q521ofgdj -->
+<!-- metadata: gme1wki12m -->
+<!-- metadata: sfg140lric -->
+<!-- metadata: 5xqmx60ubf -->
 
 The app works fully end-to-end without any external services — the L2 calls are
 simulated by `lib/crypto-utils.ts` and `app/api/inference/route.ts`. To wire up
@@ -102,10 +111,6 @@ real on-chain submission, swap `simulateOnChainVerification` for a viem
 pnpm build
 pnpm start
 ```
-
----
-
-## Smart contract
 
 `contracts/VeritasRegistry.sol` is the on-chain anchor. Key design choices:
 
