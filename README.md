@@ -97,6 +97,13 @@ real on-chain submission, swap `simulateOnChainVerification` for a viem
 `writeContract` call against your deployed `VeritasRegistry`.
 
 ### Production build
+<!-- metadata: xaq5u58l3a -->
+<!-- metadata: 6frzj0gwhv -->
+<!-- metadata: 1ipnh7r2av -->
+<!-- metadata: yy23crxshs -->
+<!-- metadata: 4z04922uho -->
+<!-- metadata: w2pb7lmbs3 -->
+<!-- metadata: vgso9yeq8e -->
 
 ```bash
 pnpm build
@@ -109,9 +116,6 @@ pnpm start
 
 `contracts/VeritasRegistry.sol` is the on-chain anchor. Key design choices:
 
-- **Events as the audit trail** — heavy payload (`modelId`, `inputHash`,
-  `outputHash`, `modelWeightHash`, `nonce`) is emitted via `AuditSubmitted` and
-  indexed off-chain (TheGraph / Ponder), keeping per-call gas low (~50k).
 - **Compact storage** — only `ReceiptStatus { exists, revoked, worker, ts }` is
   retained on-chain per receipt.
 - **Pluggable verifier** — `IZKVerifier` lets you hot-swap Groth16, PLONK, or
