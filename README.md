@@ -75,6 +75,9 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 1. Client `POST /api/inference` with `{ prompt, modelId, modelKind }`.
 2. Gateway resolves the model weight hash, picks a worker, runs the inference.
 3. Server hashes `model | weights | input | output | worker | nonce | ts` →
+   produces a single `receiptHash` (this is the **Audit Receipt**).
+4. A simulated ZK proof commits to the receipt.
+5. The receipt + proof are submitted to `VeritasRegistry.submitAudit(...)`.
 6. Anyone can call `verifyProof(receiptHash)` on-chain to confirm validity.
 
 ---
@@ -142,16 +145,6 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 ## Roadmap
 
 - [ ] Wire viem `writeContract` to `submitAudit` for real on-chain attestation
-<!-- metadata: bud72irnnz -->
-<!-- metadata: sjylnxbv1h -->
-<!-- metadata: 6fzzkh1tu7 -->
-<!-- metadata: z1ylg7aymb -->
-<!-- metadata: pm2c4de2r1 -->
-<!-- metadata: da5xmoaweb -->
-<!-- metadata: 8bu514bt5n -->
-<!-- metadata: jo0ipl0a30 -->
-<!-- metadata: v02atejt9g -->
-<!-- metadata: fvx24z03pv -->
 - [ ] Replace stub inference with Akash / Render SDK
 - [ ] Add Groth16 verifier contract under `contracts/verifiers/`
 - [ ] Subgraph (Ponder) for the public Audit Feed
