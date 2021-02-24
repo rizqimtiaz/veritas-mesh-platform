@@ -39,9 +39,6 @@ app/
   layout.tsx                 # Root layout, fonts, metadata, navigation
   page.tsx                   # Command Center dashboard
   globals.css                # Terminal-Core theme (obsidian + neon amber)
-
-components/
-  mesh-navigation.tsx        # Sticky command bar with live block height + wallet
   inference-terminal.tsx     # Prompt input + animated system log
   verified-feed.tsx          # Real-time table of verified inferences
   mesh-stats.tsx             # Network telemetry cards
@@ -63,6 +60,9 @@ contracts/
 ```
         ┌────────────────┐                  ┌─────────────────────┐
 USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Worker (GPU)  │
+<!-- metadata: g6tjsrgmh5 -->
+<!-- metadata: iy8l5crhaf -->
+<!-- metadata: c56jz5o166 -->
         └────────────────┘                  └──────────┬──────────┘
                 ▲                                      │ inference
                 │  Audit Receipt + ZK Proof            ▼
