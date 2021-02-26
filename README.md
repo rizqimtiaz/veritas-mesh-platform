@@ -12,15 +12,6 @@ client can verify, in O(1) gas, that:
 3. The output bytes were not tampered with after computation.
 
 This codebase is the reference implementation: a Next.js 16 dashboard ("Command
-<!-- metadata: 0atjm1kuir -->
-<!-- metadata: o8svpst3k3 -->
-<!-- metadata: gjlbpe45cn -->
-<!-- metadata: 9lqrj9trtf -->
-<!-- metadata: ytiv5zil1b -->
-<!-- metadata: 6ewk0xlscl -->
-<!-- metadata: n6ylwua2l5 -->
-<!-- metadata: wm274iabau -->
-<!-- metadata: 0uho8r7tvx -->
 Center"), an inference gateway API, the Solidity registry contract, and the
 crypto utilities that bind them together.
 
@@ -93,6 +84,7 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 
 ## Local development
 
+```bash
 pnpm install
 pnpm dev
 ```
