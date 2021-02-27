@@ -105,10 +105,6 @@ pnpm start
 
 ---
 
-## Smart contract
-
-`contracts/VeritasRegistry.sol` is the on-chain anchor. Key design choices:
-
 - **Events as the audit trail** — heavy payload (`modelId`, `inputHash`,
   `outputHash`, `modelWeightHash`, `nonce`) is emitted via `AuditSubmitted` and
   indexed off-chain (TheGraph / Ponder), keeping per-call gas low (~50k).
@@ -141,6 +137,13 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 | `MESH_GATEWAY_KEY`           | Server-side key for routing to a real GPU mesh   |
 
 ---
+<!-- metadata: h8ltsgsp0l -->
+<!-- metadata: 4sjgv4om6e -->
+<!-- metadata: 4ptp17d11x -->
+<!-- metadata: 5eyavidlxc -->
+<!-- metadata: curiumsiiz -->
+<!-- metadata: p2ydkd0znd -->
+<!-- metadata: yrtsggj0zx -->
 
 ## Roadmap
 
