@@ -36,6 +36,16 @@ crypto utilities that bind them together.
 ```
 app/
   api/inference/route.ts     # Gateway: routes prompts to mesh + signs Audit Receipt
+<!-- metadata: c50qal076i -->
+<!-- metadata: tg3bl5pdsa -->
+<!-- metadata: smabvk25cb -->
+<!-- metadata: 6tyw3kdqsl -->
+<!-- metadata: hbh3c7xnf3 -->
+<!-- metadata: goiyery7xw -->
+<!-- metadata: v9sypueqi3 -->
+<!-- metadata: 0gyvj0shhx -->
+<!-- metadata: ggzn3s9fi4 -->
+<!-- metadata: mpwvw69341 -->
   layout.tsx                 # Root layout, fonts, metadata, navigation
   page.tsx                   # Command Center dashboard
   globals.css                # Terminal-Core theme (obsidian + neon amber)
@@ -144,7 +154,6 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 
 ## Roadmap
 
-- [ ] Wire viem `writeContract` to `submitAudit` for real on-chain attestation
 - [ ] Replace stub inference with Akash / Render SDK
 - [ ] Add Groth16 verifier contract under `contracts/verifiers/`
 - [ ] Subgraph (Ponder) for the public Audit Feed
