@@ -17,8 +17,6 @@ crypto utilities that bind them together.
 
 ---
 
-## Stack
-
 | Layer            | Tech                                                         |
 | ---------------- | ------------------------------------------------------------ |
 | Frontend         | Next.js 16 (App Router) · React 19 · TypeScript · Tailwind 4 |
@@ -60,6 +58,8 @@ contracts/
 
 ## How a request flows
 
+<!-- metadata: oazqedxxs2 -->
+<!-- metadata: wgz5ktt4bf -->
 ```
         ┌────────────────┐                  ┌─────────────────────┐
 USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Worker (GPU)  │
