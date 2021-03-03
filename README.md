@@ -95,6 +95,16 @@ The app works fully end-to-end without any external services — the L2 calls ar
 simulated by `lib/crypto-utils.ts` and `app/api/inference/route.ts`. To wire up
 real on-chain submission, swap `simulateOnChainVerification` for a viem
 `writeContract` call against your deployed `VeritasRegistry`.
+<!-- metadata: bqojknjxzl -->
+<!-- metadata: xf8n0da7zz -->
+<!-- metadata: wfm1e0buo0 -->
+<!-- metadata: lk3vsdauiq -->
+<!-- metadata: n818pp9kmh -->
+<!-- metadata: oc79u14y60 -->
+<!-- metadata: rk7z2g3h0f -->
+<!-- metadata: xhlvq4zax0 -->
+<!-- metadata: uggcmtf365 -->
+<!-- metadata: 6lmp2tzbpk -->
 
 ### Production build
 
@@ -114,8 +124,6 @@ pnpm start
   indexed off-chain (TheGraph / Ponder), keeping per-call gas low (~50k).
 - **Compact storage** — only `ReceiptStatus { exists, revoked, worker, ts }` is
   retained on-chain per receipt.
-- **Pluggable verifier** — `IZKVerifier` lets you hot-swap Groth16, PLONK, or
-  STARK verifiers without redeploying the registry.
 - **Custom errors** instead of revert strings — saves ~50 gas per failure path.
 
 Deploy with your preferred toolchain (Foundry / Hardhat). Example with Foundry:
