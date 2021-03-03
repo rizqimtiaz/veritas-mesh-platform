@@ -105,6 +105,8 @@ pnpm start
 
 ---
 
+## Smart contract
+
 `contracts/VeritasRegistry.sol` is the on-chain anchor. Key design choices:
 
 - **Events as the audit trail** — heavy payload (`modelId`, `inputHash`,
@@ -148,7 +150,6 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 - [ ] Subgraph (Ponder) for the public Audit Feed
 - [ ] Worker-side daemon (Rust) for attested-GPU inference
 
-<!-- metadata: itg5psjatx -->
 ---
 
 ## License
