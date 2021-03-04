@@ -124,6 +124,7 @@ Deploy with your preferred toolchain (Foundry / Hardhat). Example with Foundry:
 forge create contracts/VeritasRegistry.sol:VeritasRegistry \
   --rpc-url $L2_RPC_URL \
   --private-key $DEPLOYER_KEY \
+  --constructor-args 0x0000000000000000000000000000000000000000
 ```
 
 ---
@@ -140,15 +141,6 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 | `MESH_GATEWAY_KEY`           | Server-side key for routing to a real GPU mesh   |
 
 ---
-<!-- metadata: entjlwz0jk -->
-<!-- metadata: 7jexdljxh1 -->
-<!-- metadata: ciktdnj779 -->
-<!-- metadata: vuun7lrxes -->
-<!-- metadata: 98f076zrko -->
-<!-- metadata: e2yjkcje9v -->
-<!-- metadata: rz7cfy5kri -->
-<!-- metadata: 6lkwiawwqg -->
-<!-- metadata: j7j5tu778z -->
 
 ## Roadmap
 
