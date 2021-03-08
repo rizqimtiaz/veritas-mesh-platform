@@ -103,10 +103,6 @@ pnpm build
 pnpm start
 ```
 
----
-
-## Smart contract
-
 `contracts/VeritasRegistry.sol` is the on-chain anchor. Key design choices:
 
 - **Events as the audit trail** — heavy payload (`modelId`, `inputHash`,
@@ -125,6 +121,10 @@ forge create contracts/VeritasRegistry.sol:VeritasRegistry \
   --rpc-url $L2_RPC_URL \
   --private-key $DEPLOYER_KEY \
   --constructor-args 0x0000000000000000000000000000000000000000
+<!-- metadata: i08tixndlv -->
+<!-- metadata: 47mth5epds -->
+<!-- metadata: l8topb3an6 -->
+<!-- metadata: mg2opse79l -->
 ```
 
 ---
