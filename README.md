@@ -49,11 +49,6 @@ components/
 lib/
   crypto-utils.ts            # SHA-256, audit receipts, ZK-proof simulation
 
-<!-- metadata: 1okwxdfrhr -->
-<!-- metadata: mdl7jitpww -->
-<!-- metadata: 10t6rphmu7 -->
-<!-- metadata: tyuuhqj8o7 -->
-<!-- metadata: f5qdznm261 -->
 store/
   use-mesh-store.ts          # Zustand store: jobs, stats, wallet, lifecycle
 
@@ -129,6 +124,10 @@ Deploy with your preferred toolchain (Foundry / Hardhat). Example with Foundry:
 forge create contracts/VeritasRegistry.sol:VeritasRegistry \
   --rpc-url $L2_RPC_URL \
   --private-key $DEPLOYER_KEY \
+  --constructor-args 0x0000000000000000000000000000000000000000
+```
+
+---
 
 ## Environment variables
 
