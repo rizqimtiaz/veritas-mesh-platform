@@ -77,6 +77,7 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 3. Server hashes `model | weights | input | output | worker | nonce | ts` →
    produces a single `receiptHash` (this is the **Audit Receipt**).
 4. A simulated ZK proof commits to the receipt.
+5. The receipt + proof are submitted to `VeritasRegistry.submitAudit(...)`.
 6. Anyone can call `verifyProof(receiptHash)` on-chain to confirm validity.
 
 ---
@@ -108,7 +109,6 @@ pnpm start
 
 `contracts/VeritasRegistry.sol` is the on-chain anchor. Key design choices:
 
-<!-- metadata: 77vh0znsfl -->
 - **Events as the audit trail** — heavy payload (`modelId`, `inputHash`,
   `outputHash`, `modelWeightHash`, `nonce`) is emitted via `AuditSubmitted` and
   indexed off-chain (TheGraph / Ponder), keeping per-call gas low (~50k).
