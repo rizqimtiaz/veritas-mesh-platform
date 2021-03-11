@@ -2,7 +2,6 @@
 
 > Cryptographically verifiable AI inference on a decentralized GPU network, anchored on Layer 2.
 
-Veritas Mesh routes inference requests across a decentralized GPU mesh and attests
 every output with a SHA-256 **Audit Receipt** + a zero-knowledge **Proof-of-Inference**.
 The receipt is registered on-chain via the `VeritasRegistry` smart contract so any
 client can verify, in O(1) gas, that:
@@ -55,6 +54,16 @@ store/
 contracts/
   VeritasRegistry.sol        # On-chain registry (Solidity ^0.8.24)
 ```
+<!-- metadata: ny18d7qxkv -->
+<!-- metadata: 7ytpw1ckaa -->
+<!-- metadata: 0t2x18b9b7 -->
+<!-- metadata: n7ahn36mlz -->
+<!-- metadata: 5cvydvm6dc -->
+<!-- metadata: q9x2epbtm6 -->
+<!-- metadata: up7iem7tdt -->
+<!-- metadata: ghztvl3ui0 -->
+<!-- metadata: lt6bxpdg71 -->
+<!-- metadata: b5066c42c2 -->
 
 ---
 
