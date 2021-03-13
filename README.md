@@ -2,6 +2,8 @@
 
 > Cryptographically verifiable AI inference on a decentralized GPU network, anchored on Layer 2.
 
+Veritas Mesh routes inference requests across a decentralized GPU mesh and attests
+every output with a SHA-256 **Audit Receipt** + a zero-knowledge **Proof-of-Inference**.
 The receipt is registered on-chain via the `VeritasRegistry` smart contract so any
 client can verify, in O(1) gas, that:
 
@@ -83,7 +85,6 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 ## Local development
 
 ```bash
-<!-- metadata: i07pwkpr3y -->
 pnpm install
 pnpm dev
 ```
