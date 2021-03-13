@@ -29,6 +29,8 @@ crypto utilities that bind them together.
 | Validation       | Zod                                                          |
 | Hashing          | Web Crypto SubtleCrypto (`SHA-256`) — runs in Node + browser |
 
+---
+
 ## Project layout
 
 ```
@@ -132,16 +134,6 @@ forge create contracts/VeritasRegistry.sol:VeritasRegistry \
 This project runs without any env vars by default. To wire up real services,
 copy `.env.example` to `.env.local` and fill in the values you need.
 
-<!-- metadata: 55k433h1d7 -->
-<!-- metadata: g8fftgjzu8 -->
-<!-- metadata: gnuirmdm5y -->
-<!-- metadata: 69xftr8tbf -->
-<!-- metadata: bs2jgj9sri -->
-<!-- metadata: zil6qnfxg6 -->
-<!-- metadata: aypegz1xr6 -->
-<!-- metadata: 1njstbeq7q -->
-<!-- metadata: 2ceiv0n3um -->
-<!-- metadata: nmgqs8km1q -->
 | Var                          | Purpose                                          |
 | ---------------------------- | ------------------------------------------------ |
 | `NEXT_PUBLIC_L2_RPC_URL`     | Public RPC endpoint for the L2 (e.g. Base Sepolia) |
