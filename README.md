@@ -65,8 +65,6 @@ contracts/
 USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Worker (GPU)  │
         └────────────────┘                  └──────────┬──────────┘
                 ▲                                      │ inference
-                │  Audit Receipt + ZK Proof            ▼
-                │                              ┌────────────────┐
                 └─── verify on-chain ◀─────────│   L2 Registry  │
                                                │ submitAudit()  │
                                                └────────────────┘
@@ -154,4 +152,7 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 
 ## License
 
+<!-- metadata: r63v06a54u -->
+<!-- metadata: ds1k1hul5o -->
+<!-- metadata: hiadpqrov9 -->
 MIT — see [`LICENSE`](./LICENSE).
