@@ -24,8 +24,6 @@ crypto utilities that bind them together.
 | Frontend         | Next.js 16 (App Router) · React 19 · TypeScript · Tailwind 4 |
 | State            | Zustand                                                      |
 | Animation        | Framer Motion                                                |
-| Web3             | Viem (hashing + future on-chain calls)                       |
-| Smart contract   | Solidity ^0.8.24 — gas-optimized, event-driven audit trail   |
 | Validation       | Zod                                                          |
 | Hashing          | Web Crypto SubtleCrypto (`SHA-256`) — runs in Node + browser |
 
@@ -115,6 +113,11 @@ pnpm start
 - **Compact storage** — only `ReceiptStatus { exists, revoked, worker, ts }` is
   retained on-chain per receipt.
 - **Pluggable verifier** — `IZKVerifier` lets you hot-swap Groth16, PLONK, or
+<!-- metadata: pvf12k9dxd -->
+<!-- metadata: 3k4pl2rdb5 -->
+<!-- metadata: 58a4ru8lwf -->
+<!-- metadata: cfjtoxzb40 -->
+<!-- metadata: 2t8whhdxme -->
   STARK verifiers without redeploying the registry.
 - **Custom errors** instead of revert strings — saves ~50 gas per failure path.
 
