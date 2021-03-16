@@ -57,6 +57,8 @@ contracts/
 ```
 
 ---
+<!-- metadata: 6uzn4ptzzp -->
+<!-- metadata: 85u557kxyd -->
 
 ## How a request flows
 
@@ -138,9 +140,6 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 | ---------------------------- | ------------------------------------------------ |
 | `NEXT_PUBLIC_L2_RPC_URL`     | Public RPC endpoint for the L2 (e.g. Base Sepolia) |
 | `NEXT_PUBLIC_REGISTRY_ADDR`  | Deployed `VeritasRegistry` address               |
-| `MESH_GATEWAY_KEY`           | Server-side key for routing to a real GPU mesh   |
-
----
 
 ## Roadmap
 
