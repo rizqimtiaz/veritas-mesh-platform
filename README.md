@@ -44,6 +44,8 @@ components/
   mesh-navigation.tsx        # Sticky command bar with live block height + wallet
   inference-terminal.tsx     # Prompt input + animated system log
   verified-feed.tsx          # Real-time table of verified inferences
+  mesh-stats.tsx             # Network telemetry cards
+
 lib/
   crypto-utils.ts            # SHA-256, audit receipts, ZK-proof simulation
 
@@ -126,10 +128,6 @@ forge create contracts/VeritasRegistry.sol:VeritasRegistry \
 ```
 
 ---
-<!-- metadata: 809v4ieg6c -->
-<!-- metadata: qkhujysksi -->
-<!-- metadata: q5tbbbsyui -->
-<!-- metadata: bpapo3kubu -->
 
 ## Environment variables
 
