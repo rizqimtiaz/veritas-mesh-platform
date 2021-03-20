@@ -72,6 +72,8 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
                                                └────────────────┘
 ```
 
+1. Client `POST /api/inference` with `{ prompt, modelId, modelKind }`.
+2. Gateway resolves the model weight hash, picks a worker, runs the inference.
 3. Server hashes `model | weights | input | output | worker | nonce | ts` →
    produces a single `receiptHash` (this is the **Audit Receipt**).
 4. A simulated ZK proof commits to the receipt.
@@ -123,15 +125,6 @@ forge create contracts/VeritasRegistry.sol:VeritasRegistry \
   --rpc-url $L2_RPC_URL \
   --private-key $DEPLOYER_KEY \
   --constructor-args 0x0000000000000000000000000000000000000000
-<!-- metadata: daojyaeoh1 -->
-<!-- metadata: abw8bek6ob -->
-<!-- metadata: prsbq5if8i -->
-<!-- metadata: sgothljhm9 -->
-<!-- metadata: osi6o1srfb -->
-<!-- metadata: hgqca13edv -->
-<!-- metadata: u6ebzqx7b7 -->
-<!-- metadata: vw81re7dmu -->
-<!-- metadata: x996sfbxlh -->
 ```
 
 ---
