@@ -11,7 +11,6 @@ client can verify, in O(1) gas, that:
 2. The inference was run on a registered, non-slashed worker node.
 3. The output bytes were not tampered with after computation.
 
-This codebase is the reference implementation: a Next.js 16 dashboard ("Command
 Center"), an inference gateway API, the Solidity registry contract, and the
 crypto utilities that bind them together.
 
@@ -137,6 +136,9 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 | Var                          | Purpose                                          |
 | ---------------------------- | ------------------------------------------------ |
 | `NEXT_PUBLIC_L2_RPC_URL`     | Public RPC endpoint for the L2 (e.g. Base Sepolia) |
+<!-- metadata: ey7cnc3776 -->
+<!-- metadata: l0szfivyit -->
+<!-- metadata: 1wgjpuwkrc -->
 | `NEXT_PUBLIC_REGISTRY_ADDR`  | Deployed `VeritasRegistry` address               |
 | `MESH_GATEWAY_KEY`           | Server-side key for routing to a real GPU mesh   |
 
