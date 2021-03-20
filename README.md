@@ -75,16 +75,6 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 1. Client `POST /api/inference` with `{ prompt, modelId, modelKind }`.
 2. Gateway resolves the model weight hash, picks a worker, runs the inference.
 3. Server hashes `model | weights | input | output | worker | nonce | ts` →
-<!-- metadata: wq3sms5g5a -->
-<!-- metadata: jbupq68ibd -->
-<!-- metadata: 1li7rve14e -->
-<!-- metadata: oeomzbw6t6 -->
-<!-- metadata: tp2qmz4yo0 -->
-<!-- metadata: aoez8mljxz -->
-<!-- metadata: ftj751v3xn -->
-<!-- metadata: r7apeix6ub -->
-<!-- metadata: ves1ctxg6v -->
-<!-- metadata: 8f5it3g9ld -->
    produces a single `receiptHash` (this is the **Audit Receipt**).
 4. A simulated ZK proof commits to the receipt.
 5. The receipt + proof are submitted to `VeritasRegistry.submitAudit(...)`.
@@ -117,6 +107,9 @@ pnpm start
 
 ## Smart contract
 
+`contracts/VeritasRegistry.sol` is the on-chain anchor. Key design choices:
+
+- **Events as the audit trail** — heavy payload (`modelId`, `inputHash`,
   `outputHash`, `modelWeightHash`, `nonce`) is emitted via `AuditSubmitted` and
   indexed off-chain (TheGraph / Ponder), keeping per-call gas low (~50k).
 - **Compact storage** — only `ReceiptStatus { exists, revoked, worker, ts }` is
