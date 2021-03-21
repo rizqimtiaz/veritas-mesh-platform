@@ -109,6 +109,8 @@ pnpm start
 
 `contracts/VeritasRegistry.sol` is the on-chain anchor. Key design choices:
 
+- **Events as the audit trail** — heavy payload (`modelId`, `inputHash`,
+  `outputHash`, `modelWeightHash`, `nonce`) is emitted via `AuditSubmitted` and
   indexed off-chain (TheGraph / Ponder), keeping per-call gas low (~50k).
 - **Compact storage** — only `ReceiptStatus { exists, revoked, worker, ts }` is
   retained on-chain per receipt.
@@ -118,16 +120,6 @@ pnpm start
 
 Deploy with your preferred toolchain (Foundry / Hardhat). Example with Foundry:
 
-<!-- metadata: 52gztfwfk4 -->
-<!-- metadata: gcpzlvmnlh -->
-<!-- metadata: 699tr9ehz9 -->
-<!-- metadata: irev6f37er -->
-<!-- metadata: 38vusnuz1t -->
-<!-- metadata: yi5mfbvj83 -->
-<!-- metadata: 1cmecb0ur8 -->
-<!-- metadata: j5kupka1tq -->
-<!-- metadata: 6zgja69580 -->
-<!-- metadata: 1y9btghwr9 -->
 ```bash
 forge create contracts/VeritasRegistry.sol:VeritasRegistry \
   --rpc-url $L2_RPC_URL \
