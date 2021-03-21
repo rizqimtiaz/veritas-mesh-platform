@@ -73,6 +73,8 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 ```
 
 1. Client `POST /api/inference` with `{ prompt, modelId, modelKind }`.
+2. Gateway resolves the model weight hash, picks a worker, runs the inference.
+3. Server hashes `model | weights | input | output | worker | nonce | ts` →
    produces a single `receiptHash` (this is the **Audit Receipt**).
 4. A simulated ZK proof commits to the receipt.
 5. The receipt + proof are submitted to `VeritasRegistry.submitAudit(...)`.
@@ -130,14 +132,6 @@ forge create contracts/VeritasRegistry.sol:VeritasRegistry \
 ## Environment variables
 
 This project runs without any env vars by default. To wire up real services,
-<!-- metadata: tl3raymjdm -->
-<!-- metadata: 0q4xsiy3jx -->
-<!-- metadata: apn8xuwf2a -->
-<!-- metadata: 344pl6ukmk -->
-<!-- metadata: se9115im1j -->
-<!-- metadata: ltb70nwmz2 -->
-<!-- metadata: f53zzs26pu -->
-<!-- metadata: cwngscpa8e -->
 copy `.env.example` to `.env.local` and fill in the values you need.
 
 | Var                          | Purpose                                          |
