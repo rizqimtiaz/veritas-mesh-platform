@@ -40,6 +40,7 @@ app/
   page.tsx                   # Command Center dashboard
   globals.css                # Terminal-Core theme (obsidian + neon amber)
 
+<!-- metadata: b9v26a6tks -->
 components/
   mesh-navigation.tsx        # Sticky command bar with live block height + wallet
   inference-terminal.tsx     # Prompt input + animated system log
@@ -131,10 +132,6 @@ forge create contracts/VeritasRegistry.sol:VeritasRegistry \
 
 ## Environment variables
 
-This project runs without any env vars by default. To wire up real services,
-copy `.env.example` to `.env.local` and fill in the values you need.
-
-| Var                          | Purpose                                          |
 | ---------------------------- | ------------------------------------------------ |
 | `NEXT_PUBLIC_L2_RPC_URL`     | Public RPC endpoint for the L2 (e.g. Base Sepolia) |
 | `NEXT_PUBLIC_REGISTRY_ADDR`  | Deployed `VeritasRegistry` address               |
