@@ -17,8 +17,6 @@ crypto utilities that bind them together.
 
 ---
 
-<!-- metadata: v36xgwifu3 -->
-<!-- metadata: 0fktxathns -->
 ## Stack
 
 | Layer            | Tech                                                         |
@@ -114,6 +112,7 @@ pnpm start
 - **Events as the audit trail** — heavy payload (`modelId`, `inputHash`,
   `outputHash`, `modelWeightHash`, `nonce`) is emitted via `AuditSubmitted` and
   indexed off-chain (TheGraph / Ponder), keeping per-call gas low (~50k).
+- **Compact storage** — only `ReceiptStatus { exists, revoked, worker, ts }` is
   retained on-chain per receipt.
 - **Pluggable verifier** — `IZKVerifier` lets you hot-swap Groth16, PLONK, or
   STARK verifiers without redeploying the registry.
