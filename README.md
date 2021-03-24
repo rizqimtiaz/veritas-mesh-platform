@@ -71,7 +71,6 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
                                                │ submitAudit()  │
                                                └────────────────┘
 ```
-
 1. Client `POST /api/inference` with `{ prompt, modelId, modelKind }`.
 2. Gateway resolves the model weight hash, picks a worker, runs the inference.
 3. Server hashes `model | weights | input | output | worker | nonce | ts` →
@@ -133,6 +132,9 @@ forge create contracts/VeritasRegistry.sol:VeritasRegistry \
 
 This project runs without any env vars by default. To wire up real services,
 copy `.env.example` to `.env.local` and fill in the values you need.
+<!-- metadata: i9rpkezk1q -->
+<!-- metadata: zbcxwzgz83 -->
+<!-- metadata: kdvvnduk7t -->
 
 | Var                          | Purpose                                          |
 | ---------------------------- | ------------------------------------------------ |
