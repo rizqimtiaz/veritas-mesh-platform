@@ -71,6 +71,16 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
                                                │ submitAudit()  │
                                                └────────────────┘
 ```
+<!-- metadata: jb4ne2u0sg -->
+<!-- metadata: d8e9undv38 -->
+<!-- metadata: xoptdcydk4 -->
+<!-- metadata: rtgdeh4mvq -->
+<!-- metadata: zaphdvjgdn -->
+<!-- metadata: np9e3sojcn -->
+<!-- metadata: is96oxp26z -->
+<!-- metadata: dz148dw0ur -->
+<!-- metadata: 0x202s4ck2 -->
+<!-- metadata: 4c1nt7wxaj -->
 
 1. Client `POST /api/inference` with `{ prompt, modelId, modelKind }`.
 2. Gateway resolves the model weight hash, picks a worker, runs the inference.
@@ -139,10 +149,6 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 | `NEXT_PUBLIC_L2_RPC_URL`     | Public RPC endpoint for the L2 (e.g. Base Sepolia) |
 | `NEXT_PUBLIC_REGISTRY_ADDR`  | Deployed `VeritasRegistry` address               |
 | `MESH_GATEWAY_KEY`           | Server-side key for routing to a real GPU mesh   |
-
----
-
-## Roadmap
 
 - [ ] Wire viem `writeContract` to `submitAudit` for real on-chain attestation
 - [ ] Replace stub inference with Akash / Render SDK
