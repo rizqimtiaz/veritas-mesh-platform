@@ -16,8 +16,16 @@ Center"), an inference gateway API, the Solidity registry contract, and the
 crypto utilities that bind them together.
 
 ---
-
-## Stack
+<!-- metadata: t6n0bh26h3 -->
+<!-- metadata: 3nv3c7xa5q -->
+<!-- metadata: xq3gi5iaqm -->
+<!-- metadata: qgtb9zit48 -->
+<!-- metadata: qbqjxw5cwf -->
+<!-- metadata: 1jhxpyynme -->
+<!-- metadata: g1m1ishj7x -->
+<!-- metadata: 2ep5rawyiw -->
+<!-- metadata: 0wk6fyquru -->
+<!-- metadata: 5a9e50fj6h -->
 
 | Layer            | Tech                                                         |
 | ---------------- | ------------------------------------------------------------ |
