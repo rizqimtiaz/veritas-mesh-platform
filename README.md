@@ -49,12 +49,6 @@ components/
 lib/
   crypto-utils.ts            # SHA-256, audit receipts, ZK-proof simulation
 
-<!-- metadata: 6r05hiok8o -->
-<!-- metadata: 79pk4jpcj0 -->
-<!-- metadata: hnrnkoj2n6 -->
-<!-- metadata: hyh97zmk2z -->
-<!-- metadata: tdol8132i6 -->
-<!-- metadata: e54yebtqie -->
 store/
   use-mesh-store.ts          # Zustand store: jobs, stats, wallet, lifecycle
 
@@ -88,6 +82,10 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 
 ---
 
+## Local development
+
+```bash
+pnpm install
 pnpm dev
 ```
 
