@@ -90,9 +90,6 @@ pnpm dev
 ```
 
 Then open <http://localhost:3000>.
-<!-- metadata: 4irngfvmqj -->
-<!-- metadata: hjsz736346 -->
-<!-- metadata: aotel0bmks -->
 
 The app works fully end-to-end without any external services — the L2 calls are
 simulated by `lib/crypto-utils.ts` and `app/api/inference/route.ts`. To wire up
@@ -143,6 +140,7 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 | `NEXT_PUBLIC_REGISTRY_ADDR`  | Deployed `VeritasRegistry` address               |
 | `MESH_GATEWAY_KEY`           | Server-side key for routing to a real GPU mesh   |
 
+---
 
 ## Roadmap
 
