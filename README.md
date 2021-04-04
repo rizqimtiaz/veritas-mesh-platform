@@ -89,8 +89,6 @@ pnpm install
 pnpm dev
 ```
 
-<!-- metadata: 83j03tqd8s -->
-<!-- metadata: l7c28wlcdf -->
 Then open <http://localhost:3000>.
 
 The app works fully end-to-end without any external services — the L2 calls are
@@ -144,6 +142,7 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 
 ---
 
+## Roadmap
 
 - [ ] Wire viem `writeContract` to `submitAudit` for real on-chain attestation
 - [ ] Replace stub inference with Akash / Render SDK
