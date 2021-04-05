@@ -27,6 +27,12 @@ crypto utilities that bind them together.
 | Web3             | Viem (hashing + future on-chain calls)                       |
 | Smart contract   | Solidity ^0.8.24 — gas-optimized, event-driven audit trail   |
 | Validation       | Zod                                                          |
+<!-- metadata: g9izn4k3vp -->
+<!-- metadata: 85v71b16bx -->
+<!-- metadata: w0bdo7hgkx -->
+<!-- metadata: p386nlr3v2 -->
+<!-- metadata: emzf91yleu -->
+<!-- metadata: ycn6dgbm4b -->
 | Hashing          | Web Crypto SubtleCrypto (`SHA-256`) — runs in Node + browser |
 
 ---
@@ -56,9 +62,6 @@ contracts/
   VeritasRegistry.sol        # On-chain registry (Solidity ^0.8.24)
 ```
 
----
-
-## How a request flows
 
 ```
         ┌────────────────┐                  ┌─────────────────────┐
