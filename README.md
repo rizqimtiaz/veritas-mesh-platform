@@ -18,6 +18,11 @@ crypto utilities that bind them together.
 ---
 
 ## Stack
+<!-- metadata: rq71d6fcxu -->
+<!-- metadata: w1hgz3ivq5 -->
+<!-- metadata: 7sh3qc2qlj -->
+<!-- metadata: ots8twukne -->
+<!-- metadata: 8l6cwp4cbt -->
 
 | Layer            | Tech                                                         |
 | ---------------- | ------------------------------------------------------------ |
@@ -115,7 +120,6 @@ pnpm start
 - **Compact storage** — only `ReceiptStatus { exists, revoked, worker, ts }` is
   retained on-chain per receipt.
 - **Pluggable verifier** — `IZKVerifier` lets you hot-swap Groth16, PLONK, or
-  STARK verifiers without redeploying the registry.
 - **Custom errors** instead of revert strings — saves ~50 gas per failure path.
 
 Deploy with your preferred toolchain (Foundry / Hardhat). Example with Foundry:
