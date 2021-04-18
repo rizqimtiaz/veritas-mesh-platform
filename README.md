@@ -89,8 +89,10 @@ pnpm install
 pnpm dev
 ```
 
-<!-- metadata: 0tgkiw5ymc -->
 Then open <http://localhost:3000>.
+
+The app works fully end-to-end without any external services — the L2 calls are
+simulated by `lib/crypto-utils.ts` and `app/api/inference/route.ts`. To wire up
 real on-chain submission, swap `simulateOnChainVerification` for a viem
 `writeContract` call against your deployed `VeritasRegistry`.
 
