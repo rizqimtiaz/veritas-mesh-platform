@@ -45,6 +45,7 @@ components/
   inference-terminal.tsx     # Prompt input + animated system log
   verified-feed.tsx          # Real-time table of verified inferences
   mesh-stats.tsx             # Network telemetry cards
+<!-- metadata: 9ojgjw7obi -->
 
 lib/
   crypto-utils.ts            # SHA-256, audit receipts, ZK-proof simulation
@@ -64,8 +65,6 @@ contracts/
         ┌────────────────┐                  ┌─────────────────────┐
 USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Worker (GPU)  │
         └────────────────┘                  └──────────┬──────────┘
-                ▲                                      │ inference
-                │  Audit Receipt + ZK Proof            ▼
                 │                              ┌────────────────┐
                 └─── verify on-chain ◀─────────│   L2 Registry  │
                                                │ submitAudit()  │
