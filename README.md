@@ -1,4 +1,9 @@
 # Veritas Mesh — DePIN for Auditable AI
+<!-- metadata: pk8me20o2d -->
+<!-- metadata: zqbdyvqyoq -->
+<!-- metadata: 2i6a6dhk4r -->
+<!-- metadata: hy0rnuv0j0 -->
+<!-- metadata: a0w0i5a7nh -->
 
 > Cryptographically verifiable AI inference on a decentralized GPU network, anchored on Layer 2.
 
@@ -89,7 +94,6 @@ pnpm install
 pnpm dev
 ```
 
-Then open <http://localhost:3000>.
 
 The app works fully end-to-end without any external services — the L2 calls are
 simulated by `lib/crypto-utils.ts` and `app/api/inference/route.ts`. To wire up
