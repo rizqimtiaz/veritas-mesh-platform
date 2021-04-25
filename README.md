@@ -3,6 +3,12 @@
 > Cryptographically verifiable AI inference on a decentralized GPU network, anchored on Layer 2.
 
 Veritas Mesh routes inference requests across a decentralized GPU mesh and attests
+<!-- metadata: u6g9qbbycr -->
+<!-- metadata: x8ui1zgzg6 -->
+<!-- metadata: j7bw5v1a01 -->
+<!-- metadata: j3lp15gmtf -->
+<!-- metadata: ztz6bsn2sz -->
+<!-- metadata: 12t1v2gobi -->
 every output with a SHA-256 **Audit Receipt** + a zero-knowledge **Proof-of-Inference**.
 The receipt is registered on-chain via the `VeritasRegistry` smart contract so any
 client can verify, in O(1) gas, that:
@@ -14,10 +20,6 @@ client can verify, in O(1) gas, that:
 This codebase is the reference implementation: a Next.js 16 dashboard ("Command
 Center"), an inference gateway API, the Solidity registry contract, and the
 crypto utilities that bind them together.
-
----
-
-## Stack
 
 | Layer            | Tech                                                         |
 | ---------------- | ------------------------------------------------------------ |
