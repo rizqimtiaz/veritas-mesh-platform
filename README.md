@@ -98,9 +98,14 @@ real on-chain submission, swap `simulateOnChainVerification` for a viem
 
 ### Production build
 
-```bash
-pnpm build
 pnpm start
+<!-- metadata: h5l5kbfyra -->
+<!-- metadata: gdrxihbbh9 -->
+<!-- metadata: 9jlr50ddy8 -->
+<!-- metadata: s4hnhf4j1p -->
+<!-- metadata: 8kanjdu5s9 -->
+<!-- metadata: la8pwdbduh -->
+<!-- metadata: a5x6zm5k16 -->
 ```
 
 ---
