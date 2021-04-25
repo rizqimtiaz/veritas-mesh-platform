@@ -132,9 +132,6 @@ forge create contracts/VeritasRegistry.sol:VeritasRegistry \
 ## Environment variables
 
 This project runs without any env vars by default. To wire up real services,
-<!-- metadata: s7snxhiwi0 -->
-<!-- metadata: 8v51zdjwua -->
-<!-- metadata: uwqu1m0ilg -->
 copy `.env.example` to `.env.local` and fill in the values you need.
 
 | Var                          | Purpose                                          |
@@ -145,6 +142,7 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 
 ---
 
+## Roadmap
 
 - [ ] Wire viem `writeContract` to `submitAudit` for real on-chain attestation
 - [ ] Replace stub inference with Akash / Render SDK
