@@ -41,6 +41,13 @@ app/
   globals.css                # Terminal-Core theme (obsidian + neon amber)
 
 components/
+<!-- metadata: 0jdex609x3 -->
+<!-- metadata: kagvknjm7y -->
+<!-- metadata: owov72o84z -->
+<!-- metadata: 96m2xcvy1x -->
+<!-- metadata: qvohjfn3qq -->
+<!-- metadata: z3fqvmc3hy -->
+<!-- metadata: ywsz2el83k -->
   mesh-navigation.tsx        # Sticky command bar with live block height + wallet
   inference-terminal.tsx     # Prompt input + animated system log
   verified-feed.tsx          # Real-time table of verified inferences
@@ -134,10 +141,6 @@ forge create contracts/VeritasRegistry.sol:VeritasRegistry \
 This project runs without any env vars by default. To wire up real services,
 copy `.env.example` to `.env.local` and fill in the values you need.
 
-| Var                          | Purpose                                          |
-| ---------------------------- | ------------------------------------------------ |
-| `NEXT_PUBLIC_L2_RPC_URL`     | Public RPC endpoint for the L2 (e.g. Base Sepolia) |
-| `NEXT_PUBLIC_REGISTRY_ADDR`  | Deployed `VeritasRegistry` address               |
 | `MESH_GATEWAY_KEY`           | Server-side key for routing to a real GPU mesh   |
 
 ---
