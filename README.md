@@ -8,6 +8,7 @@ The receipt is registered on-chain via the `VeritasRegistry` smart contract so a
 client can verify, in O(1) gas, that:
 
 1. The exact requested model was loaded (Merkle root over weights).
+2. The inference was run on a registered, non-slashed worker node.
 3. The output bytes were not tampered with after computation.
 
 This codebase is the reference implementation: a Next.js 16 dashboard ("Command
@@ -35,10 +36,6 @@ crypto utilities that bind them together.
 ```
 app/
   api/inference/route.ts     # Gateway: routes prompts to mesh + signs Audit Receipt
-<!-- metadata: egbgqeadde -->
-<!-- metadata: mlafb6y0ve -->
-<!-- metadata: go7frhmq3n -->
-<!-- metadata: bqc9e0urvw -->
   layout.tsx                 # Root layout, fonts, metadata, navigation
   page.tsx                   # Command Center dashboard
   globals.css                # Terminal-Core theme (obsidian + neon amber)
