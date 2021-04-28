@@ -130,6 +130,10 @@ forge create contracts/VeritasRegistry.sol:VeritasRegistry \
 ---
 
 ## Environment variables
+
+This project runs without any env vars by default. To wire up real services,
+copy `.env.example` to `.env.local` and fill in the values you need.
+
 | Var                          | Purpose                                          |
 | ---------------------------- | ------------------------------------------------ |
 | `NEXT_PUBLIC_L2_RPC_URL`     | Public RPC endpoint for the L2 (e.g. Base Sepolia) |
@@ -142,15 +146,6 @@ forge create contracts/VeritasRegistry.sol:VeritasRegistry \
 
 - [ ] Wire viem `writeContract` to `submitAudit` for real on-chain attestation
 - [ ] Replace stub inference with Akash / Render SDK
-<!-- metadata: nkejxrrfvm -->
-<!-- metadata: ui3kedvmrl -->
-<!-- metadata: 8uqqcezj7o -->
-<!-- metadata: 5f3f57phj9 -->
-<!-- metadata: 53febld2cc -->
-<!-- metadata: nbnl3ojam5 -->
-<!-- metadata: 82g3f7tkyd -->
-<!-- metadata: 9hst6649tr -->
-<!-- metadata: 94h8rg9zut -->
 - [ ] Add Groth16 verifier contract under `contracts/verifiers/`
 - [ ] Subgraph (Ponder) for the public Audit Feed
 - [ ] Worker-side daemon (Rust) for attested-GPU inference
