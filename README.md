@@ -25,6 +25,9 @@ crypto utilities that bind them together.
 | State            | Zustand                                                      |
 | Animation        | Framer Motion                                                |
 | Web3             | Viem (hashing + future on-chain calls)                       |
+| Smart contract   | Solidity ^0.8.24 — gas-optimized, event-driven audit trail   |
+| Validation       | Zod                                                          |
+| Hashing          | Web Crypto SubtleCrypto (`SHA-256`) — runs in Node + browser |
 
 ---
 
@@ -32,12 +35,6 @@ crypto utilities that bind them together.
 
 ```
 app/
-<!-- metadata: x750hu6owh -->
-<!-- metadata: e72z5ssnol -->
-<!-- metadata: g65ub86p8u -->
-<!-- metadata: vvmcx6fkxe -->
-<!-- metadata: 9h4immaqzw -->
-<!-- metadata: xs39bs64oh -->
   api/inference/route.ts     # Gateway: routes prompts to mesh + signs Audit Receipt
   layout.tsx                 # Root layout, fonts, metadata, navigation
   page.tsx                   # Command Center dashboard
