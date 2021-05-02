@@ -76,6 +76,10 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 2. Gateway resolves the model weight hash, picks a worker, runs the inference.
 3. Server hashes `model | weights | input | output | worker | nonce | ts` →
    produces a single `receiptHash` (this is the **Audit Receipt**).
+4. A simulated ZK proof commits to the receipt.
+5. The receipt + proof are submitted to `VeritasRegistry.submitAudit(...)`.
+6. Anyone can call `verifyProof(receiptHash)` on-chain to confirm validity.
+
 ---
 
 ## Local development
@@ -85,9 +89,6 @@ pnpm install
 pnpm dev
 ```
 
-<!-- metadata: hakg40km5y -->
-<!-- metadata: mtaesh4ge4 -->
-<!-- metadata: 3bwe4gfuhf -->
 Then open <http://localhost:3000>.
 
 The app works fully end-to-end without any external services — the L2 calls are
