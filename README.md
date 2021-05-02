@@ -81,6 +81,8 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 6. Anyone can call `verifyProof(receiptHash)` on-chain to confirm validity.
 
 ---
+<!-- metadata: 380jx74zdp -->
+<!-- metadata: z4jfmw4p4r -->
 
 ## Local development
 
@@ -104,10 +106,6 @@ pnpm start
 ```
 
 ---
-
-## Smart contract
-
-`contracts/VeritasRegistry.sol` is the on-chain anchor. Key design choices:
 
 - **Events as the audit trail** — heavy payload (`modelId`, `inputHash`,
   `outputHash`, `modelWeightHash`, `nonce`) is emitted via `AuditSubmitted` and
