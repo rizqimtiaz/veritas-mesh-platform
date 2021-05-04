@@ -28,7 +28,6 @@ crypto utilities that bind them together.
 | Smart contract   | Solidity ^0.8.24 — gas-optimized, event-driven audit trail   |
 | Validation       | Zod                                                          |
 | Hashing          | Web Crypto SubtleCrypto (`SHA-256`) — runs in Node + browser |
-<!-- metadata: dpk6gcyau4 -->
 
 ---
 
@@ -42,6 +41,9 @@ app/
   globals.css                # Terminal-Core theme (obsidian + neon amber)
 
 components/
+  mesh-navigation.tsx        # Sticky command bar with live block height + wallet
+  inference-terminal.tsx     # Prompt input + animated system log
+  verified-feed.tsx          # Real-time table of verified inferences
   mesh-stats.tsx             # Network telemetry cards
 
 lib/
