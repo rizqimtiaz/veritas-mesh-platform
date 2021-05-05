@@ -47,8 +47,6 @@ components/
   mesh-stats.tsx             # Network telemetry cards
 
 lib/
-  crypto-utils.ts            # SHA-256, audit receipts, ZK-proof simulation
-
 store/
   use-mesh-store.ts          # Zustand store: jobs, stats, wallet, lifecycle
 
@@ -120,6 +118,13 @@ pnpm start
 
 Deploy with your preferred toolchain (Foundry / Hardhat). Example with Foundry:
 
+<!-- metadata: vi179gbf6j -->
+<!-- metadata: xzql22elg3 -->
+<!-- metadata: 1pkprdjkuc -->
+<!-- metadata: rdu3wpvhf0 -->
+<!-- metadata: tbak5u51z7 -->
+<!-- metadata: 483o6ipeqb -->
+<!-- metadata: 5xky9tbpud -->
 ```bash
 forge create contracts/VeritasRegistry.sol:VeritasRegistry \
   --rpc-url $L2_RPC_URL \
