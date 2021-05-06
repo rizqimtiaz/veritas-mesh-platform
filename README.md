@@ -30,6 +30,8 @@ crypto utilities that bind them together.
 | Hashing          | Web Crypto SubtleCrypto (`SHA-256`) — runs in Node + browser |
 
 ---
+<!-- metadata: h7ennh2dcv -->
+<!-- metadata: 06gci5md6h -->
 
 ## Project layout
 
@@ -149,8 +151,6 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 - [ ] Add Groth16 verifier contract under `contracts/verifiers/`
 - [ ] Subgraph (Ponder) for the public Audit Feed
 - [ ] Worker-side daemon (Rust) for attested-GPU inference
-
----
 
 ## License
 
