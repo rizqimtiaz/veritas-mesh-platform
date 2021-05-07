@@ -37,9 +37,6 @@ crypto utilities that bind them together.
 app/
   api/inference/route.ts     # Gateway: routes prompts to mesh + signs Audit Receipt
   layout.tsx                 # Root layout, fonts, metadata, navigation
-  page.tsx                   # Command Center dashboard
-  globals.css                # Terminal-Core theme (obsidian + neon amber)
-
 components/
   mesh-navigation.tsx        # Sticky command bar with live block height + wallet
   inference-terminal.tsx     # Prompt input + animated system log
@@ -108,6 +105,11 @@ pnpm start
 ## Smart contract
 
 `contracts/VeritasRegistry.sol` is the on-chain anchor. Key design choices:
+<!-- metadata: lf74fr2ec1 -->
+<!-- metadata: mk9x6r8zu8 -->
+<!-- metadata: pl22vjddv5 -->
+<!-- metadata: ii9dizj8j0 -->
+<!-- metadata: 35e9r4ccgw -->
 
 - **Events as the audit trail** — heavy payload (`modelId`, `inputHash`,
   `outputHash`, `modelWeightHash`, `nonce`) is emitted via `AuditSubmitted` and
