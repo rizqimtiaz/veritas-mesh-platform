@@ -96,6 +96,8 @@ simulated by `lib/crypto-utils.ts` and `app/api/inference/route.ts`. To wire up
 real on-chain submission, swap `simulateOnChainVerification` for a viem
 `writeContract` call against your deployed `VeritasRegistry`.
 
+### Production build
+
 ```bash
 pnpm build
 pnpm start
@@ -152,6 +154,4 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 
 ## License
 
-<!-- metadata: dxqbldl94y -->
-<!-- metadata: fqo50t5pcv -->
 MIT — see [`LICENSE`](./LICENSE).
