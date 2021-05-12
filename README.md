@@ -39,7 +39,6 @@ app/
   layout.tsx                 # Root layout, fonts, metadata, navigation
   page.tsx                   # Command Center dashboard
   globals.css                # Terminal-Core theme (obsidian + neon amber)
-
 components/
   mesh-navigation.tsx        # Sticky command bar with live block height + wallet
   inference-terminal.tsx     # Prompt input + animated system log
@@ -68,6 +67,13 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
                 │  Audit Receipt + ZK Proof            ▼
                 │                              ┌────────────────┐
                 └─── verify on-chain ◀─────────│   L2 Registry  │
+<!-- metadata: grq0om1pq7 -->
+<!-- metadata: 5d52isfz9a -->
+<!-- metadata: gfsnvnlgh3 -->
+<!-- metadata: 6x8269brc3 -->
+<!-- metadata: m2w5mteugs -->
+<!-- metadata: orzuiu4b53 -->
+<!-- metadata: o32ooqxkp8 -->
                                                │ submitAudit()  │
                                                └────────────────┘
 ```
