@@ -10,8 +10,6 @@ client can verify, in O(1) gas, that:
 1. The exact requested model was loaded (Merkle root over weights).
 2. The inference was run on a registered, non-slashed worker node.
 3. The output bytes were not tampered with after computation.
-
-This codebase is the reference implementation: a Next.js 16 dashboard ("Command
 Center"), an inference gateway API, the Solidity registry contract, and the
 crypto utilities that bind them together.
 
@@ -28,6 +26,13 @@ crypto utilities that bind them together.
 | Smart contract   | Solidity ^0.8.24 — gas-optimized, event-driven audit trail   |
 | Validation       | Zod                                                          |
 | Hashing          | Web Crypto SubtleCrypto (`SHA-256`) — runs in Node + browser |
+<!-- metadata: vha8cg1bb7 -->
+<!-- metadata: va6lgo66b3 -->
+<!-- metadata: 5htj6ayrd5 -->
+<!-- metadata: hp9pqeiebe -->
+<!-- metadata: ab4d7cys1f -->
+<!-- metadata: z2m6k32ihy -->
+<!-- metadata: cedijcxofh -->
 
 ---
 
