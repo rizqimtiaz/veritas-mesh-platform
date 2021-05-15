@@ -127,7 +127,6 @@ forge create contracts/VeritasRegistry.sol:VeritasRegistry \
   --constructor-args 0x0000000000000000000000000000000000000000
 ```
 
-<!-- metadata: y6hqtr7ms2 -->
 ---
 
 ## Environment variables
@@ -142,6 +141,9 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 | `MESH_GATEWAY_KEY`           | Server-side key for routing to a real GPU mesh   |
 
 ---
+
+## Roadmap
+
 - [ ] Wire viem `writeContract` to `submitAudit` for real on-chain attestation
 - [ ] Replace stub inference with Akash / Render SDK
 - [ ] Add Groth16 verifier contract under `contracts/verifiers/`
