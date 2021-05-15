@@ -54,6 +54,10 @@ store/
 
 contracts/
   VeritasRegistry.sol        # On-chain registry (Solidity ^0.8.24)
+<!-- metadata: ejk9i79y8m -->
+<!-- metadata: qo5hiar750 -->
+<!-- metadata: dtc5xhq8ct -->
+<!-- metadata: 9mjbof51af -->
 ```
 
 ---
@@ -69,10 +73,6 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
                 │                              ┌────────────────┐
                 └─── verify on-chain ◀─────────│   L2 Registry  │
                                                │ submitAudit()  │
-                                               └────────────────┘
-```
-
-1. Client `POST /api/inference` with `{ prompt, modelId, modelKind }`.
 2. Gateway resolves the model weight hash, picks a worker, runs the inference.
 3. Server hashes `model | weights | input | output | worker | nonce | ts` →
    produces a single `receiptHash` (this is the **Audit Receipt**).
