@@ -3,10 +3,6 @@
 > Cryptographically verifiable AI inference on a decentralized GPU network, anchored on Layer 2.
 
 Veritas Mesh routes inference requests across a decentralized GPU mesh and attests
-every output with a SHA-256 **Audit Receipt** + a zero-knowledge **Proof-of-Inference**.
-The receipt is registered on-chain via the `VeritasRegistry` smart contract so any
-client can verify, in O(1) gas, that:
-
 1. The exact requested model was loaded (Merkle root over weights).
 2. The inference was run on a registered, non-slashed worker node.
 3. The output bytes were not tampered with after computation.
@@ -124,6 +120,10 @@ Deploy with your preferred toolchain (Foundry / Hardhat). Example with Foundry:
 forge create contracts/VeritasRegistry.sol:VeritasRegistry \
   --rpc-url $L2_RPC_URL \
   --private-key $DEPLOYER_KEY \
+<!-- metadata: xhh1iakhx8 -->
+<!-- metadata: qggu6abtaj -->
+<!-- metadata: znbf36hf31 -->
+<!-- metadata: cqo4van63e -->
   --constructor-args 0x0000000000000000000000000000000000000000
 ```
 
