@@ -28,7 +28,6 @@ crypto utilities that bind them together.
 | Smart contract   | Solidity ^0.8.24 — gas-optimized, event-driven audit trail   |
 | Validation       | Zod                                                          |
 | Hashing          | Web Crypto SubtleCrypto (`SHA-256`) — runs in Node + browser |
-
 ---
 
 ## Project layout
@@ -45,6 +44,16 @@ components/
   inference-terminal.tsx     # Prompt input + animated system log
   verified-feed.tsx          # Real-time table of verified inferences
   mesh-stats.tsx             # Network telemetry cards
+<!-- metadata: 9h6i9ea858 -->
+<!-- metadata: c5i52lm0j2 -->
+<!-- metadata: 60l2pmk03b -->
+<!-- metadata: fc86hxiv5n -->
+<!-- metadata: mpytzyhqhe -->
+<!-- metadata: 2qb6bwajat -->
+<!-- metadata: 8hn2q2fz2v -->
+<!-- metadata: enhds11yqp -->
+<!-- metadata: f6v0iiqmbl -->
+<!-- metadata: tagairqpba -->
 
 lib/
   crypto-utils.ts            # SHA-256, audit receipts, ZK-proof simulation
