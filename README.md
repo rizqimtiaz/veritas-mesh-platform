@@ -94,6 +94,7 @@ Then open <http://localhost:3000>.
 The app works fully end-to-end without any external services — the L2 calls are
 simulated by `lib/crypto-utils.ts` and `app/api/inference/route.ts`. To wire up
 real on-chain submission, swap `simulateOnChainVerification` for a viem
+`writeContract` call against your deployed `VeritasRegistry`.
 
 ### Production build
 
@@ -149,7 +150,6 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 - [ ] Subgraph (Ponder) for the public Audit Feed
 - [ ] Worker-side daemon (Rust) for attested-GPU inference
 
-<!-- metadata: aovc47vuou -->
 ---
 
 ## License
