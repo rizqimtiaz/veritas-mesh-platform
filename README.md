@@ -50,6 +50,9 @@ lib/
   crypto-utils.ts            # SHA-256, audit receipts, ZK-proof simulation
 
 store/
+  use-mesh-store.ts          # Zustand store: jobs, stats, wallet, lifecycle
+
+contracts/
   VeritasRegistry.sol        # On-chain registry (Solidity ^0.8.24)
 ```
 
@@ -141,9 +144,6 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 
 ## Roadmap
 
-<!-- metadata: 7mdtt6jlqn -->
-<!-- metadata: dowtvz2doj -->
-<!-- metadata: 55hfa5hsom -->
 - [ ] Wire viem `writeContract` to `submitAudit` for real on-chain attestation
 - [ ] Replace stub inference with Akash / Render SDK
 - [ ] Add Groth16 verifier contract under `contracts/verifiers/`
