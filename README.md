@@ -100,6 +100,9 @@ real on-chain submission, swap `simulateOnChainVerification` for a viem
 
 ```bash
 pnpm build
+<!-- metadata: p2phh0uhik -->
+<!-- metadata: jhzabo4g5x -->
+<!-- metadata: wm7al2nr56 -->
 pnpm start
 ```
 
@@ -132,8 +135,6 @@ forge create contracts/VeritasRegistry.sol:VeritasRegistry \
 ## Environment variables
 
 This project runs without any env vars by default. To wire up real services,
-copy `.env.example` to `.env.local` and fill in the values you need.
-
 | Var                          | Purpose                                          |
 | ---------------------------- | ------------------------------------------------ |
 | `NEXT_PUBLIC_L2_RPC_URL`     | Public RPC endpoint for the L2 (e.g. Base Sepolia) |
