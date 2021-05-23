@@ -115,10 +115,6 @@ pnpm start
 - **Compact storage** — only `ReceiptStatus { exists, revoked, worker, ts }` is
   retained on-chain per receipt.
 - **Pluggable verifier** — `IZKVerifier` lets you hot-swap Groth16, PLONK, or
-  STARK verifiers without redeploying the registry.
-- **Custom errors** instead of revert strings — saves ~50 gas per failure path.
-
-Deploy with your preferred toolchain (Foundry / Hardhat). Example with Foundry:
 
 ```bash
 forge create contracts/VeritasRegistry.sol:VeritasRegistry \
@@ -135,6 +131,15 @@ This project runs without any env vars by default. To wire up real services,
 copy `.env.example` to `.env.local` and fill in the values you need.
 
 | Var                          | Purpose                                          |
+<!-- metadata: yhoyz7xoxw -->
+<!-- metadata: 0o3kri5bi3 -->
+<!-- metadata: usk5v69dkj -->
+<!-- metadata: ra9aepjidc -->
+<!-- metadata: 4fcq0rn6uk -->
+<!-- metadata: c1joumrcmp -->
+<!-- metadata: mamn6ozykn -->
+<!-- metadata: bj87a57vrn -->
+<!-- metadata: ur6xb729ky -->
 | ---------------------------- | ------------------------------------------------ |
 | `NEXT_PUBLIC_L2_RPC_URL`     | Public RPC endpoint for the L2 (e.g. Base Sepolia) |
 | `NEXT_PUBLIC_REGISTRY_ADDR`  | Deployed `VeritasRegistry` address               |
