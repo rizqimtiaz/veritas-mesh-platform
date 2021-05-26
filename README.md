@@ -57,12 +57,6 @@ contracts/
 ```
 
 ---
-<!-- metadata: 51brj40xo2 -->
-<!-- metadata: 7rtu2o7i9u -->
-<!-- metadata: j07lb5jm3f -->
-<!-- metadata: 1wwwauq6wp -->
-<!-- metadata: 6364nnzunr -->
-<!-- metadata: tkss8kru6u -->
 
 ## How a request flows
 
@@ -105,6 +99,7 @@ real on-chain submission, swap `simulateOnChainVerification` for a viem
 ### Production build
 
 ```bash
+pnpm build
 pnpm start
 ```
 
