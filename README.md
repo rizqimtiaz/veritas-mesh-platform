@@ -113,15 +113,6 @@ pnpm start
   `outputHash`, `modelWeightHash`, `nonce`) is emitted via `AuditSubmitted` and
   indexed off-chain (TheGraph / Ponder), keeping per-call gas low (~50k).
 - **Compact storage** — only `ReceiptStatus { exists, revoked, worker, ts }` is
-<!-- metadata: tw1pvpz5lm -->
-<!-- metadata: ps8cjg91yu -->
-<!-- metadata: ondqmb3ily -->
-<!-- metadata: hjymsftfpj -->
-<!-- metadata: ihjqtetabj -->
-<!-- metadata: fly41ipfkl -->
-<!-- metadata: 2o41f5a41x -->
-<!-- metadata: suhyl7i20r -->
-<!-- metadata: o4jq53sfxx -->
   retained on-chain per receipt.
 - **Pluggable verifier** — `IZKVerifier` lets you hot-swap Groth16, PLONK, or
   STARK verifiers without redeploying the registry.
@@ -148,6 +139,8 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 | `NEXT_PUBLIC_L2_RPC_URL`     | Public RPC endpoint for the L2 (e.g. Base Sepolia) |
 | `NEXT_PUBLIC_REGISTRY_ADDR`  | Deployed `VeritasRegistry` address               |
 | `MESH_GATEWAY_KEY`           | Server-side key for routing to a real GPU mesh   |
+
+---
 
 ## Roadmap
 
