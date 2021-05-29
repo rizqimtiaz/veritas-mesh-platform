@@ -36,14 +36,6 @@ crypto utilities that bind them together.
 ```
 app/
   api/inference/route.ts     # Gateway: routes prompts to mesh + signs Audit Receipt
-<!-- metadata: 69ycihxjru -->
-<!-- metadata: v2j1zlpmbj -->
-<!-- metadata: y2lo5q0c3y -->
-<!-- metadata: jstun083pe -->
-<!-- metadata: qmr9r1cuv0 -->
-<!-- metadata: 5v5qku3pr6 -->
-<!-- metadata: p0ofrcxbm9 -->
-<!-- metadata: 9w6yvj1fpy -->
   layout.tsx                 # Root layout, fonts, metadata, navigation
   page.tsx                   # Command Center dashboard
   globals.css                # Terminal-Core theme (obsidian + neon amber)
@@ -83,6 +75,10 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 1. Client `POST /api/inference` with `{ prompt, modelId, modelKind }`.
 2. Gateway resolves the model weight hash, picks a worker, runs the inference.
 3. Server hashes `model | weights | input | output | worker | nonce | ts` →
+   produces a single `receiptHash` (this is the **Audit Receipt**).
+4. A simulated ZK proof commits to the receipt.
+5. The receipt + proof are submitted to `VeritasRegistry.submitAudit(...)`.
+6. Anyone can call `verifyProof(receiptHash)` on-chain to confirm validity.
 
 ---
 
