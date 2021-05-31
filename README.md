@@ -1,4 +1,3 @@
-<!-- metadata: sfl26tw6gf -->
 # Veritas Mesh — DePIN for Auditable AI
 
 > Cryptographically verifiable AI inference on a decentralized GPU network, anchored on Layer 2.
@@ -109,6 +108,9 @@ pnpm start
 ## Smart contract
 
 `contracts/VeritasRegistry.sol` is the on-chain anchor. Key design choices:
+
+- **Events as the audit trail** — heavy payload (`modelId`, `inputHash`,
+  `outputHash`, `modelWeightHash`, `nonce`) is emitted via `AuditSubmitted` and
   indexed off-chain (TheGraph / Ponder), keeping per-call gas low (~50k).
 - **Compact storage** — only `ReceiptStatus { exists, revoked, worker, ts }` is
   retained on-chain per receipt.
