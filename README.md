@@ -4,7 +4,6 @@
 
 Veritas Mesh routes inference requests across a decentralized GPU mesh and attests
 every output with a SHA-256 **Audit Receipt** + a zero-knowledge **Proof-of-Inference**.
-<!-- metadata: yd9v1gv6qw -->
 The receipt is registered on-chain via the `VeritasRegistry` smart contract so any
 client can verify, in O(1) gas, that:
 
@@ -19,6 +18,9 @@ crypto utilities that bind them together.
 ---
 
 ## Stack
+
+| Layer            | Tech                                                         |
+| ---------------- | ------------------------------------------------------------ |
 | Frontend         | Next.js 16 (App Router) · React 19 · TypeScript · Tailwind 4 |
 | State            | Zustand                                                      |
 | Animation        | Framer Motion                                                |
