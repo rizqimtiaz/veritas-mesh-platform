@@ -51,7 +51,6 @@ lib/
 
 store/
   use-mesh-store.ts          # Zustand store: jobs, stats, wallet, lifecycle
-<!-- metadata: vdq4g4cenh -->
 
 contracts/
   VeritasRegistry.sol        # On-chain registry (Solidity ^0.8.24)
@@ -65,6 +64,9 @@ contracts/
         ┌────────────────┐                  ┌─────────────────────┐
 USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Worker (GPU)  │
         └────────────────┘                  └──────────┬──────────┘
+                ▲                                      │ inference
+                │  Audit Receipt + ZK Proof            ▼
+                │                              ┌────────────────┐
                 └─── verify on-chain ◀─────────│   L2 Registry  │
                                                │ submitAudit()  │
                                                └────────────────┘
