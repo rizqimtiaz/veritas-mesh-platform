@@ -13,6 +13,10 @@ client can verify, in O(1) gas, that:
 
 This codebase is the reference implementation: a Next.js 16 dashboard ("Command
 Center"), an inference gateway API, the Solidity registry contract, and the
+crypto utilities that bind them together.
+
+---
+
 ## Stack
 
 | Layer            | Tech                                                         |
@@ -135,12 +139,6 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 | `NEXT_PUBLIC_L2_RPC_URL`     | Public RPC endpoint for the L2 (e.g. Base Sepolia) |
 | `NEXT_PUBLIC_REGISTRY_ADDR`  | Deployed `VeritasRegistry` address               |
 | `MESH_GATEWAY_KEY`           | Server-side key for routing to a real GPU mesh   |
-<!-- metadata: 5rl5yipwhn -->
-<!-- metadata: wxesjytkna -->
-<!-- metadata: bwfo3r0zn0 -->
-<!-- metadata: mrl1m0nqdq -->
-<!-- metadata: 9w3npoz7s7 -->
-<!-- metadata: v8xt3niqil -->
 
 ---
 
