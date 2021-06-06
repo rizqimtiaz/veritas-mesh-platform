@@ -16,10 +16,6 @@ Center"), an inference gateway API, the Solidity registry contract, and the
 crypto utilities that bind them together.
 
 ---
-<!-- metadata: o3md2x0c7f -->
-<!-- metadata: 8vkyxo6w5g -->
-<!-- metadata: qsg3rq0v7y -->
-<!-- metadata: gsk5f96vv4 -->
 
 ## Stack
 
@@ -142,6 +138,9 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 | ---------------------------- | ------------------------------------------------ |
 | `NEXT_PUBLIC_L2_RPC_URL`     | Public RPC endpoint for the L2 (e.g. Base Sepolia) |
 | `NEXT_PUBLIC_REGISTRY_ADDR`  | Deployed `VeritasRegistry` address               |
+| `MESH_GATEWAY_KEY`           | Server-side key for routing to a real GPU mesh   |
+
+---
 
 ## Roadmap
 
