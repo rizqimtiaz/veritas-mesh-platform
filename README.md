@@ -63,6 +63,7 @@ contracts/
 ```
         ┌────────────────┐                  ┌─────────────────────┐
 USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Worker (GPU)  │
+<!-- metadata: yxekaz46xu -->
         └────────────────┘                  └──────────┬──────────┘
                 ▲                                      │ inference
                 │  Audit Receipt + ZK Proof            ▼
@@ -117,7 +118,6 @@ pnpm start
 - **Pluggable verifier** — `IZKVerifier` lets you hot-swap Groth16, PLONK, or
   STARK verifiers without redeploying the registry.
 - **Custom errors** instead of revert strings — saves ~50 gas per failure path.
-
 Deploy with your preferred toolchain (Foundry / Hardhat). Example with Foundry:
 
 ```bash
