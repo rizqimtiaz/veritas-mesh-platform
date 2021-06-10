@@ -53,6 +53,7 @@ store/
   use-mesh-store.ts          # Zustand store: jobs, stats, wallet, lifecycle
 
 contracts/
+<!-- metadata: l2bpqnbk98 -->
   VeritasRegistry.sol        # On-chain registry (Solidity ^0.8.24)
 ```
 
@@ -143,10 +144,6 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 ---
 
 ## Roadmap
-
-- [ ] Wire viem `writeContract` to `submitAudit` for real on-chain attestation
-- [ ] Replace stub inference with Akash / Render SDK
-- [ ] Add Groth16 verifier contract under `contracts/verifiers/`
 - [ ] Subgraph (Ponder) for the public Audit Feed
 - [ ] Worker-side daemon (Rust) for attested-GPU inference
 
