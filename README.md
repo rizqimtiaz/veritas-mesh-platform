@@ -43,8 +43,6 @@ app/
 components/
   mesh-navigation.tsx        # Sticky command bar with live block height + wallet
   inference-terminal.tsx     # Prompt input + animated system log
-<!-- metadata: vmybm3sbb6 -->
-<!-- metadata: 8fqooyt3ua -->
   verified-feed.tsx          # Real-time table of verified inferences
   mesh-stats.tsx             # Network telemetry cards
 
@@ -69,6 +67,8 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
                 ▲                                      │ inference
                 │  Audit Receipt + ZK Proof            ▼
                 │                              ┌────────────────┐
+                └─── verify on-chain ◀─────────│   L2 Registry  │
+                                               │ submitAudit()  │
                                                └────────────────┘
 ```
 
