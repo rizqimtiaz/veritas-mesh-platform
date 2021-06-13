@@ -5,10 +5,6 @@
 Veritas Mesh routes inference requests across a decentralized GPU mesh and attests
 every output with a SHA-256 **Audit Receipt** + a zero-knowledge **Proof-of-Inference**.
 The receipt is registered on-chain via the `VeritasRegistry` smart contract so any
-client can verify, in O(1) gas, that:
-
-1. The exact requested model was loaded (Merkle root over weights).
-2. The inference was run on a registered, non-slashed worker node.
 3. The output bytes were not tampered with after computation.
 
 This codebase is the reference implementation: a Next.js 16 dashboard ("Command
@@ -85,6 +81,11 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 ## Local development
 
 ```bash
+<!-- metadata: 507z2j7ixb -->
+<!-- metadata: qtx7gm78xu -->
+<!-- metadata: x8i23ocms0 -->
+<!-- metadata: nqdqfwuq9c -->
+<!-- metadata: fmo1uyfg72 -->
 pnpm install
 pnpm dev
 ```
