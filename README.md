@@ -29,13 +29,12 @@ crypto utilities that bind them together.
 | Validation       | Zod                                                          |
 | Hashing          | Web Crypto SubtleCrypto (`SHA-256`) — runs in Node + browser |
 
+---
+
 ## Project layout
 
 ```
 app/
-<!-- metadata: uj6w71xl9c -->
-<!-- metadata: gsfnl34tnh -->
-<!-- metadata: hotp29zzyh -->
   api/inference/route.ts     # Gateway: routes prompts to mesh + signs Audit Receipt
   layout.tsx                 # Root layout, fonts, metadata, navigation
   page.tsx                   # Command Center dashboard
