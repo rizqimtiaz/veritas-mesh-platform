@@ -9,6 +9,10 @@ client can verify, in O(1) gas, that:
 
 1. The exact requested model was loaded (Merkle root over weights).
 2. The inference was run on a registered, non-slashed worker node.
+3. The output bytes were not tampered with after computation.
+
+This codebase is the reference implementation: a Next.js 16 dashboard ("Command
+Center"), an inference gateway API, the Solidity registry contract, and the
 crypto utilities that bind them together.
 
 ---
@@ -143,14 +147,6 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 - [ ] Wire viem `writeContract` to `submitAudit` for real on-chain attestation
 - [ ] Replace stub inference with Akash / Render SDK
 - [ ] Add Groth16 verifier contract under `contracts/verifiers/`
-<!-- metadata: 23y1qsxgxh -->
-<!-- metadata: 50m3x5ocql -->
-<!-- metadata: sykl69us5t -->
-<!-- metadata: 2uiobe9ds9 -->
-<!-- metadata: sa6y9ho7kl -->
-<!-- metadata: a3aqpcgva1 -->
-<!-- metadata: ydu2j8obhf -->
-<!-- metadata: 35qkec9zle -->
 - [ ] Subgraph (Ponder) for the public Audit Feed
 - [ ] Worker-side daemon (Rust) for attested-GPU inference
 
