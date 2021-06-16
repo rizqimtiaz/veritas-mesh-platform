@@ -18,6 +18,7 @@ crypto utilities that bind them together.
 ---
 
 ## Stack
+
 | Layer            | Tech                                                         |
 | ---------------- | ------------------------------------------------------------ |
 | Frontend         | Next.js 16 (App Router) · React 19 · TypeScript · Tailwind 4 |
@@ -85,7 +86,6 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 
 ```bash
 pnpm install
-<!-- metadata: jzgzm9samf -->
 pnpm dev
 ```
 
