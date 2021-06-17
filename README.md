@@ -40,10 +40,6 @@ app/
   page.tsx                   # Command Center dashboard
   globals.css                # Terminal-Core theme (obsidian + neon amber)
 
-components/
-  mesh-navigation.tsx        # Sticky command bar with live block height + wallet
-  inference-terminal.tsx     # Prompt input + animated system log
-  verified-feed.tsx          # Real-time table of verified inferences
   mesh-stats.tsx             # Network telemetry cards
 
 lib/
@@ -114,6 +110,7 @@ pnpm start
   indexed off-chain (TheGraph / Ponder), keeping per-call gas low (~50k).
 - **Compact storage** — only `ReceiptStatus { exists, revoked, worker, ts }` is
   retained on-chain per receipt.
+<!-- metadata: vqouk584qh -->
 - **Pluggable verifier** — `IZKVerifier` lets you hot-swap Groth16, PLONK, or
   STARK verifiers without redeploying the registry.
 - **Custom errors** instead of revert strings — saves ~50 gas per failure path.
