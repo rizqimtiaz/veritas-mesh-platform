@@ -87,16 +87,6 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 ```bash
 pnpm install
 pnpm dev
-<!-- metadata: y68aensyx6 -->
-<!-- metadata: logmrra8di -->
-<!-- metadata: 2q2r73aak5 -->
-<!-- metadata: g72fqp6cwr -->
-<!-- metadata: qir7284rm7 -->
-<!-- metadata: jrbm4df8mr -->
-<!-- metadata: zz3biusvjc -->
-<!-- metadata: wsm3ixbwlw -->
-<!-- metadata: rjlwl9m3q3 -->
-<!-- metadata: 9pe76iqu7h -->
 ```
 
 Then open <http://localhost:3000>.
@@ -128,6 +118,7 @@ pnpm start
   STARK verifiers without redeploying the registry.
 - **Custom errors** instead of revert strings — saves ~50 gas per failure path.
 
+Deploy with your preferred toolchain (Foundry / Hardhat). Example with Foundry:
 
 ```bash
 forge create contracts/VeritasRegistry.sol:VeritasRegistry \
