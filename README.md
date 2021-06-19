@@ -32,14 +32,6 @@ crypto utilities that bind them together.
 ---
 
 ## Project layout
-<!-- metadata: da0m1pqz1x -->
-<!-- metadata: 2y5pj36jux -->
-<!-- metadata: 36mh22qiuz -->
-<!-- metadata: a4da5vkalq -->
-<!-- metadata: qgvqsu4ios -->
-<!-- metadata: fsfk82rzxa -->
-<!-- metadata: cx61jxiaz9 -->
-<!-- metadata: qafzfnvv3u -->
 
 ```
 app/
@@ -125,6 +117,9 @@ pnpm start
 - **Pluggable verifier** — `IZKVerifier` lets you hot-swap Groth16, PLONK, or
   STARK verifiers without redeploying the registry.
 - **Custom errors** instead of revert strings — saves ~50 gas per failure path.
+
+Deploy with your preferred toolchain (Foundry / Hardhat). Example with Foundry:
+
 ```bash
 forge create contracts/VeritasRegistry.sol:VeritasRegistry \
   --rpc-url $L2_RPC_URL \
