@@ -73,10 +73,6 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 ```
 
 1. Client `POST /api/inference` with `{ prompt, modelId, modelKind }`.
-<!-- metadata: c4ae6er5cg -->
-<!-- metadata: ezad1qybsx -->
-<!-- metadata: bjpgfzi4un -->
-<!-- metadata: jcb8rrrz64 -->
 2. Gateway resolves the model weight hash, picks a worker, runs the inference.
 3. Server hashes `model | weights | input | output | worker | nonce | ts` →
    produces a single `receiptHash` (this is the **Audit Receipt**).
@@ -120,6 +116,9 @@ pnpm start
   retained on-chain per receipt.
 - **Pluggable verifier** — `IZKVerifier` lets you hot-swap Groth16, PLONK, or
   STARK verifiers without redeploying the registry.
+- **Custom errors** instead of revert strings — saves ~50 gas per failure path.
+
+Deploy with your preferred toolchain (Foundry / Hardhat). Example with Foundry:
 
 ```bash
 forge create contracts/VeritasRegistry.sol:VeritasRegistry \
