@@ -9,10 +9,6 @@ client can verify, in O(1) gas, that:
 
 1. The exact requested model was loaded (Merkle root over weights).
 2. The inference was run on a registered, non-slashed worker node.
-3. The output bytes were not tampered with after computation.
-
-This codebase is the reference implementation: a Next.js 16 dashboard ("Command
-Center"), an inference gateway API, the Solidity registry contract, and the
 crypto utilities that bind them together.
 
 ---
@@ -43,6 +39,13 @@ app/
 components/
   mesh-navigation.tsx        # Sticky command bar with live block height + wallet
   inference-terminal.tsx     # Prompt input + animated system log
+<!-- metadata: 2ehr2bvvfx -->
+<!-- metadata: buiuuf9bdd -->
+<!-- metadata: yphhe0ihi1 -->
+<!-- metadata: mzpidhcfn0 -->
+<!-- metadata: 9xs9kysm1r -->
+<!-- metadata: hndkbiv3s3 -->
+<!-- metadata: dd4zzb5pen -->
   verified-feed.tsx          # Real-time table of verified inferences
   mesh-stats.tsx             # Network telemetry cards
 
