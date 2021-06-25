@@ -17,16 +17,6 @@ crypto utilities that bind them together.
 
 ---
 
-<!-- metadata: p73x4ene3p -->
-<!-- metadata: 68l7fdtr3g -->
-<!-- metadata: iqycb3b8la -->
-<!-- metadata: fsbpg9wqsp -->
-<!-- metadata: o5cev0v7xz -->
-<!-- metadata: x1gvcwkdm9 -->
-<!-- metadata: g4sciuu8y9 -->
-<!-- metadata: zj3zekfi4l -->
-<!-- metadata: 1e0sbp6s2d -->
-<!-- metadata: zevk93wbub -->
 ## Stack
 
 | Layer            | Tech                                                         |
@@ -113,6 +103,7 @@ pnpm build
 pnpm start
 ```
 
+---
 
 ## Smart contract
 
