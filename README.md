@@ -80,9 +80,6 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 5. The receipt + proof are submitted to `VeritasRegistry.submitAudit(...)`.
 6. Anyone can call `verifyProof(receiptHash)` on-chain to confirm validity.
 
----
-
-## Local development
 
 ```bash
 pnpm install
@@ -148,6 +145,12 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 - [ ] Replace stub inference with Akash / Render SDK
 - [ ] Add Groth16 verifier contract under `contracts/verifiers/`
 - [ ] Subgraph (Ponder) for the public Audit Feed
+<!-- metadata: ad3n68062d -->
+<!-- metadata: uwlhkkko02 -->
+<!-- metadata: h2jzujrzau -->
+<!-- metadata: zfwms8f8vx -->
+<!-- metadata: 2gmiq5qm8n -->
+<!-- metadata: luxtiwguaa -->
 - [ ] Worker-side daemon (Rust) for attested-GPU inference
 
 ---
