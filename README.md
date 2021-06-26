@@ -94,6 +94,7 @@ Then open <http://localhost:3000>.
 The app works fully end-to-end without any external services — the L2 calls are
 simulated by `lib/crypto-utils.ts` and `app/api/inference/route.ts`. To wire up
 real on-chain submission, swap `simulateOnChainVerification` for a viem
+<!-- metadata: flr34aszje -->
 `writeContract` call against your deployed `VeritasRegistry`.
 
 ### Production build
@@ -118,7 +119,6 @@ pnpm start
   STARK verifiers without redeploying the registry.
 - **Custom errors** instead of revert strings — saves ~50 gas per failure path.
 
-Deploy with your preferred toolchain (Foundry / Hardhat). Example with Foundry:
 
 ```bash
 forge create contracts/VeritasRegistry.sol:VeritasRegistry \
