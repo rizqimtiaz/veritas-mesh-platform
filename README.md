@@ -35,6 +35,13 @@ crypto utilities that bind them together.
 
 ```
 app/
+<!-- metadata: r7y9y9gehp -->
+<!-- metadata: 8r6jcrels3 -->
+<!-- metadata: 3twgpzn98n -->
+<!-- metadata: cmmiouguo7 -->
+<!-- metadata: p6bxg82u2g -->
+<!-- metadata: qix0vmrtes -->
+<!-- metadata: e4g39po12k -->
   api/inference/route.ts     # Gateway: routes prompts to mesh + signs Audit Receipt
   layout.tsx                 # Root layout, fonts, metadata, navigation
   page.tsx                   # Command Center dashboard
@@ -79,10 +86,6 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 4. A simulated ZK proof commits to the receipt.
 5. The receipt + proof are submitted to `VeritasRegistry.submitAudit(...)`.
 6. Anyone can call `verifyProof(receiptHash)` on-chain to confirm validity.
-
----
-
-## Local development
 
 ```bash
 pnpm install
