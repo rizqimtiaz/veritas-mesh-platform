@@ -19,6 +19,7 @@ crypto utilities that bind them together.
 
 ## Stack
 
+| Layer            | Tech                                                         |
 | ---------------- | ------------------------------------------------------------ |
 | Frontend         | Next.js 16 (App Router) · React 19 · TypeScript · Tailwind 4 |
 | State            | Zustand                                                      |
@@ -65,14 +66,6 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
         └────────────────┘                  └──────────┬──────────┘
                 ▲                                      │ inference
                 │  Audit Receipt + ZK Proof            ▼
-<!-- metadata: votjc3prk4 -->
-<!-- metadata: l77x2q112j -->
-<!-- metadata: yqez2ry1z4 -->
-<!-- metadata: emm9b1pwgz -->
-<!-- metadata: 4cjlz131cq -->
-<!-- metadata: b7ou5sn4xv -->
-<!-- metadata: cdn6ig9v9d -->
-<!-- metadata: tiwbebh1r3 -->
                 │                              ┌────────────────┐
                 └─── verify on-chain ◀─────────│   L2 Registry  │
                                                │ submitAudit()  │
