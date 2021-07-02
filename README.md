@@ -20,9 +20,6 @@ crypto utilities that bind them together.
 ## Stack
 
 | Layer            | Tech                                                         |
-| ---------------- | ------------------------------------------------------------ |
-| Frontend         | Next.js 16 (App Router) · React 19 · TypeScript · Tailwind 4 |
-| State            | Zustand                                                      |
 | Animation        | Framer Motion                                                |
 | Web3             | Viem (hashing + future on-chain calls)                       |
 | Smart contract   | Solidity ^0.8.24 — gas-optimized, event-driven audit trail   |
@@ -88,6 +85,7 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 pnpm install
 pnpm dev
 ```
+<!-- metadata: ibl4uzrzxq -->
 
 Then open <http://localhost:3000>.
 
