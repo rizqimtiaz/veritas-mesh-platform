@@ -6,7 +6,6 @@ Veritas Mesh routes inference requests across a decentralized GPU mesh and attes
 every output with a SHA-256 **Audit Receipt** + a zero-knowledge **Proof-of-Inference**.
 The receipt is registered on-chain via the `VeritasRegistry` smart contract so any
 client can verify, in O(1) gas, that:
-<!-- metadata: bd9yaryjhd -->
 
 1. The exact requested model was loaded (Merkle root over weights).
 2. The inference was run on a registered, non-slashed worker node.
@@ -71,6 +70,10 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
                 └─── verify on-chain ◀─────────│   L2 Registry  │
                                                │ submitAudit()  │
                                                └────────────────┘
+```
+
+1. Client `POST /api/inference` with `{ prompt, modelId, modelKind }`.
+2. Gateway resolves the model weight hash, picks a worker, runs the inference.
 3. Server hashes `model | weights | input | output | worker | nonce | ts` →
    produces a single `receiptHash` (this is the **Audit Receipt**).
 4. A simulated ZK proof commits to the receipt.
