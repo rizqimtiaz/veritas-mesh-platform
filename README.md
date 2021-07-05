@@ -44,16 +44,6 @@ components/
   mesh-navigation.tsx        # Sticky command bar with live block height + wallet
   inference-terminal.tsx     # Prompt input + animated system log
   verified-feed.tsx          # Real-time table of verified inferences
-<!-- metadata: f7bidhdhvy -->
-<!-- metadata: tkz40261zk -->
-<!-- metadata: 1hl9p2lle3 -->
-<!-- metadata: 04q8yg7pql -->
-<!-- metadata: wix6lp7e7r -->
-<!-- metadata: 2vnwmigl98 -->
-<!-- metadata: thgzq8zw8i -->
-<!-- metadata: r4wgiqzbo6 -->
-<!-- metadata: wq1j9dlca8 -->
-<!-- metadata: lgxky2prtr -->
   mesh-stats.tsx             # Network telemetry cards
 
 lib/
@@ -156,6 +146,9 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 
 - [ ] Wire viem `writeContract` to `submitAudit` for real on-chain attestation
 - [ ] Replace stub inference with Akash / Render SDK
+- [ ] Add Groth16 verifier contract under `contracts/verifiers/`
+- [ ] Subgraph (Ponder) for the public Audit Feed
+- [ ] Worker-side daemon (Rust) for attested-GPU inference
 
 ---
 
