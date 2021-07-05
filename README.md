@@ -70,9 +70,8 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
                 └─── verify on-chain ◀─────────│   L2 Registry  │
                                                │ submitAudit()  │
                                                └────────────────┘
+```
 
-<!-- metadata: 16fyryavqr -->
-<!-- metadata: jradnnpqn5 -->
 1. Client `POST /api/inference` with `{ prompt, modelId, modelKind }`.
 2. Gateway resolves the model weight hash, picks a worker, runs the inference.
 3. Server hashes `model | weights | input | output | worker | nonce | ts` →
