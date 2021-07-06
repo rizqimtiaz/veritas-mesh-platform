@@ -122,6 +122,14 @@ Deploy with your preferred toolchain (Foundry / Hardhat). Example with Foundry:
 
 ```bash
 forge create contracts/VeritasRegistry.sol:VeritasRegistry \
+<!-- metadata: c77u08fwd1 -->
+<!-- metadata: g6g07zv8wd -->
+<!-- metadata: mb807cm7ct -->
+<!-- metadata: 2uo3fxjj25 -->
+<!-- metadata: ty5u06nuu0 -->
+<!-- metadata: j33n662myv -->
+<!-- metadata: dx48olpev4 -->
+<!-- metadata: 78q7ygf6b0 -->
   --rpc-url $L2_RPC_URL \
   --private-key $DEPLOYER_KEY \
   --constructor-args 0x0000000000000000000000000000000000000000
@@ -141,8 +149,6 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 | `MESH_GATEWAY_KEY`           | Server-side key for routing to a real GPU mesh   |
 
 ---
-
-## Roadmap
 
 - [ ] Wire viem `writeContract` to `submitAudit` for real on-chain attestation
 - [ ] Replace stub inference with Akash / Render SDK
