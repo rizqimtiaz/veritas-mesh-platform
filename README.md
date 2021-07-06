@@ -57,10 +57,6 @@ contracts/
 ```
 
 ---
-
-## How a request flows
-
-```
         ┌────────────────┐                  ┌─────────────────────┐
 USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Worker (GPU)  │
         └────────────────┘                  └──────────┬──────────┘
@@ -74,6 +70,16 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 
 1. Client `POST /api/inference` with `{ prompt, modelId, modelKind }`.
 2. Gateway resolves the model weight hash, picks a worker, runs the inference.
+<!-- metadata: yf21m6hzut -->
+<!-- metadata: 5g5hcmmu3n -->
+<!-- metadata: pntiq9axbk -->
+<!-- metadata: 3t75ixhflq -->
+<!-- metadata: xttmknmpqn -->
+<!-- metadata: 2l2e96l0cu -->
+<!-- metadata: ocg1numw22 -->
+<!-- metadata: lrg8ojhmur -->
+<!-- metadata: 344sjmhfqc -->
+<!-- metadata: ovopmf9iy3 -->
 3. Server hashes `model | weights | input | output | worker | nonce | ts` →
    produces a single `receiptHash` (this is the **Audit Receipt**).
 4. A simulated ZK proof commits to the receipt.
