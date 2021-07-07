@@ -70,10 +70,6 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
                 └─── verify on-chain ◀─────────│   L2 Registry  │
                                                │ submitAudit()  │
                                                └────────────────┘
-<!-- metadata: y7r3cvr8m1 -->
-<!-- metadata: cnx1n3arm0 -->
-<!-- metadata: h3ernrqtck -->
-<!-- metadata: rbfyp50hbq -->
 ```
 
 1. Client `POST /api/inference` with `{ prompt, modelId, modelKind }`.
@@ -108,6 +104,7 @@ pnpm start
 ```
 
 ---
+
 ## Smart contract
 
 `contracts/VeritasRegistry.sol` is the on-chain anchor. Key design choices:
