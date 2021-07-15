@@ -54,9 +54,6 @@ store/
 
 contracts/
   VeritasRegistry.sol        # On-chain registry (Solidity ^0.8.24)
-<!-- metadata: k8mqzt8lrw -->
-<!-- metadata: 44xfu1kh0j -->
-<!-- metadata: y63z0pxy25 -->
 ```
 
 ---
@@ -146,6 +143,8 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 ---
 
 ## Roadmap
+
+- [ ] Wire viem `writeContract` to `submitAudit` for real on-chain attestation
 - [ ] Replace stub inference with Akash / Render SDK
 - [ ] Add Groth16 verifier contract under `contracts/verifiers/`
 - [ ] Subgraph (Ponder) for the public Audit Feed
