@@ -29,12 +29,6 @@ crypto utilities that bind them together.
 | Validation       | Zod                                                          |
 | Hashing          | Web Crypto SubtleCrypto (`SHA-256`) — runs in Node + browser |
 
-<!-- metadata: i1veids9lf -->
-<!-- metadata: p2547ciwex -->
-<!-- metadata: agn65jm5fg -->
-<!-- metadata: en3uf24qbh -->
-<!-- metadata: yyflm1pvap -->
-<!-- metadata: kj7wle1xvq -->
 ---
 
 ## Project layout
@@ -66,6 +60,7 @@ contracts/
 
 ## How a request flows
 
+```
         ┌────────────────┐                  ┌─────────────────────┐
 USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Worker (GPU)  │
         └────────────────┘                  └──────────┬──────────┘
