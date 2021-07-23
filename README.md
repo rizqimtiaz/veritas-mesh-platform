@@ -1,5 +1,4 @@
 # Veritas Mesh — DePIN for Auditable AI
-
 > Cryptographically verifiable AI inference on a decentralized GPU network, anchored on Layer 2.
 
 Veritas Mesh routes inference requests across a decentralized GPU mesh and attests
@@ -115,6 +114,13 @@ pnpm start
 - **Compact storage** — only `ReceiptStatus { exists, revoked, worker, ts }` is
   retained on-chain per receipt.
 - **Pluggable verifier** — `IZKVerifier` lets you hot-swap Groth16, PLONK, or
+<!-- metadata: wtjoqyjeef -->
+<!-- metadata: 2d79cpitdp -->
+<!-- metadata: endbdgjw9l -->
+<!-- metadata: f4u9ekxdm2 -->
+<!-- metadata: vz5z9d9fe5 -->
+<!-- metadata: rm8bcatfzs -->
+<!-- metadata: s80ofr9db6 -->
   STARK verifiers without redeploying the registry.
 - **Custom errors** instead of revert strings — saves ~50 gas per failure path.
 
