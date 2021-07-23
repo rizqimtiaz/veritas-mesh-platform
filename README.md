@@ -45,6 +45,13 @@ components/
   inference-terminal.tsx     # Prompt input + animated system log
   verified-feed.tsx          # Real-time table of verified inferences
   mesh-stats.tsx             # Network telemetry cards
+<!-- metadata: 87dcfwx3rr -->
+<!-- metadata: d74nnicu49 -->
+<!-- metadata: meu5oqbuv0 -->
+<!-- metadata: el1kdjmub5 -->
+<!-- metadata: 1nkckn4abi -->
+<!-- metadata: e9xyilyoky -->
+<!-- metadata: 9nunmpfnzr -->
 
 lib/
   crypto-utils.ts            # SHA-256, audit receipts, ZK-proof simulation
@@ -95,8 +102,6 @@ The app works fully end-to-end without any external services — the L2 calls ar
 simulated by `lib/crypto-utils.ts` and `app/api/inference/route.ts`. To wire up
 real on-chain submission, swap `simulateOnChainVerification` for a viem
 `writeContract` call against your deployed `VeritasRegistry`.
-
-### Production build
 
 ```bash
 pnpm build
