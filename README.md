@@ -86,10 +86,12 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 
 ```bash
 pnpm install
-<!-- metadata: lgroxwtmu1 -->
-<!-- metadata: h8qx80a7a1 -->
 pnpm dev
 ```
+
+Then open <http://localhost:3000>.
+
+The app works fully end-to-end without any external services — the L2 calls are
 simulated by `lib/crypto-utils.ts` and `app/api/inference/route.ts`. To wire up
 real on-chain submission, swap `simulateOnChainVerification` for a viem
 `writeContract` call against your deployed `VeritasRegistry`.
