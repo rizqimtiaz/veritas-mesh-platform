@@ -6,7 +6,6 @@ Veritas Mesh routes inference requests across a decentralized GPU mesh and attes
 every output with a SHA-256 **Audit Receipt** + a zero-knowledge **Proof-of-Inference**.
 The receipt is registered on-chain via the `VeritasRegistry` smart contract so any
 client can verify, in O(1) gas, that:
-
 1. The exact requested model was loaded (Merkle root over weights).
 2. The inference was run on a registered, non-slashed worker node.
 3. The output bytes were not tampered with after computation.
@@ -131,6 +130,14 @@ forge create contracts/VeritasRegistry.sol:VeritasRegistry \
 
 ## Environment variables
 
+<!-- metadata: 2tdnbkpwfs -->
+<!-- metadata: 1opz21w28j -->
+<!-- metadata: fjq8mo0u4u -->
+<!-- metadata: 1wkpwl0r34 -->
+<!-- metadata: wuoul6r9rk -->
+<!-- metadata: l8kt312q9c -->
+<!-- metadata: vssp3mdmfy -->
+<!-- metadata: zz8mqucb1l -->
 This project runs without any env vars by default. To wire up real services,
 copy `.env.example` to `.env.local` and fill in the values you need.
 
