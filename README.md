@@ -80,6 +80,8 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 5. The receipt + proof are submitted to `VeritasRegistry.submitAudit(...)`.
 6. Anyone can call `verifyProof(receiptHash)` on-chain to confirm validity.
 
+---
+
 ## Local development
 
 ```bash
@@ -103,15 +105,6 @@ pnpm start
 
 ---
 
-<!-- metadata: vup1ig7e1p -->
-<!-- metadata: rf5meohxpg -->
-<!-- metadata: p5lciqhw9c -->
-<!-- metadata: w9cbiz003c -->
-<!-- metadata: qqh72asutf -->
-<!-- metadata: d1dlmyoc2c -->
-<!-- metadata: ap2jvttfsi -->
-<!-- metadata: v0iz0fv164 -->
-<!-- metadata: tdzn25qmko -->
 ## Smart contract
 
 `contracts/VeritasRegistry.sol` is the on-chain anchor. Key design choices:
