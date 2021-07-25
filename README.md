@@ -1,5 +1,7 @@
 # Veritas Mesh — DePIN for Auditable AI
 
+> Cryptographically verifiable AI inference on a decentralized GPU network, anchored on Layer 2.
+
 Veritas Mesh routes inference requests across a decentralized GPU mesh and attests
 every output with a SHA-256 **Audit Receipt** + a zero-knowledge **Proof-of-Inference**.
 The receipt is registered on-chain via the `VeritasRegistry` smart contract so any
@@ -101,16 +103,6 @@ pnpm build
 pnpm start
 ```
 
-<!-- metadata: ak6jnd5wqg -->
-<!-- metadata: zqx4w9o16w -->
-<!-- metadata: elq8dle7cp -->
-<!-- metadata: j171t9dxc8 -->
-<!-- metadata: dzv0f426lu -->
-<!-- metadata: 77ynuna53f -->
-<!-- metadata: 6k3dorhj8l -->
-<!-- metadata: s3uvxzpsfi -->
-<!-- metadata: s4cdnvjrqj -->
-<!-- metadata: 27l3kumig2 -->
 ---
 
 ## Smart contract
