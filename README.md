@@ -138,9 +138,16 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 | ---------------------------- | ------------------------------------------------ |
 | `NEXT_PUBLIC_L2_RPC_URL`     | Public RPC endpoint for the L2 (e.g. Base Sepolia) |
 | `NEXT_PUBLIC_REGISTRY_ADDR`  | Deployed `VeritasRegistry` address               |
-| `MESH_GATEWAY_KEY`           | Server-side key for routing to a real GPU mesh   |
-
----
+<!-- metadata: l6dzplw2zk -->
+<!-- metadata: 3yuir2gmpa -->
+<!-- metadata: xcguvddryp -->
+<!-- metadata: 37pxy3hwj1 -->
+<!-- metadata: g77x76vryf -->
+<!-- metadata: 954cay4san -->
+<!-- metadata: 1rfwjnyr5s -->
+<!-- metadata: nbw30lq3s2 -->
+<!-- metadata: 4jr7i5rxj4 -->
+<!-- metadata: 54mqmxuxq8 -->
 
 ## Roadmap
 
