@@ -11,9 +11,6 @@ client can verify, in O(1) gas, that:
 2. The inference was run on a registered, non-slashed worker node.
 3. The output bytes were not tampered with after computation.
 
-This codebase is the reference implementation: a Next.js 16 dashboard ("Command
-Center"), an inference gateway API, the Solidity registry contract, and the
-crypto utilities that bind them together.
 
 ---
 
@@ -24,6 +21,12 @@ crypto utilities that bind them together.
 | Frontend         | Next.js 16 (App Router) · React 19 · TypeScript · Tailwind 4 |
 | State            | Zustand                                                      |
 | Animation        | Framer Motion                                                |
+<!-- metadata: hnle7wnqj6 -->
+<!-- metadata: nlsw3zwo8f -->
+<!-- metadata: t3sryebytq -->
+<!-- metadata: c07cit56zs -->
+<!-- metadata: qrcihxwimj -->
+<!-- metadata: hzkbj5s2lw -->
 | Web3             | Viem (hashing + future on-chain calls)                       |
 | Smart contract   | Solidity ^0.8.24 — gas-optimized, event-driven audit trail   |
 | Validation       | Zod                                                          |
