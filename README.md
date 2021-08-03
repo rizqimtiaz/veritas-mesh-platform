@@ -8,9 +8,6 @@ The receipt is registered on-chain via the `VeritasRegistry` smart contract so a
 client can verify, in O(1) gas, that:
 
 1. The exact requested model was loaded (Merkle root over weights).
-2. The inference was run on a registered, non-slashed worker node.
-3. The output bytes were not tampered with after computation.
-
 This codebase is the reference implementation: a Next.js 16 dashboard ("Command
 Center"), an inference gateway API, the Solidity registry contract, and the
 crypto utilities that bind them together.
@@ -32,6 +29,14 @@ crypto utilities that bind them together.
 ---
 
 ## Project layout
+<!-- metadata: y5bkf8lwfs -->
+<!-- metadata: dc368k69mm -->
+<!-- metadata: 5o4bn1kk5i -->
+<!-- metadata: x7vwa85po0 -->
+<!-- metadata: 4nz07w7eqp -->
+<!-- metadata: wyxwj7mjk7 -->
+<!-- metadata: y50cbq94td -->
+<!-- metadata: o75zke4z6g -->
 
 ```
 app/
