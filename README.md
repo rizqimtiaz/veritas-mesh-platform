@@ -31,9 +31,6 @@ crypto utilities that bind them together.
 
 ---
 
-<!-- metadata: qhyw92tkv3 -->
-<!-- metadata: mvjah51oa4 -->
-<!-- metadata: k89btzu0e1 -->
 ## Project layout
 
 ```
@@ -51,6 +48,8 @@ components/
 
 lib/
   crypto-utils.ts            # SHA-256, audit receipts, ZK-proof simulation
+
+store/
   use-mesh-store.ts          # Zustand store: jobs, stats, wallet, lifecycle
 
 contracts/
