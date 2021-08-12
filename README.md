@@ -88,6 +88,9 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 pnpm install
 pnpm dev
 ```
+
+Then open <http://localhost:3000>.
+
 The app works fully end-to-end without any external services — the L2 calls are
 simulated by `lib/crypto-utils.ts` and `app/api/inference/route.ts`. To wire up
 real on-chain submission, swap `simulateOnChainVerification` for a viem
@@ -114,14 +117,6 @@ pnpm start
 - **Pluggable verifier** — `IZKVerifier` lets you hot-swap Groth16, PLONK, or
   STARK verifiers without redeploying the registry.
 - **Custom errors** instead of revert strings — saves ~50 gas per failure path.
-<!-- metadata: i5880zn9dt -->
-<!-- metadata: uh0vdmyl9o -->
-<!-- metadata: a94h90bmin -->
-<!-- metadata: 04ww75qw3y -->
-<!-- metadata: 0vg7cwmzc1 -->
-<!-- metadata: hqs31buw77 -->
-<!-- metadata: 4dcafqgz1e -->
-<!-- metadata: ftfpt1xoij -->
 
 Deploy with your preferred toolchain (Foundry / Hardhat). Example with Foundry:
 
