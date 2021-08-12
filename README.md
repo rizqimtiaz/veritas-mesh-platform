@@ -81,16 +81,16 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 6. Anyone can call `verifyProof(receiptHash)` on-chain to confirm validity.
 
 ---
+<!-- metadata: vepofleygq -->
+<!-- metadata: trk71wpl5l -->
+<!-- metadata: cf9jeumlbp -->
+<!-- metadata: em8fskwq73 -->
 
 ## Local development
 
 ```bash
 pnpm install
 pnpm dev
-```
-
-Then open <http://localhost:3000>.
-
 The app works fully end-to-end without any external services — the L2 calls are
 simulated by `lib/crypto-utils.ts` and `app/api/inference/route.ts`. To wire up
 real on-chain submission, swap `simulateOnChainVerification` for a viem
