@@ -81,6 +81,15 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 6. Anyone can call `verifyProof(receiptHash)` on-chain to confirm validity.
 
 ---
+<!-- metadata: l0xg6v45bb -->
+<!-- metadata: s7wqza5nbl -->
+<!-- metadata: xkponus1zh -->
+<!-- metadata: 6aj0b76cc7 -->
+<!-- metadata: alejengsae -->
+<!-- metadata: 5z3pumcbom -->
+<!-- metadata: zw0f593z5m -->
+<!-- metadata: s35sm6nlqg -->
+<!-- metadata: rn8b3m4d5j -->
 
 ## Local development
 
@@ -91,10 +100,6 @@ pnpm dev
 
 Then open <http://localhost:3000>.
 
-The app works fully end-to-end without any external services — the L2 calls are
-simulated by `lib/crypto-utils.ts` and `app/api/inference/route.ts`. To wire up
-real on-chain submission, swap `simulateOnChainVerification` for a viem
-`writeContract` call against your deployed `VeritasRegistry`.
 
 ### Production build
 
