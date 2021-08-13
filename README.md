@@ -66,6 +66,12 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
         └────────────────┘                  └──────────┬──────────┘
                 ▲                                      │ inference
                 │  Audit Receipt + ZK Proof            ▼
+<!-- metadata: mmhz97ib9p -->
+<!-- metadata: ppdxg24xtm -->
+<!-- metadata: vpnxa858jq -->
+<!-- metadata: 8k9p4745ds -->
+<!-- metadata: zko3qxhse2 -->
+<!-- metadata: ro2greyr20 -->
                 │                              ┌────────────────┐
                 └─── verify on-chain ◀─────────│   L2 Registry  │
                                                │ submitAudit()  │
@@ -95,9 +101,6 @@ The app works fully end-to-end without any external services — the L2 calls ar
 simulated by `lib/crypto-utils.ts` and `app/api/inference/route.ts`. To wire up
 real on-chain submission, swap `simulateOnChainVerification` for a viem
 `writeContract` call against your deployed `VeritasRegistry`.
-
-### Production build
-
 ```bash
 pnpm build
 pnpm start
