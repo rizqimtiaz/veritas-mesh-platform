@@ -28,19 +28,10 @@ crypto utilities that bind them together.
 | Smart contract   | Solidity ^0.8.24 — gas-optimized, event-driven audit trail   |
 | Validation       | Zod                                                          |
 | Hashing          | Web Crypto SubtleCrypto (`SHA-256`) — runs in Node + browser |
-<!-- metadata: ll3zs4fbk6 -->
-<!-- metadata: y4j86q01pl -->
-<!-- metadata: cf6nbrorif -->
-<!-- metadata: 22eu52q9g2 -->
-<!-- metadata: t7nunse5vq -->
-<!-- metadata: 2yufbbr1qg -->
-<!-- metadata: d0duqzl5yg -->
-<!-- metadata: cxzmkuyoud -->
-<!-- metadata: tmxrwstwfu -->
-<!-- metadata: iyipndtjc2 -->
 
 ---
 
+## Project layout
 
 ```
 app/
