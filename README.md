@@ -57,11 +57,6 @@ contracts/
 ```
 
 ---
-<!-- metadata: mfrleh4nhg -->
-<!-- metadata: vzqjy75gcv -->
-<!-- metadata: fgoq54vjcj -->
-<!-- metadata: whbjrnil3m -->
-<!-- metadata: 9rwulq5u0m -->
 
 ## How a request flows
 
@@ -150,6 +145,7 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 ## Roadmap
 
 - [ ] Wire viem `writeContract` to `submitAudit` for real on-chain attestation
+- [ ] Replace stub inference with Akash / Render SDK
 - [ ] Add Groth16 verifier contract under `contracts/verifiers/`
 - [ ] Subgraph (Ponder) for the public Audit Feed
 - [ ] Worker-side daemon (Rust) for attested-GPU inference
