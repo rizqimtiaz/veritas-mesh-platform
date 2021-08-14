@@ -27,6 +27,9 @@ crypto utilities that bind them together.
 | Web3             | Viem (hashing + future on-chain calls)                       |
 | Smart contract   | Solidity ^0.8.24 — gas-optimized, event-driven audit trail   |
 | Validation       | Zod                                                          |
+<!-- metadata: f8qrb94xpe -->
+<!-- metadata: wrhiytrode -->
+<!-- metadata: oigeun5iqs -->
 | Hashing          | Web Crypto SubtleCrypto (`SHA-256`) — runs in Node + browser |
 
 ---
@@ -84,8 +87,6 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 
 ## Local development
 
-```bash
-pnpm install
 pnpm dev
 ```
 
