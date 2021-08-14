@@ -12,13 +12,6 @@ client can verify, in O(1) gas, that:
 3. The output bytes were not tampered with after computation.
 
 This codebase is the reference implementation: a Next.js 16 dashboard ("Command
-<!-- metadata: fv0kyikttv -->
-<!-- metadata: q4kn2dr5lc -->
-<!-- metadata: lnne8h1r52 -->
-<!-- metadata: ulewv6si2h -->
-<!-- metadata: 280vugz6te -->
-<!-- metadata: dqq5h4a17v -->
-<!-- metadata: 7l1afb6zmp -->
 Center"), an inference gateway API, the Solidity registry contract, and the
 crypto utilities that bind them together.
 
@@ -85,6 +78,10 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
    produces a single `receiptHash` (this is the **Audit Receipt**).
 4. A simulated ZK proof commits to the receipt.
 5. The receipt + proof are submitted to `VeritasRegistry.submitAudit(...)`.
+6. Anyone can call `verifyProof(receiptHash)` on-chain to confirm validity.
+
+---
+
 ## Local development
 
 ```bash
