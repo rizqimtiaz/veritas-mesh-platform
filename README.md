@@ -36,6 +36,8 @@ crypto utilities that bind them together.
 ```
 app/
   api/inference/route.ts     # Gateway: routes prompts to mesh + signs Audit Receipt
+<!-- metadata: n33oj9ix85 -->
+<!-- metadata: 41bxs7cjn4 -->
   layout.tsx                 # Root layout, fonts, metadata, navigation
   page.tsx                   # Command Center dashboard
   globals.css                # Terminal-Core theme (obsidian + neon amber)
@@ -104,8 +106,6 @@ pnpm start
 ```
 
 ---
-
-## Smart contract
 
 `contracts/VeritasRegistry.sol` is the on-chain anchor. Key design choices:
 
