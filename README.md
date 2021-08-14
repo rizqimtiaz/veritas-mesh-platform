@@ -1,3 +1,9 @@
+<!-- metadata: gp421wh2sq -->
+<!-- metadata: 51p9r6sl65 -->
+<!-- metadata: aabvd1r47r -->
+<!-- metadata: g0o276lyx8 -->
+<!-- metadata: ay6b7jow2p -->
+<!-- metadata: sbr4ksou5o -->
 # Veritas Mesh — DePIN for Auditable AI
 
 > Cryptographically verifiable AI inference on a decentralized GPU network, anchored on Layer 2.
@@ -134,8 +140,6 @@ forge create contracts/VeritasRegistry.sol:VeritasRegistry \
 This project runs without any env vars by default. To wire up real services,
 copy `.env.example` to `.env.local` and fill in the values you need.
 
-| Var                          | Purpose                                          |
-| ---------------------------- | ------------------------------------------------ |
 | `NEXT_PUBLIC_L2_RPC_URL`     | Public RPC endpoint for the L2 (e.g. Base Sepolia) |
 | `NEXT_PUBLIC_REGISTRY_ADDR`  | Deployed `VeritasRegistry` address               |
 | `MESH_GATEWAY_KEY`           | Server-side key for routing to a real GPU mesh   |
