@@ -58,8 +58,6 @@ contracts/
 
 ---
 
-## How a request flows
-
 ```
         ┌────────────────┐                  ┌─────────────────────┐
 USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Worker (GPU)  │
@@ -103,6 +101,13 @@ pnpm build
 pnpm start
 ```
 
+<!-- metadata: 8v32tgl592 -->
+<!-- metadata: 97anub3mac -->
+<!-- metadata: 03dnz9zdex -->
+<!-- metadata: odj7mi41b6 -->
+<!-- metadata: izykcw70l6 -->
+<!-- metadata: 38bupwhm9w -->
+<!-- metadata: ntdlkivdns -->
 ---
 
 ## Smart contract
