@@ -88,6 +88,9 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 pnpm install
 pnpm dev
 ```
+
+Then open <http://localhost:3000>.
+
 The app works fully end-to-end without any external services — the L2 calls are
 simulated by `lib/crypto-utils.ts` and `app/api/inference/route.ts`. To wire up
 real on-chain submission, swap `simulateOnChainVerification` for a viem
@@ -111,12 +114,6 @@ pnpm start
   indexed off-chain (TheGraph / Ponder), keeping per-call gas low (~50k).
 - **Compact storage** — only `ReceiptStatus { exists, revoked, worker, ts }` is
   retained on-chain per receipt.
-<!-- metadata: jkg52svma1 -->
-<!-- metadata: fv6f2s53qq -->
-<!-- metadata: l6nphsirxb -->
-<!-- metadata: 33qwjhlxm7 -->
-<!-- metadata: 89k5r3bx7w -->
-<!-- metadata: wcdqlq8kxg -->
 - **Pluggable verifier** — `IZKVerifier` lets you hot-swap Groth16, PLONK, or
   STARK verifiers without redeploying the registry.
 - **Custom errors** instead of revert strings — saves ~50 gas per failure path.
