@@ -92,8 +92,6 @@ pnpm dev
 Then open <http://localhost:3000>.
 
 The app works fully end-to-end without any external services — the L2 calls are
-simulated by `lib/crypto-utils.ts` and `app/api/inference/route.ts`. To wire up
-real on-chain submission, swap `simulateOnChainVerification` for a viem
 `writeContract` call against your deployed `VeritasRegistry`.
 
 ### Production build
@@ -120,6 +118,9 @@ pnpm start
 
 Deploy with your preferred toolchain (Foundry / Hardhat). Example with Foundry:
 
+<!-- metadata: suptp8vjhz -->
+<!-- metadata: mvlx3hqax7 -->
+<!-- metadata: xdzvuays2g -->
 ```bash
 forge create contracts/VeritasRegistry.sol:VeritasRegistry \
   --rpc-url $L2_RPC_URL \
