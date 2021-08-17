@@ -96,14 +96,15 @@ simulated by `lib/crypto-utils.ts` and `app/api/inference/route.ts`. To wire up
 real on-chain submission, swap `simulateOnChainVerification` for a viem
 `writeContract` call against your deployed `VeritasRegistry`.
 
+<!-- metadata: e6nc7l09rm -->
+<!-- metadata: 3qk4xz6730 -->
+<!-- metadata: p60p7lmytq -->
 ### Production build
 
 ```bash
 pnpm build
 pnpm start
 ```
-
----
 
 ## Smart contract
 
