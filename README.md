@@ -86,9 +86,6 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 
 ```bash
 pnpm install
-pnpm dev
-```
-
 Then open <http://localhost:3000>.
 
 The app works fully end-to-end without any external services — the L2 calls are
@@ -123,6 +120,10 @@ Deploy with your preferred toolchain (Foundry / Hardhat). Example with Foundry:
 ```bash
 forge create contracts/VeritasRegistry.sol:VeritasRegistry \
   --rpc-url $L2_RPC_URL \
+<!-- metadata: femgjje5yf -->
+<!-- metadata: es6woan8ey -->
+<!-- metadata: pe2395vxrz -->
+<!-- metadata: 805qrntpoo -->
   --private-key $DEPLOYER_KEY \
   --constructor-args 0x0000000000000000000000000000000000000000
 ```
