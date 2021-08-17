@@ -122,14 +122,6 @@ Deploy with your preferred toolchain (Foundry / Hardhat). Example with Foundry:
 
 ```bash
 forge create contracts/VeritasRegistry.sol:VeritasRegistry \
-<!-- metadata: h1ma8uj0rx -->
-<!-- metadata: b3hogaz4i9 -->
-<!-- metadata: t4qayg0aor -->
-<!-- metadata: nzoj7t7x4a -->
-<!-- metadata: 70q8m66r5b -->
-<!-- metadata: ewrn8179xx -->
-<!-- metadata: 671dkbsjbv -->
-<!-- metadata: oniw8u8vwn -->
   --rpc-url $L2_RPC_URL \
   --private-key $DEPLOYER_KEY \
   --constructor-args 0x0000000000000000000000000000000000000000
@@ -156,6 +148,7 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 - [ ] Replace stub inference with Akash / Render SDK
 - [ ] Add Groth16 verifier contract under `contracts/verifiers/`
 - [ ] Subgraph (Ponder) for the public Audit Feed
+- [ ] Worker-side daemon (Rust) for attested-GPU inference
 
 ---
 
