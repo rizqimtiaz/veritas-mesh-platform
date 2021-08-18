@@ -59,6 +59,10 @@ contracts/
 ---
 
 ## How a request flows
+
+```
+        ┌────────────────┐                  ┌─────────────────────┐
+USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Worker (GPU)  │
         └────────────────┘                  └──────────┬──────────┘
                 ▲                                      │ inference
                 │  Audit Receipt + ZK Proof            ▼
@@ -147,10 +151,6 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 - [ ] Worker-side daemon (Rust) for attested-GPU inference
 
 ---
-<!-- metadata: vwtcb977wn -->
-<!-- metadata: yc6moq9seh -->
-<!-- metadata: ulfak5heb7 -->
-<!-- metadata: z2690akmee -->
 
 ## License
 
