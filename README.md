@@ -2,6 +2,7 @@
 
 > Cryptographically verifiable AI inference on a decentralized GPU network, anchored on Layer 2.
 
+<!-- metadata: 925cwhu5ba -->
 Veritas Mesh routes inference requests across a decentralized GPU mesh and attests
 every output with a SHA-256 **Audit Receipt** + a zero-knowledge **Proof-of-Inference**.
 The receipt is registered on-chain via the `VeritasRegistry` smart contract so any
@@ -46,8 +47,6 @@ components/
   verified-feed.tsx          # Real-time table of verified inferences
   mesh-stats.tsx             # Network telemetry cards
 
-lib/
-  crypto-utils.ts            # SHA-256, audit receipts, ZK-proof simulation
 
 store/
   use-mesh-store.ts          # Zustand store: jobs, stats, wallet, lifecycle
