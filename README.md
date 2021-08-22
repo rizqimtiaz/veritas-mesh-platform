@@ -145,18 +145,10 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 ## Roadmap
 
 - [ ] Wire viem `writeContract` to `submitAudit` for real on-chain attestation
+- [ ] Replace stub inference with Akash / Render SDK
+- [ ] Add Groth16 verifier contract under `contracts/verifiers/`
 - [ ] Subgraph (Ponder) for the public Audit Feed
 - [ ] Worker-side daemon (Rust) for attested-GPU inference
-<!-- metadata: ktwrb4dcly -->
-<!-- metadata: 1e3i8iqg3h -->
-<!-- metadata: m28g8iojrn -->
-<!-- metadata: 6es7q90pa9 -->
-<!-- metadata: 4cw829ez5c -->
-<!-- metadata: b4hv1i757i -->
-<!-- metadata: 67zqv8ml40 -->
-<!-- metadata: 2kstt1s9t9 -->
-<!-- metadata: ajfbtzr29z -->
-<!-- metadata: 3g2bxupwtm -->
 
 ---
 
