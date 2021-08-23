@@ -120,15 +120,10 @@ pnpm start
 
 Deploy with your preferred toolchain (Foundry / Hardhat). Example with Foundry:
 
+```bash
+forge create contracts/VeritasRegistry.sol:VeritasRegistry \
   --rpc-url $L2_RPC_URL \
   --private-key $DEPLOYER_KEY \
-<!-- metadata: w8oixfnf7l -->
-<!-- metadata: rr75xlji43 -->
-<!-- metadata: syoxz91p27 -->
-<!-- metadata: vnfs3lixav -->
-<!-- metadata: h4061982l0 -->
-<!-- metadata: y1odcewfxl -->
-<!-- metadata: pg2tr63vll -->
   --constructor-args 0x0000000000000000000000000000000000000000
 ```
 
