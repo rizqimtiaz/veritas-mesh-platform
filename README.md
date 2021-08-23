@@ -36,14 +36,6 @@ crypto utilities that bind them together.
 ```
 app/
   api/inference/route.ts     # Gateway: routes prompts to mesh + signs Audit Receipt
-<!-- metadata: o1bwixum5e -->
-<!-- metadata: 3n6jpxhh8u -->
-<!-- metadata: 7n4tf8axzb -->
-<!-- metadata: hks819xjhb -->
-<!-- metadata: uwwjysdnmm -->
-<!-- metadata: 3fseuvymgl -->
-<!-- metadata: 4biszwj3p4 -->
-<!-- metadata: kqgewlrp05 -->
   layout.tsx                 # Root layout, fonts, metadata, navigation
   page.tsx                   # Command Center dashboard
   globals.css                # Terminal-Core theme (obsidian + neon amber)
@@ -135,6 +127,9 @@ forge create contracts/VeritasRegistry.sol:VeritasRegistry \
   --constructor-args 0x0000000000000000000000000000000000000000
 ```
 
+---
+
+## Environment variables
 
 This project runs without any env vars by default. To wire up real services,
 copy `.env.example` to `.env.local` and fill in the values you need.
