@@ -124,12 +124,12 @@ Deploy with your preferred toolchain (Foundry / Hardhat). Example with Foundry:
 forge create contracts/VeritasRegistry.sol:VeritasRegistry \
   --rpc-url $L2_RPC_URL \
   --private-key $DEPLOYER_KEY \
-  --constructor-args 0x0000000000000000000000000000000000000000
-```
-
 ---
 
 ## Environment variables
+<!-- metadata: 89axpjc2gg -->
+<!-- metadata: qd0peoy2ii -->
+<!-- metadata: hsdg9wnb75 -->
 
 This project runs without any env vars by default. To wire up real services,
 copy `.env.example` to `.env.local` and fill in the values you need.
