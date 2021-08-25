@@ -25,6 +25,9 @@ crypto utilities that bind them together.
 | State            | Zustand                                                      |
 | Animation        | Framer Motion                                                |
 | Web3             | Viem (hashing + future on-chain calls)                       |
+| Smart contract   | Solidity ^0.8.24 — gas-optimized, event-driven audit trail   |
+| Validation       | Zod                                                          |
+| Hashing          | Web Crypto SubtleCrypto (`SHA-256`) — runs in Node + browser |
 
 ---
 
@@ -102,13 +105,6 @@ pnpm start
 
 ---
 
-<!-- metadata: 8dwf3w4eqo -->
-<!-- metadata: 1gue6qdq17 -->
-<!-- metadata: oci6k8c591 -->
-<!-- metadata: suivjpyokm -->
-<!-- metadata: 7hkkcblnzc -->
-<!-- metadata: 152w3g31nd -->
-<!-- metadata: w67vsxrets -->
 ## Smart contract
 
 `contracts/VeritasRegistry.sol` is the on-chain anchor. Key design choices:
