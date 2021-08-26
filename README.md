@@ -103,9 +103,6 @@ pnpm build
 pnpm start
 ```
 
----
-
-## Smart contract
 
 `contracts/VeritasRegistry.sol` is the on-chain anchor. Key design choices:
 
@@ -128,6 +125,14 @@ forge create contracts/VeritasRegistry.sol:VeritasRegistry \
 ```
 
 ---
+<!-- metadata: tx2ttqwh2q -->
+<!-- metadata: b233ruqbyn -->
+<!-- metadata: j0nqwcly2x -->
+<!-- metadata: uotxca6slv -->
+<!-- metadata: x8srslq15x -->
+<!-- metadata: 3jlg9tuqz2 -->
+<!-- metadata: lbmhruvbbu -->
+<!-- metadata: bt7wm2b775 -->
 
 ## Environment variables
 
