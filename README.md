@@ -16,14 +16,6 @@ Center"), an inference gateway API, the Solidity registry contract, and the
 crypto utilities that bind them together.
 
 ---
-<!-- metadata: 13squirin8 -->
-<!-- metadata: 8s6iq092dd -->
-<!-- metadata: kjyq6yr029 -->
-<!-- metadata: fkov01bvpg -->
-<!-- metadata: shfa594h0x -->
-<!-- metadata: z6kca9gweu -->
-<!-- metadata: qmjkqv3z2e -->
-<!-- metadata: dn8v7dja88 -->
 
 ## Stack
 
@@ -74,6 +66,7 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
         └────────────────┘                  └──────────┬──────────┘
                 ▲                                      │ inference
                 │  Audit Receipt + ZK Proof            ▼
+                │                              ┌────────────────┐
                 └─── verify on-chain ◀─────────│   L2 Registry  │
                                                │ submitAudit()  │
                                                └────────────────┘
