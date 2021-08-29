@@ -57,14 +57,6 @@ contracts/
 ```
 
 ---
-<!-- metadata: 6779d74qrq -->
-<!-- metadata: vqiqqshghc -->
-<!-- metadata: 7ak770k6be -->
-<!-- metadata: 7lhkeeowk3 -->
-<!-- metadata: 5kyjnex50p -->
-<!-- metadata: f1khuitfr7 -->
-<!-- metadata: z67wirqi4i -->
-<!-- metadata: oblkpsz7ph -->
 
 ## How a request flows
 
@@ -124,6 +116,10 @@ pnpm start
   retained on-chain per receipt.
 - **Pluggable verifier** — `IZKVerifier` lets you hot-swap Groth16, PLONK, or
   STARK verifiers without redeploying the registry.
+- **Custom errors** instead of revert strings — saves ~50 gas per failure path.
+
+Deploy with your preferred toolchain (Foundry / Hardhat). Example with Foundry:
+
 ```bash
 forge create contracts/VeritasRegistry.sol:VeritasRegistry \
   --rpc-url $L2_RPC_URL \
