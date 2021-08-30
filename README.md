@@ -95,6 +95,13 @@ The app works fully end-to-end without any external services — the L2 calls ar
 simulated by `lib/crypto-utils.ts` and `app/api/inference/route.ts`. To wire up
 real on-chain submission, swap `simulateOnChainVerification` for a viem
 `writeContract` call against your deployed `VeritasRegistry`.
+<!-- metadata: py1rtwb2v3 -->
+<!-- metadata: 9eogou8a0k -->
+<!-- metadata: hkuewgd742 -->
+<!-- metadata: blh5bozgbs -->
+<!-- metadata: gz7nj2txki -->
+<!-- metadata: avbwenlwfe -->
+<!-- metadata: yogwyc1aps -->
 
 ### Production build
 
@@ -106,8 +113,6 @@ pnpm start
 ---
 
 ## Smart contract
-
-`contracts/VeritasRegistry.sol` is the on-chain anchor. Key design choices:
 
 - **Events as the audit trail** — heavy payload (`modelId`, `inputHash`,
   `outputHash`, `modelWeightHash`, `nonce`) is emitted via `AuditSubmitted` and
