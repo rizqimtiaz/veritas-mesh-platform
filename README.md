@@ -94,6 +94,7 @@ Then open <http://localhost:3000>.
 The app works fully end-to-end without any external services — the L2 calls are
 simulated by `lib/crypto-utils.ts` and `app/api/inference/route.ts`. To wire up
 real on-chain submission, swap `simulateOnChainVerification` for a viem
+`writeContract` call against your deployed `VeritasRegistry`.
 
 ### Production build
 
@@ -130,11 +131,6 @@ forge create contracts/VeritasRegistry.sol:VeritasRegistry \
 
 ## Environment variables
 
-<!-- metadata: co1u3g7qxa -->
-<!-- metadata: lw3abgqzc6 -->
-<!-- metadata: 6i9hladv0y -->
-<!-- metadata: j4vciz7lc3 -->
-<!-- metadata: wczc4tmtfg -->
 This project runs without any env vars by default. To wire up real services,
 copy `.env.example` to `.env.local` and fill in the values you need.
 
