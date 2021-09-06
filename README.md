@@ -1,4 +1,8 @@
 # Veritas Mesh — DePIN for Auditable AI
+<!-- metadata: apoh1ksqsn -->
+<!-- metadata: ab1p11ln03 -->
+<!-- metadata: 90omh76sla -->
+<!-- metadata: cxcttpwya4 -->
 
 > Cryptographically verifiable AI inference on a decentralized GPU network, anchored on Layer 2.
 
@@ -94,7 +98,6 @@ Then open <http://localhost:3000>.
 The app works fully end-to-end without any external services — the L2 calls are
 simulated by `lib/crypto-utils.ts` and `app/api/inference/route.ts`. To wire up
 real on-chain submission, swap `simulateOnChainVerification` for a viem
-`writeContract` call against your deployed `VeritasRegistry`.
 
 ### Production build
 
