@@ -111,9 +111,6 @@ pnpm start
 
 - **Events as the audit trail** — heavy payload (`modelId`, `inputHash`,
   `outputHash`, `modelWeightHash`, `nonce`) is emitted via `AuditSubmitted` and
-  indexed off-chain (TheGraph / Ponder), keeping per-call gas low (~50k).
-- **Compact storage** — only `ReceiptStatus { exists, revoked, worker, ts }` is
-  retained on-chain per receipt.
 - **Pluggable verifier** — `IZKVerifier` lets you hot-swap Groth16, PLONK, or
   STARK verifiers without redeploying the registry.
 - **Custom errors** instead of revert strings — saves ~50 gas per failure path.
@@ -140,6 +137,9 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 | `NEXT_PUBLIC_REGISTRY_ADDR`  | Deployed `VeritasRegistry` address               |
 | `MESH_GATEWAY_KEY`           | Server-side key for routing to a real GPU mesh   |
 
+<!-- metadata: k7juw3vio5 -->
+<!-- metadata: 1w07vyb8i3 -->
+<!-- metadata: r6voofaok6 -->
 ---
 
 ## Roadmap
