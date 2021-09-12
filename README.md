@@ -58,15 +58,6 @@ contracts/
 
 ---
 
-<!-- metadata: vbt924i1gs -->
-<!-- metadata: uc91bkn99f -->
-<!-- metadata: cle4vzdwig -->
-<!-- metadata: 24csqtr231 -->
-<!-- metadata: 1ubfc2orow -->
-<!-- metadata: b4yqrumxge -->
-<!-- metadata: e9mf0bef5i -->
-<!-- metadata: f8xduov07i -->
-<!-- metadata: 70102jbesw -->
 ## How a request flows
 
 ```
@@ -135,6 +126,8 @@ forge create contracts/VeritasRegistry.sol:VeritasRegistry \
   --private-key $DEPLOYER_KEY \
   --constructor-args 0x0000000000000000000000000000000000000000
 ```
+
+---
 
 ## Environment variables
 
