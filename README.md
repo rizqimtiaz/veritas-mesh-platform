@@ -37,6 +37,9 @@ crypto utilities that bind them together.
 app/
   api/inference/route.ts     # Gateway: routes prompts to mesh + signs Audit Receipt
   layout.tsx                 # Root layout, fonts, metadata, navigation
+  page.tsx                   # Command Center dashboard
+  globals.css                # Terminal-Core theme (obsidian + neon amber)
+
 components/
   mesh-navigation.tsx        # Sticky command bar with live block height + wallet
   inference-terminal.tsx     # Prompt input + animated system log
@@ -60,13 +63,6 @@ contracts/
 ```
         ┌────────────────┐                  ┌─────────────────────┐
 USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Worker (GPU)  │
-<!-- metadata: 59t3loc8vz -->
-<!-- metadata: btaz6f6fqh -->
-<!-- metadata: gui3dbc1ij -->
-<!-- metadata: eemo39aqbz -->
-<!-- metadata: j7i26fypqv -->
-<!-- metadata: ynsnk954gr -->
-<!-- metadata: jrkeqw62hq -->
         └────────────────┘                  └──────────┬──────────┘
                 ▲                                      │ inference
                 │  Audit Receipt + ZK Proof            ▼
