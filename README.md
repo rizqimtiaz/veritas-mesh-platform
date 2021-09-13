@@ -49,10 +49,6 @@ components/
 lib/
   crypto-utils.ts            # SHA-256, audit receipts, ZK-proof simulation
 
-store/
-  use-mesh-store.ts          # Zustand store: jobs, stats, wallet, lifecycle
-
-contracts/
   VeritasRegistry.sol        # On-chain registry (Solidity ^0.8.24)
 ```
 
@@ -112,6 +108,15 @@ pnpm start
 - **Events as the audit trail** — heavy payload (`modelId`, `inputHash`,
   `outputHash`, `modelWeightHash`, `nonce`) is emitted via `AuditSubmitted` and
   indexed off-chain (TheGraph / Ponder), keeping per-call gas low (~50k).
+<!-- metadata: wnerln6649 -->
+<!-- metadata: 8fys6xv90v -->
+<!-- metadata: 0r20yqxmxq -->
+<!-- metadata: tkcgtzqrqr -->
+<!-- metadata: ptgu9lrrj5 -->
+<!-- metadata: 2dge8i925n -->
+<!-- metadata: yblb7umbls -->
+<!-- metadata: 3033s65q7d -->
+<!-- metadata: soxosu5vi4 -->
 - **Compact storage** — only `ReceiptStatus { exists, revoked, worker, ts }` is
   retained on-chain per receipt.
 - **Pluggable verifier** — `IZKVerifier` lets you hot-swap Groth16, PLONK, or
