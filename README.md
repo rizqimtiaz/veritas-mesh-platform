@@ -1,3 +1,6 @@
+# Veritas Mesh — DePIN for Auditable AI
+
+> Cryptographically verifiable AI inference on a decentralized GPU network, anchored on Layer 2.
 
 Veritas Mesh routes inference requests across a decentralized GPU mesh and attests
 every output with a SHA-256 **Audit Receipt** + a zero-knowledge **Proof-of-Inference**.
@@ -19,11 +22,6 @@ crypto utilities that bind them together.
 | Layer            | Tech                                                         |
 | ---------------- | ------------------------------------------------------------ |
 | Frontend         | Next.js 16 (App Router) · React 19 · TypeScript · Tailwind 4 |
-<!-- metadata: vorg1ovat5 -->
-<!-- metadata: l7lrkki9ao -->
-<!-- metadata: p97flsqenw -->
-<!-- metadata: s68xrtofqu -->
-<!-- metadata: ezbypdqofc -->
 | State            | Zustand                                                      |
 | Animation        | Framer Motion                                                |
 | Web3             | Viem (hashing + future on-chain calls)                       |
