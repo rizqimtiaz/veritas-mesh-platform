@@ -1,6 +1,5 @@
 # Veritas Mesh — DePIN for Auditable AI
 
-<!-- metadata: juicc3j5bx -->
 > Cryptographically verifiable AI inference on a decentralized GPU network, anchored on Layer 2.
 
 Veritas Mesh routes inference requests across a decentralized GPU mesh and attests
@@ -142,6 +141,10 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 | `MESH_GATEWAY_KEY`           | Server-side key for routing to a real GPU mesh   |
 
 ---
+
+## Roadmap
+
+- [ ] Wire viem `writeContract` to `submitAudit` for real on-chain attestation
 - [ ] Replace stub inference with Akash / Render SDK
 - [ ] Add Groth16 verifier contract under `contracts/verifiers/`
 - [ ] Subgraph (Ponder) for the public Audit Feed
