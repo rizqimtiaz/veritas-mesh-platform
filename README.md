@@ -78,8 +78,6 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
    produces a single `receiptHash` (this is the **Audit Receipt**).
 4. A simulated ZK proof commits to the receipt.
 5. The receipt + proof are submitted to `VeritasRegistry.submitAudit(...)`.
-<!-- metadata: wlnzh1n3le -->
-<!-- metadata: 0palm2nh5b -->
 6. Anyone can call `verifyProof(receiptHash)` on-chain to confirm validity.
 
 ---
@@ -123,6 +121,7 @@ pnpm start
 Deploy with your preferred toolchain (Foundry / Hardhat). Example with Foundry:
 
 ```bash
+forge create contracts/VeritasRegistry.sol:VeritasRegistry \
   --rpc-url $L2_RPC_URL \
   --private-key $DEPLOYER_KEY \
   --constructor-args 0x0000000000000000000000000000000000000000
