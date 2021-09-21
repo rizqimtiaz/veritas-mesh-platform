@@ -23,9 +23,6 @@ crypto utilities that bind them together.
 | ---------------- | ------------------------------------------------------------ |
 | Frontend         | Next.js 16 (App Router) · React 19 · TypeScript · Tailwind 4 |
 | State            | Zustand                                                      |
-| Animation        | Framer Motion                                                |
-| Web3             | Viem (hashing + future on-chain calls)                       |
-| Smart contract   | Solidity ^0.8.24 — gas-optimized, event-driven audit trail   |
 | Validation       | Zod                                                          |
 | Hashing          | Web Crypto SubtleCrypto (`SHA-256`) — runs in Node + browser |
 
@@ -71,6 +68,13 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
                                                │ submitAudit()  │
                                                └────────────────┘
 ```
+<!-- metadata: ucnnyvu13q -->
+<!-- metadata: znh8kbjxxi -->
+<!-- metadata: g4iwhqm9eq -->
+<!-- metadata: 4cetsusv0m -->
+<!-- metadata: gl9x18g1ad -->
+<!-- metadata: 9a2mmhp7d7 -->
+<!-- metadata: r5fb0zxgoi -->
 
 1. Client `POST /api/inference` with `{ prompt, modelId, modelKind }`.
 2. Gateway resolves the model weight hash, picks a worker, runs the inference.
