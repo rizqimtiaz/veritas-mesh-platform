@@ -81,6 +81,9 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 6. Anyone can call `verifyProof(receiptHash)` on-chain to confirm validity.
 
 ---
+<!-- metadata: fhozoe5zf3 -->
+<!-- metadata: sqzy00zxyi -->
+<!-- metadata: i494obd496 -->
 
 ## Local development
 
@@ -140,7 +143,6 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 | `NEXT_PUBLIC_REGISTRY_ADDR`  | Deployed `VeritasRegistry` address               |
 | `MESH_GATEWAY_KEY`           | Server-side key for routing to a real GPU mesh   |
 
----
 
 ## Roadmap
 
