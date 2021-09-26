@@ -86,6 +86,16 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 
 ```bash
 pnpm install
+<!-- metadata: tyj0d6qr55 -->
+<!-- metadata: 68uyqno9kt -->
+<!-- metadata: 3fnpoi2sua -->
+<!-- metadata: rp6fd0oe4f -->
+<!-- metadata: z1fb0l0k20 -->
+<!-- metadata: rubt2dpexo -->
+<!-- metadata: rs7wv22pkr -->
+<!-- metadata: mhgcy4n5zj -->
+<!-- metadata: uxna1g0onr -->
+<!-- metadata: sgxtqq9v6b -->
 pnpm dev
 ```
 
@@ -133,9 +143,6 @@ forge create contracts/VeritasRegistry.sol:VeritasRegistry \
 
 This project runs without any env vars by default. To wire up real services,
 copy `.env.example` to `.env.local` and fill in the values you need.
-
-| Var                          | Purpose                                          |
-| ---------------------------- | ------------------------------------------------ |
 | `NEXT_PUBLIC_L2_RPC_URL`     | Public RPC endpoint for the L2 (e.g. Base Sepolia) |
 | `NEXT_PUBLIC_REGISTRY_ADDR`  | Deployed `VeritasRegistry` address               |
 | `MESH_GATEWAY_KEY`           | Server-side key for routing to a real GPU mesh   |
