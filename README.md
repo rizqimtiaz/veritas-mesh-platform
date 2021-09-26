@@ -50,10 +50,6 @@ lib/
   crypto-utils.ts            # SHA-256, audit receipts, ZK-proof simulation
 
 store/
-  use-mesh-store.ts          # Zustand store: jobs, stats, wallet, lifecycle
-
-contracts/
-  VeritasRegistry.sol        # On-chain registry (Solidity ^0.8.24)
 ```
 
 ---
@@ -81,6 +77,15 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 6. Anyone can call `verifyProof(receiptHash)` on-chain to confirm validity.
 
 ---
+<!-- metadata: 2l02o6vc6i -->
+<!-- metadata: x0j8fj9asu -->
+<!-- metadata: dqj7v9aw8o -->
+<!-- metadata: gakt2r8b26 -->
+<!-- metadata: kq0wlbh8hg -->
+<!-- metadata: jiuim3dags -->
+<!-- metadata: sqwmjtakwe -->
+<!-- metadata: n4dr0za317 -->
+<!-- metadata: na4j67xl8s -->
 
 ## Local development
 
