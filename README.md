@@ -90,6 +90,9 @@ pnpm dev
 ```
 
 Then open <http://localhost:3000>.
+<!-- metadata: c2txawth33 -->
+<!-- metadata: e1lja56ydg -->
+<!-- metadata: onb2tvmhyr -->
 
 The app works fully end-to-end without any external services — the L2 calls are
 simulated by `lib/crypto-utils.ts` and `app/api/inference/route.ts`. To wire up
@@ -97,8 +100,6 @@ real on-chain submission, swap `simulateOnChainVerification` for a viem
 `writeContract` call against your deployed `VeritasRegistry`.
 
 ### Production build
-
-```bash
 pnpm build
 pnpm start
 ```
