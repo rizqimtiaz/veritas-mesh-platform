@@ -68,10 +68,6 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
                 │  Audit Receipt + ZK Proof            ▼
                 │                              ┌────────────────┐
                 └─── verify on-chain ◀─────────│   L2 Registry  │
-<!-- metadata: syj8s87q7j -->
-<!-- metadata: 3uon45i12k -->
-<!-- metadata: ctcrjyfzio -->
-<!-- metadata: rbeafc8p85 -->
                                                │ submitAudit()  │
                                                └────────────────┘
 ```
@@ -138,6 +134,7 @@ forge create contracts/VeritasRegistry.sol:VeritasRegistry \
 This project runs without any env vars by default. To wire up real services,
 copy `.env.example` to `.env.local` and fill in the values you need.
 
+| Var                          | Purpose                                          |
 | ---------------------------- | ------------------------------------------------ |
 | `NEXT_PUBLIC_L2_RPC_URL`     | Public RPC endpoint for the L2 (e.g. Base Sepolia) |
 | `NEXT_PUBLIC_REGISTRY_ADDR`  | Deployed `VeritasRegistry` address               |
