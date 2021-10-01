@@ -73,16 +73,6 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 ```
 
 1. Client `POST /api/inference` with `{ prompt, modelId, modelKind }`.
-<!-- metadata: 8wwaj1p6vt -->
-<!-- metadata: kh63nayftx -->
-<!-- metadata: s36igar02n -->
-<!-- metadata: facsopbn7h -->
-<!-- metadata: fgdet7zhmx -->
-<!-- metadata: bpiwdatfsc -->
-<!-- metadata: sz1wvfenjs -->
-<!-- metadata: egomp8o1si -->
-<!-- metadata: lcn034bggl -->
-<!-- metadata: y5joabhjm8 -->
 2. Gateway resolves the model weight hash, picks a worker, runs the inference.
 3. Server hashes `model | weights | input | output | worker | nonce | ts` →
    produces a single `receiptHash` (this is the **Audit Receipt**).
@@ -96,6 +86,10 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 
 ```bash
 pnpm install
+pnpm dev
+```
+
+Then open <http://localhost:3000>.
 
 The app works fully end-to-end without any external services — the L2 calls are
 simulated by `lib/crypto-utils.ts` and `app/api/inference/route.ts`. To wire up
