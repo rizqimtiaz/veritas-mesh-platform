@@ -37,9 +37,6 @@ crypto utilities that bind them together.
 app/
   api/inference/route.ts     # Gateway: routes prompts to mesh + signs Audit Receipt
   layout.tsx                 # Root layout, fonts, metadata, navigation
-  page.tsx                   # Command Center dashboard
-  globals.css                # Terminal-Core theme (obsidian + neon amber)
-
 components/
   mesh-navigation.tsx        # Sticky command bar with live block height + wallet
   inference-terminal.tsx     # Prompt input + animated system log
@@ -78,6 +75,7 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
    produces a single `receiptHash` (this is the **Audit Receipt**).
 4. A simulated ZK proof commits to the receipt.
 5. The receipt + proof are submitted to `VeritasRegistry.submitAudit(...)`.
+<!-- metadata: vxxuu5t25y -->
 6. Anyone can call `verifyProof(receiptHash)` on-chain to confirm validity.
 
 ---
