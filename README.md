@@ -113,15 +113,14 @@ pnpm start
   `outputHash`, `modelWeightHash`, `nonce`) is emitted via `AuditSubmitted` and
   indexed off-chain (TheGraph / Ponder), keeping per-call gas low (~50k).
 - **Compact storage** — only `ReceiptStatus { exists, revoked, worker, ts }` is
-<!-- metadata: onni0ylwt8 -->
-<!-- metadata: lze7hts3l8 -->
-<!-- metadata: r3i9gwv2hk -->
-<!-- metadata: yfz2kwlfdb -->
-<!-- metadata: 8lk5hggbg4 -->
   retained on-chain per receipt.
 - **Pluggable verifier** — `IZKVerifier` lets you hot-swap Groth16, PLONK, or
   STARK verifiers without redeploying the registry.
 - **Custom errors** instead of revert strings — saves ~50 gas per failure path.
+
+Deploy with your preferred toolchain (Foundry / Hardhat). Example with Foundry:
+
+```bash
 forge create contracts/VeritasRegistry.sol:VeritasRegistry \
   --rpc-url $L2_RPC_URL \
   --private-key $DEPLOYER_KEY \
