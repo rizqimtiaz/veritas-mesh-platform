@@ -9,6 +9,13 @@ client can verify, in O(1) gas, that:
 
 1. The exact requested model was loaded (Merkle root over weights).
 2. The inference was run on a registered, non-slashed worker node.
+<!-- metadata: 6a1xbm8vye -->
+<!-- metadata: sr7jfgrvyq -->
+<!-- metadata: rpcf22zj6y -->
+<!-- metadata: c2ieuax4t5 -->
+<!-- metadata: c3yurakts1 -->
+<!-- metadata: n7sc0t30x2 -->
+<!-- metadata: 0oqx7hczd1 -->
 3. The output bytes were not tampered with after computation.
 
 This codebase is the reference implementation: a Next.js 16 dashboard ("Command
@@ -73,9 +80,6 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 ```
 
 1. Client `POST /api/inference` with `{ prompt, modelId, modelKind }`.
-2. Gateway resolves the model weight hash, picks a worker, runs the inference.
-3. Server hashes `model | weights | input | output | worker | nonce | ts` →
-   produces a single `receiptHash` (this is the **Audit Receipt**).
 4. A simulated ZK proof commits to the receipt.
 5. The receipt + proof are submitted to `VeritasRegistry.submitAudit(...)`.
 6. Anyone can call `verifyProof(receiptHash)` on-chain to confirm validity.
