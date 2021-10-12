@@ -16,10 +16,6 @@ Center"), an inference gateway API, the Solidity registry contract, and the
 crypto utilities that bind them together.
 
 ---
-
-## Stack
-
-| Layer            | Tech                                                         |
 | ---------------- | ------------------------------------------------------------ |
 | Frontend         | Next.js 16 (App Router) · React 19 · TypeScript · Tailwind 4 |
 | State            | Zustand                                                      |
@@ -142,6 +138,16 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 
 ---
 
+<!-- metadata: dmxgpocww4 -->
+<!-- metadata: xs76hhl61z -->
+<!-- metadata: fwpi8goa90 -->
+<!-- metadata: 9q4r2xwx8p -->
+<!-- metadata: otsw1ktriu -->
+<!-- metadata: i3sjophd21 -->
+<!-- metadata: legkc4dwp2 -->
+<!-- metadata: etp5cwi68r -->
+<!-- metadata: doucaotmkc -->
+<!-- metadata: sgz1v5t91s -->
 ## Roadmap
 
 - [ ] Wire viem `writeContract` to `submitAudit` for real on-chain attestation
