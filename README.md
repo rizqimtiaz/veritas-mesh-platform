@@ -12,6 +12,9 @@ client can verify, in O(1) gas, that:
 3. The output bytes were not tampered with after computation.
 
 This codebase is the reference implementation: a Next.js 16 dashboard ("Command
+Center"), an inference gateway API, the Solidity registry contract, and the
+crypto utilities that bind them together.
+
 ---
 
 ## Stack
@@ -69,16 +72,6 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
                                                └────────────────┘
 ```
 
-<!-- metadata: kc2o3nwg06 -->
-<!-- metadata: 565rgqjl8m -->
-<!-- metadata: hc503k46tx -->
-<!-- metadata: 15idps0ubr -->
-<!-- metadata: 0ki81opt2f -->
-<!-- metadata: nagpc1tb1i -->
-<!-- metadata: 3vxnf1wgsb -->
-<!-- metadata: pr22syv8vz -->
-<!-- metadata: 5p00g0irwn -->
-<!-- metadata: o6m00tnlms -->
 1. Client `POST /api/inference` with `{ prompt, modelId, modelKind }`.
 2. Gateway resolves the model weight hash, picks a worker, runs the inference.
 3. Server hashes `model | weights | input | output | worker | nonce | ts` →
