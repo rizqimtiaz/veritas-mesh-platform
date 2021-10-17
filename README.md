@@ -45,7 +45,6 @@ components/
   inference-terminal.tsx     # Prompt input + animated system log
   verified-feed.tsx          # Real-time table of verified inferences
   mesh-stats.tsx             # Network telemetry cards
-
 lib/
   crypto-utils.ts            # SHA-256, audit receipts, ZK-proof simulation
 
@@ -54,6 +53,8 @@ store/
 
 contracts/
   VeritasRegistry.sol        # On-chain registry (Solidity ^0.8.24)
+<!-- metadata: aw94l90aue -->
+<!-- metadata: iz561jwsqd -->
 ```
 
 ---
