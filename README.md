@@ -25,6 +25,8 @@ crypto utilities that bind them together.
 | State            | Zustand                                                      |
 | Animation        | Framer Motion                                                |
 | Web3             | Viem (hashing + future on-chain calls)                       |
+| Smart contract   | Solidity ^0.8.24 — gas-optimized, event-driven audit trail   |
+| Validation       | Zod                                                          |
 | Hashing          | Web Crypto SubtleCrypto (`SHA-256`) — runs in Node + browser |
 
 ---
@@ -150,14 +152,6 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 
 ---
 
-<!-- metadata: fo4c5rgq8e -->
-<!-- metadata: lcf33mzc1o -->
-<!-- metadata: raro7nxmfq -->
-<!-- metadata: z4xbt07efc -->
-<!-- metadata: u8kcvii1nl -->
-<!-- metadata: yttxyj8ucj -->
-<!-- metadata: b39ddd2euk -->
-<!-- metadata: 3m9dh9r676 -->
 ## License
 
 MIT — see [`LICENSE`](./LICENSE).
