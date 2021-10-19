@@ -100,10 +100,6 @@ real on-chain submission, swap `simulateOnChainVerification` for a viem
 
 ```bash
 pnpm build
-<!-- metadata: s716tlqvkm -->
-<!-- metadata: rmk9ic5k0c -->
-<!-- metadata: 4hgyx4wlop -->
-<!-- metadata: yl8is1a118 -->
 pnpm start
 ```
 
@@ -130,6 +126,10 @@ forge create contracts/VeritasRegistry.sol:VeritasRegistry \
   --private-key $DEPLOYER_KEY \
   --constructor-args 0x0000000000000000000000000000000000000000
 ```
+
+---
+
+## Environment variables
 
 This project runs without any env vars by default. To wire up real services,
 copy `.env.example` to `.env.local` and fill in the values you need.
