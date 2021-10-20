@@ -1,4 +1,5 @@
 # Veritas Mesh — DePIN for Auditable AI
+
 > Cryptographically verifiable AI inference on a decentralized GPU network, anchored on Layer 2.
 
 Veritas Mesh routes inference requests across a decentralized GPU mesh and attests
@@ -35,16 +36,6 @@ crypto utilities that bind them together.
 ```
 app/
   api/inference/route.ts     # Gateway: routes prompts to mesh + signs Audit Receipt
-<!-- metadata: c7lcx9qsd2 -->
-<!-- metadata: 3zefc14om8 -->
-<!-- metadata: rtj1oo9bqo -->
-<!-- metadata: c1in65b0ht -->
-<!-- metadata: ucw52u7q0j -->
-<!-- metadata: wri700uvdb -->
-<!-- metadata: vb4dqmwli0 -->
-<!-- metadata: ywtgqpb36f -->
-<!-- metadata: q24pjp4n6c -->
-<!-- metadata: 0co8bdz596 -->
   layout.tsx                 # Root layout, fonts, metadata, navigation
   page.tsx                   # Command Center dashboard
   globals.css                # Terminal-Core theme (obsidian + neon amber)
