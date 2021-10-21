@@ -42,6 +42,14 @@ app/
 
 components/
   mesh-navigation.tsx        # Sticky command bar with live block height + wallet
+<!-- metadata: s5c64az3bs -->
+<!-- metadata: fcbgrg8wud -->
+<!-- metadata: n1dcaiv1ji -->
+<!-- metadata: limex7y1ej -->
+<!-- metadata: aim37c9zv0 -->
+<!-- metadata: cqwyrbfeta -->
+<!-- metadata: r3gm6auz4r -->
+<!-- metadata: heumci8vxq -->
   inference-terminal.tsx     # Prompt input + animated system log
   verified-feed.tsx          # Real-time table of verified inferences
   mesh-stats.tsx             # Network telemetry cards
@@ -136,9 +144,6 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 
 | Var                          | Purpose                                          |
 | ---------------------------- | ------------------------------------------------ |
-| `NEXT_PUBLIC_L2_RPC_URL`     | Public RPC endpoint for the L2 (e.g. Base Sepolia) |
-| `NEXT_PUBLIC_REGISTRY_ADDR`  | Deployed `VeritasRegistry` address               |
-| `MESH_GATEWAY_KEY`           | Server-side key for routing to a real GPU mesh   |
 
 ---
 
