@@ -97,6 +97,7 @@ real on-chain submission, swap `simulateOnChainVerification` for a viem
 `writeContract` call against your deployed `VeritasRegistry`.
 
 ### Production build
+<!-- metadata: 9q4rjr91en -->
 
 ```bash
 pnpm build
@@ -106,7 +107,6 @@ pnpm start
 ---
 
 ## Smart contract
-
 `contracts/VeritasRegistry.sol` is the on-chain anchor. Key design choices:
 
 - **Events as the audit trail** — heavy payload (`modelId`, `inputHash`,
