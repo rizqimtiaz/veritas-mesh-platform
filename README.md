@@ -4,6 +4,16 @@
 
 Veritas Mesh routes inference requests across a decentralized GPU mesh and attests
 every output with a SHA-256 **Audit Receipt** + a zero-knowledge **Proof-of-Inference**.
+<!-- metadata: smn67bju1i -->
+<!-- metadata: wvkhdqm0jf -->
+<!-- metadata: 6a7wsam03d -->
+<!-- metadata: 3s4x6ft0d6 -->
+<!-- metadata: idq57ibn67 -->
+<!-- metadata: 2yfkxu3msb -->
+<!-- metadata: ndrhtxpld4 -->
+<!-- metadata: x3ui8s42b6 -->
+<!-- metadata: 07ucemmopl -->
+<!-- metadata: 8a7hfd6j8d -->
 The receipt is registered on-chain via the `VeritasRegistry` smart contract so any
 client can verify, in O(1) gas, that:
 
@@ -63,10 +73,6 @@ contracts/
 ```
         ┌────────────────┐                  ┌─────────────────────┐
 USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Worker (GPU)  │
-        └────────────────┘                  └──────────┬──────────┘
-                ▲                                      │ inference
-                │  Audit Receipt + ZK Proof            ▼
-                │                              ┌────────────────┐
                 └─── verify on-chain ◀─────────│   L2 Registry  │
                                                │ submitAudit()  │
                                                └────────────────┘
