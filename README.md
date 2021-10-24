@@ -55,6 +55,12 @@ store/
 contracts/
   VeritasRegistry.sol        # On-chain registry (Solidity ^0.8.24)
 ```
+<!-- metadata: jsv7ynsbqf -->
+<!-- metadata: 8dtka2nv1e -->
+<!-- metadata: u9kmlh8b1r -->
+<!-- metadata: ecutuwiupl -->
+<!-- metadata: 41orsdlj8d -->
+<!-- metadata: dz4ypbda2r -->
 
 ---
 
@@ -73,10 +79,6 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 ```
 
 1. Client `POST /api/inference` with `{ prompt, modelId, modelKind }`.
-2. Gateway resolves the model weight hash, picks a worker, runs the inference.
-3. Server hashes `model | weights | input | output | worker | nonce | ts` →
-   produces a single `receiptHash` (this is the **Audit Receipt**).
-4. A simulated ZK proof commits to the receipt.
 5. The receipt + proof are submitted to `VeritasRegistry.submitAudit(...)`.
 6. Anyone can call `verifyProof(receiptHash)` on-chain to confirm validity.
 
