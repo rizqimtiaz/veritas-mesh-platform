@@ -25,6 +25,10 @@ crypto utilities that bind them together.
 | State            | Zustand                                                      |
 | Animation        | Framer Motion                                                |
 | Web3             | Viem (hashing + future on-chain calls)                       |
+| Smart contract   | Solidity ^0.8.24 — gas-optimized, event-driven audit trail   |
+| Validation       | Zod                                                          |
+| Hashing          | Web Crypto SubtleCrypto (`SHA-256`) — runs in Node + browser |
+
 ---
 
 ## Project layout
@@ -121,15 +125,6 @@ forge create contracts/VeritasRegistry.sol:VeritasRegistry \
   --rpc-url $L2_RPC_URL \
   --private-key $DEPLOYER_KEY \
   --constructor-args 0x0000000000000000000000000000000000000000
-<!-- metadata: qteakf2xk8 -->
-<!-- metadata: bv3z7474ds -->
-<!-- metadata: wrwjg0bfuu -->
-<!-- metadata: dp0kf3ojb8 -->
-<!-- metadata: cd6o1u3e2j -->
-<!-- metadata: u0zq8xjln5 -->
-<!-- metadata: gracp0rf6w -->
-<!-- metadata: leeqgah39q -->
-<!-- metadata: bf42jro64v -->
 ```
 
 ---
