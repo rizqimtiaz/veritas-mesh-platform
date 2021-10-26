@@ -50,14 +50,6 @@ lib/
   crypto-utils.ts            # SHA-256, audit receipts, ZK-proof simulation
 
 store/
-<!-- metadata: cmabtkb5wm -->
-<!-- metadata: kdyifnyfon -->
-<!-- metadata: o2hq5imuwg -->
-<!-- metadata: 0dfgil4ulh -->
-<!-- metadata: azmwketwuy -->
-<!-- metadata: mjuk3stke6 -->
-<!-- metadata: 8t7ylddisv -->
-<!-- metadata: 0lrh5x213g -->
   use-mesh-store.ts          # Zustand store: jobs, stats, wallet, lifecycle
 
 contracts/
@@ -108,6 +100,7 @@ real on-chain submission, swap `simulateOnChainVerification` for a viem
 
 ```bash
 pnpm build
+pnpm start
 ```
 
 ---
