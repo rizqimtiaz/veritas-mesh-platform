@@ -32,7 +32,6 @@ crypto utilities that bind them together.
 ---
 
 ## Project layout
-
 ```
 app/
   api/inference/route.ts     # Gateway: routes prompts to mesh + signs Audit Receipt
@@ -108,6 +107,13 @@ pnpm start
 ## Smart contract
 
 `contracts/VeritasRegistry.sol` is the on-chain anchor. Key design choices:
+<!-- metadata: g4ouiaeba3 -->
+<!-- metadata: nq3bhui5fn -->
+<!-- metadata: iusim46kd2 -->
+<!-- metadata: nqejs489yf -->
+<!-- metadata: 2pgdodu9km -->
+<!-- metadata: h2zdy5o8p2 -->
+<!-- metadata: ydk7kiqqov -->
 
 - **Events as the audit trail** — heavy payload (`modelId`, `inputHash`,
   `outputHash`, `modelWeightHash`, `nonce`) is emitted via `AuditSubmitted` and
