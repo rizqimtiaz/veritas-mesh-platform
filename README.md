@@ -29,12 +29,6 @@ crypto utilities that bind them together.
 | Validation       | Zod                                                          |
 | Hashing          | Web Crypto SubtleCrypto (`SHA-256`) — runs in Node + browser |
 
-<!-- metadata: 8epkjg178m -->
-<!-- metadata: k4m6gypn7m -->
-<!-- metadata: p2td4ghk6i -->
-<!-- metadata: zx9howupm9 -->
-<!-- metadata: ozc19pciek -->
-<!-- metadata: v0gklrn3tw -->
 ---
 
 ## Project layout
@@ -116,6 +110,10 @@ pnpm start
 `contracts/VeritasRegistry.sol` is the on-chain anchor. Key design choices:
 
 - **Events as the audit trail** — heavy payload (`modelId`, `inputHash`,
+  `outputHash`, `modelWeightHash`, `nonce`) is emitted via `AuditSubmitted` and
+  indexed off-chain (TheGraph / Ponder), keeping per-call gas low (~50k).
+- **Compact storage** — only `ReceiptStatus { exists, revoked, worker, ts }` is
+  retained on-chain per receipt.
 - **Pluggable verifier** — `IZKVerifier` lets you hot-swap Groth16, PLONK, or
   STARK verifiers without redeploying the registry.
 - **Custom errors** instead of revert strings — saves ~50 gas per failure path.
