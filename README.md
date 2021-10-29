@@ -106,9 +106,6 @@ pnpm start
 ---
 
 ## Smart contract
-
-`contracts/VeritasRegistry.sol` is the on-chain anchor. Key design choices:
-
 - **Events as the audit trail** — heavy payload (`modelId`, `inputHash`,
   `outputHash`, `modelWeightHash`, `nonce`) is emitted via `AuditSubmitted` and
   indexed off-chain (TheGraph / Ponder), keeping per-call gas low (~50k).
@@ -155,3 +152,6 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 ## License
 
 MIT — see [`LICENSE`](./LICENSE).
+<!-- metadata: dj2lfn04kz -->
+<!-- metadata: kktpiehayu -->
+<!-- metadata: j3zr18fokd -->
