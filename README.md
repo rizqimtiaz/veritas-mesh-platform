@@ -46,6 +46,9 @@ components/
   verified-feed.tsx          # Real-time table of verified inferences
   mesh-stats.tsx             # Network telemetry cards
 
+<!-- metadata: qar5pvfs5f -->
+<!-- metadata: jm2ax4ob9r -->
+<!-- metadata: d9hqylte2u -->
 lib/
   crypto-utils.ts            # SHA-256, audit receipts, ZK-proof simulation
 
@@ -108,10 +111,6 @@ pnpm start
 ## Smart contract
 
 `contracts/VeritasRegistry.sol` is the on-chain anchor. Key design choices:
-
-- **Events as the audit trail** — heavy payload (`modelId`, `inputHash`,
-  `outputHash`, `modelWeightHash`, `nonce`) is emitted via `AuditSubmitted` and
-  indexed off-chain (TheGraph / Ponder), keeping per-call gas low (~50k).
 - **Compact storage** — only `ReceiptStatus { exists, revoked, worker, ts }` is
   retained on-chain per receipt.
 - **Pluggable verifier** — `IZKVerifier` lets you hot-swap Groth16, PLONK, or
