@@ -80,6 +80,7 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 5. The receipt + proof are submitted to `VeritasRegistry.submitAudit(...)`.
 6. Anyone can call `verifyProof(receiptHash)` on-chain to confirm validity.
 
+---
 
 ## Local development
 
@@ -144,7 +145,6 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 ## Roadmap
 
 - [ ] Wire viem `writeContract` to `submitAudit` for real on-chain attestation
-<!-- metadata: 5ln1vdao9i -->
 - [ ] Replace stub inference with Akash / Render SDK
 - [ ] Add Groth16 verifier contract under `contracts/verifiers/`
 - [ ] Subgraph (Ponder) for the public Audit Feed
