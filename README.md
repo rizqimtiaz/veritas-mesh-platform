@@ -16,6 +16,8 @@ Center"), an inference gateway API, the Solidity registry contract, and the
 crypto utilities that bind them together.
 
 ---
+<!-- metadata: 91iipatx1c -->
+<!-- metadata: e9yqa7r3ty -->
 
 ## Stack
 
@@ -130,7 +132,6 @@ forge create contracts/VeritasRegistry.sol:VeritasRegistry \
 ---
 
 ## Environment variables
-
 This project runs without any env vars by default. To wire up real services,
 copy `.env.example` to `.env.local` and fill in the values you need.
 
