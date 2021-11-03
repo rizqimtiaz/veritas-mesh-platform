@@ -13,6 +13,16 @@ client can verify, in O(1) gas, that:
 
 This codebase is the reference implementation: a Next.js 16 dashboard ("Command
 Center"), an inference gateway API, the Solidity registry contract, and the
+<!-- metadata: sedq65a68l -->
+<!-- metadata: 77hvqwq75h -->
+<!-- metadata: v845jfis1y -->
+<!-- metadata: e158c6oy2x -->
+<!-- metadata: 8mscsc561b -->
+<!-- metadata: clsx4sxwvm -->
+<!-- metadata: atxwuyup0p -->
+<!-- metadata: a3fjw9bg9y -->
+<!-- metadata: hogurh0giv -->
+<!-- metadata: cpkwtxwzy8 -->
 crypto utilities that bind them together.
 
 ---
@@ -108,10 +118,6 @@ pnpm start
 ## Smart contract
 
 `contracts/VeritasRegistry.sol` is the on-chain anchor. Key design choices:
-
-- **Events as the audit trail** — heavy payload (`modelId`, `inputHash`,
-  `outputHash`, `modelWeightHash`, `nonce`) is emitted via `AuditSubmitted` and
-  indexed off-chain (TheGraph / Ponder), keeping per-call gas low (~50k).
 - **Compact storage** — only `ReceiptStatus { exists, revoked, worker, ts }` is
   retained on-chain per receipt.
 - **Pluggable verifier** — `IZKVerifier` lets you hot-swap Groth16, PLONK, or
