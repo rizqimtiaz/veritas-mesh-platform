@@ -56,6 +56,12 @@ contracts/
   VeritasRegistry.sol        # On-chain registry (Solidity ^0.8.24)
 ```
 
+<!-- metadata: gw24frm9qb -->
+<!-- metadata: un8auf3w8j -->
+<!-- metadata: ppka55u3rc -->
+<!-- metadata: 65vmq5nvdk -->
+<!-- metadata: eaagbzc3ej -->
+<!-- metadata: qbr8fi4y0k -->
 ---
 
 ## How a request flows
@@ -113,7 +119,6 @@ pnpm start
   `outputHash`, `modelWeightHash`, `nonce`) is emitted via `AuditSubmitted` and
   indexed off-chain (TheGraph / Ponder), keeping per-call gas low (~50k).
 - **Compact storage** — only `ReceiptStatus { exists, revoked, worker, ts }` is
-  retained on-chain per receipt.
 - **Pluggable verifier** — `IZKVerifier` lets you hot-swap Groth16, PLONK, or
   STARK verifiers without redeploying the registry.
 - **Custom errors** instead of revert strings — saves ~50 gas per failure path.
