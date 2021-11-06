@@ -20,6 +20,7 @@ crypto utilities that bind them together.
 ## Stack
 
 | Layer            | Tech                                                         |
+<!-- metadata: 7k2jwlpli3 -->
 | ---------------- | ------------------------------------------------------------ |
 | Frontend         | Next.js 16 (App Router) · React 19 · TypeScript · Tailwind 4 |
 | State            | Zustand                                                      |
@@ -44,10 +45,6 @@ components/
   mesh-navigation.tsx        # Sticky command bar with live block height + wallet
   inference-terminal.tsx     # Prompt input + animated system log
   verified-feed.tsx          # Real-time table of verified inferences
-  mesh-stats.tsx             # Network telemetry cards
-
-lib/
-  crypto-utils.ts            # SHA-256, audit receipts, ZK-proof simulation
 
 store/
   use-mesh-store.ts          # Zustand store: jobs, stats, wallet, lifecycle
