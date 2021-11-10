@@ -10,15 +10,6 @@ client can verify, in O(1) gas, that:
 1. The exact requested model was loaded (Merkle root over weights).
 2. The inference was run on a registered, non-slashed worker node.
 3. The output bytes were not tampered with after computation.
-<!-- metadata: 8l7b1mkwo9 -->
-<!-- metadata: wsscj6eg3p -->
-<!-- metadata: aeccu3q11y -->
-<!-- metadata: 4m5npeamr1 -->
-<!-- metadata: 1dqdts9bp4 -->
-<!-- metadata: s2xqaywovk -->
-<!-- metadata: rje9yg4ukx -->
-<!-- metadata: 892qks2n87 -->
-<!-- metadata: 6yipakdju3 -->
 
 This codebase is the reference implementation: a Next.js 16 dashboard ("Command
 Center"), an inference gateway API, the Solidity registry contract, and the
@@ -57,6 +48,8 @@ components/
 
 lib/
   crypto-utils.ts            # SHA-256, audit receipts, ZK-proof simulation
+
+store/
   use-mesh-store.ts          # Zustand store: jobs, stats, wallet, lifecycle
 
 contracts/
