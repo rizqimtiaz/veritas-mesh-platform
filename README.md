@@ -39,10 +39,6 @@ app/
   layout.tsx                 # Root layout, fonts, metadata, navigation
   page.tsx                   # Command Center dashboard
   globals.css                # Terminal-Core theme (obsidian + neon amber)
-
-components/
-  mesh-navigation.tsx        # Sticky command bar with live block height + wallet
-  inference-terminal.tsx     # Prompt input + animated system log
   verified-feed.tsx          # Real-time table of verified inferences
   mesh-stats.tsx             # Network telemetry cards
 
@@ -95,6 +91,9 @@ The app works fully end-to-end without any external services — the L2 calls ar
 simulated by `lib/crypto-utils.ts` and `app/api/inference/route.ts`. To wire up
 real on-chain submission, swap `simulateOnChainVerification` for a viem
 `writeContract` call against your deployed `VeritasRegistry`.
+<!-- metadata: 2614h7ymi8 -->
+<!-- metadata: hkk34a1hgg -->
+<!-- metadata: 4fr1lhxciu -->
 
 ### Production build
 
