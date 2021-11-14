@@ -68,6 +68,12 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
                 │  Audit Receipt + ZK Proof            ▼
                 │                              ┌────────────────┐
                 └─── verify on-chain ◀─────────│   L2 Registry  │
+<!-- metadata: i37y5x26b1 -->
+<!-- metadata: 9mme10gbvt -->
+<!-- metadata: ikmc8hnd4i -->
+<!-- metadata: 1gyzg6x15z -->
+<!-- metadata: 8q4go7szum -->
+<!-- metadata: 15tkmvfzkc -->
                                                │ submitAudit()  │
                                                └────────────────┘
 ```
@@ -141,7 +147,6 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 | `MESH_GATEWAY_KEY`           | Server-side key for routing to a real GPU mesh   |
 
 ---
-
 ## Roadmap
 
 - [ ] Wire viem `writeContract` to `submitAudit` for real on-chain attestation
