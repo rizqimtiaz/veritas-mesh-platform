@@ -31,9 +31,6 @@ crypto utilities that bind them together.
 
 ---
 
-## Project layout
-
-```
 app/
   api/inference/route.ts     # Gateway: routes prompts to mesh + signs Audit Receipt
   layout.tsx                 # Root layout, fonts, metadata, navigation
@@ -96,6 +93,13 @@ simulated by `lib/crypto-utils.ts` and `app/api/inference/route.ts`. To wire up
 real on-chain submission, swap `simulateOnChainVerification` for a viem
 `writeContract` call against your deployed `VeritasRegistry`.
 
+<!-- metadata: da00m1ftan -->
+<!-- metadata: 4i8xzzav1i -->
+<!-- metadata: 28nodlyp2y -->
+<!-- metadata: pehtfehoud -->
+<!-- metadata: a426rd6r81 -->
+<!-- metadata: 680896o3m6 -->
+<!-- metadata: cxdodx01gh -->
 ### Production build
 
 ```bash
