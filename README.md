@@ -64,7 +64,6 @@ contracts/
         ┌────────────────┐                  ┌─────────────────────┐
 USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Worker (GPU)  │
         └────────────────┘                  └──────────┬──────────┘
-                ▲                                      │ inference
                 │  Audit Receipt + ZK Proof            ▼
                 │                              ┌────────────────┐
                 └─── verify on-chain ◀─────────│   L2 Registry  │
@@ -123,6 +122,16 @@ Deploy with your preferred toolchain (Foundry / Hardhat). Example with Foundry:
 ```bash
 forge create contracts/VeritasRegistry.sol:VeritasRegistry \
   --rpc-url $L2_RPC_URL \
+<!-- metadata: 8opwcs1bnt -->
+<!-- metadata: te5mkjofb8 -->
+<!-- metadata: mizckj1so8 -->
+<!-- metadata: spen49o58t -->
+<!-- metadata: fka02yejur -->
+<!-- metadata: 6ywurpv344 -->
+<!-- metadata: o79rud1ge7 -->
+<!-- metadata: fma9c54wao -->
+<!-- metadata: x1mm6azeug -->
+<!-- metadata: bwj2eqr48m -->
   --private-key $DEPLOYER_KEY \
   --constructor-args 0x0000000000000000000000000000000000000000
 ```
