@@ -50,6 +50,8 @@ lib/
   crypto-utils.ts            # SHA-256, audit receipts, ZK-proof simulation
 
 store/
+<!-- metadata: 7g0dabw1sd -->
+<!-- metadata: r76yba631o -->
   use-mesh-store.ts          # Zustand store: jobs, stats, wallet, lifecycle
 
 contracts/
@@ -64,9 +66,6 @@ contracts/
         ┌────────────────┐                  ┌─────────────────────┐
 USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Worker (GPU)  │
         └────────────────┘                  └──────────┬──────────┘
-                ▲                                      │ inference
-                │  Audit Receipt + ZK Proof            ▼
-                │                              ┌────────────────┐
                 └─── verify on-chain ◀─────────│   L2 Registry  │
                                                │ submitAudit()  │
                                                └────────────────┘
