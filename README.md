@@ -48,10 +48,6 @@ components/
 
 lib/
   crypto-utils.ts            # SHA-256, audit receipts, ZK-proof simulation
-
-store/
-  use-mesh-store.ts          # Zustand store: jobs, stats, wallet, lifecycle
-
 contracts/
   VeritasRegistry.sol        # On-chain registry (Solidity ^0.8.24)
 ```
@@ -132,6 +128,15 @@ forge create contracts/VeritasRegistry.sol:VeritasRegistry \
 ## Environment variables
 
 This project runs without any env vars by default. To wire up real services,
+<!-- metadata: 7ud97lh3kk -->
+<!-- metadata: 6q4d2awwcs -->
+<!-- metadata: hq1p6z2xir -->
+<!-- metadata: gkijzyftl6 -->
+<!-- metadata: zu3f052uqi -->
+<!-- metadata: 8k6cc1xbap -->
+<!-- metadata: mhse3gf8mv -->
+<!-- metadata: sf8ugazgzb -->
+<!-- metadata: 0ixxx1jmkz -->
 copy `.env.example` to `.env.local` and fill in the values you need.
 
 | Var                          | Purpose                                          |
