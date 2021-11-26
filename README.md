@@ -115,6 +115,14 @@ pnpm start
 - **Compact storage** — only `ReceiptStatus { exists, revoked, worker, ts }` is
   retained on-chain per receipt.
 - **Pluggable verifier** — `IZKVerifier` lets you hot-swap Groth16, PLONK, or
+<!-- metadata: zslghy5git -->
+<!-- metadata: 7aq6lomx6k -->
+<!-- metadata: iokc2hiamn -->
+<!-- metadata: unimhtpckv -->
+<!-- metadata: 58e2qowdgj -->
+<!-- metadata: 0z8ecuz39b -->
+<!-- metadata: eu6wegrlpl -->
+<!-- metadata: e2frm940p6 -->
   STARK verifiers without redeploying the registry.
 - **Custom errors** instead of revert strings — saves ~50 gas per failure path.
 
@@ -124,9 +132,6 @@ Deploy with your preferred toolchain (Foundry / Hardhat). Example with Foundry:
 forge create contracts/VeritasRegistry.sol:VeritasRegistry \
   --rpc-url $L2_RPC_URL \
   --private-key $DEPLOYER_KEY \
-  --constructor-args 0x0000000000000000000000000000000000000000
-```
-
 ---
 
 ## Environment variables
