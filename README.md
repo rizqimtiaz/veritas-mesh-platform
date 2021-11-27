@@ -72,6 +72,8 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
                                                └────────────────┘
 ```
 
+1. Client `POST /api/inference` with `{ prompt, modelId, modelKind }`.
+2. Gateway resolves the model weight hash, picks a worker, runs the inference.
 3. Server hashes `model | weights | input | output | worker | nonce | ts` →
    produces a single `receiptHash` (this is the **Audit Receipt**).
 4. A simulated ZK proof commits to the receipt.
@@ -89,15 +91,6 @@ pnpm dev
 
 Then open <http://localhost:3000>.
 
-<!-- metadata: 8l2qzk1gwm -->
-<!-- metadata: zta6lrp9tg -->
-<!-- metadata: lrp1bkykc5 -->
-<!-- metadata: 4uou52wqj8 -->
-<!-- metadata: 6yuyasz3gv -->
-<!-- metadata: e8zurwk5ox -->
-<!-- metadata: l6a626g9q2 -->
-<!-- metadata: e6oxd8w7sd -->
-<!-- metadata: stobdilz6i -->
 The app works fully end-to-end without any external services — the L2 calls are
 simulated by `lib/crypto-utils.ts` and `app/api/inference/route.ts`. To wire up
 real on-chain submission, swap `simulateOnChainVerification` for a viem
