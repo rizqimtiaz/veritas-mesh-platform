@@ -79,11 +79,6 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 4. A simulated ZK proof commits to the receipt.
 5. The receipt + proof are submitted to `VeritasRegistry.submitAudit(...)`.
 6. Anyone can call `verifyProof(receiptHash)` on-chain to confirm validity.
-<!-- metadata: c73u48ksuo -->
-<!-- metadata: 6ydbaqa96i -->
-<!-- metadata: rkxd8l28m2 -->
-<!-- metadata: n15me3ws87 -->
-<!-- metadata: 572n1jn95k -->
 
 ---
 
@@ -112,6 +107,9 @@ pnpm start
 
 ## Smart contract
 
+`contracts/VeritasRegistry.sol` is the on-chain anchor. Key design choices:
+
+- **Events as the audit trail** — heavy payload (`modelId`, `inputHash`,
   `outputHash`, `modelWeightHash`, `nonce`) is emitted via `AuditSubmitted` and
   indexed off-chain (TheGraph / Ponder), keeping per-call gas low (~50k).
 - **Compact storage** — only `ReceiptStatus { exists, revoked, worker, ts }` is
