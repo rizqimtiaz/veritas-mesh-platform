@@ -91,12 +91,6 @@ pnpm dev
 
 Then open <http://localhost:3000>.
 
-<!-- metadata: wtunk4xhro -->
-<!-- metadata: yb474i3tro -->
-<!-- metadata: i7saw0hjsf -->
-<!-- metadata: diilucbg8a -->
-<!-- metadata: ms4ifvmbnp -->
-<!-- metadata: beeu1uok40 -->
 The app works fully end-to-end without any external services — the L2 calls are
 simulated by `lib/crypto-utils.ts` and `app/api/inference/route.ts`. To wire up
 real on-chain submission, swap `simulateOnChainVerification` for a viem
@@ -147,6 +141,8 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 | `MESH_GATEWAY_KEY`           | Server-side key for routing to a real GPU mesh   |
 
 ---
+
+## Roadmap
 
 - [ ] Wire viem `writeContract` to `submitAudit` for real on-chain attestation
 - [ ] Replace stub inference with Akash / Render SDK
