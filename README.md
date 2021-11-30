@@ -52,6 +52,8 @@ lib/
 store/
   use-mesh-store.ts          # Zustand store: jobs, stats, wallet, lifecycle
 
+contracts/
+  VeritasRegistry.sol        # On-chain registry (Solidity ^0.8.24)
 ```
 
 ---
@@ -94,12 +96,6 @@ simulated by `lib/crypto-utils.ts` and `app/api/inference/route.ts`. To wire up
 real on-chain submission, swap `simulateOnChainVerification` for a viem
 `writeContract` call against your deployed `VeritasRegistry`.
 
-<!-- metadata: w4topb9vcw -->
-<!-- metadata: 7zvwg6psih -->
-<!-- metadata: 8ojt7llsmi -->
-<!-- metadata: 2utg7qdg5n -->
-<!-- metadata: 92oni4qbeo -->
-<!-- metadata: 4aj3zj40et -->
 ### Production build
 
 ```bash
