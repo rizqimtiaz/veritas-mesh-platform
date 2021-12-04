@@ -80,6 +80,10 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 5. The receipt + proof are submitted to `VeritasRegistry.submitAudit(...)`.
 6. Anyone can call `verifyProof(receiptHash)` on-chain to confirm validity.
 
+---
+
+## Local development
+
 ```bash
 pnpm install
 pnpm dev
@@ -140,12 +144,6 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 
 ## Roadmap
 
-<!-- metadata: cufh1yy4s4 -->
-<!-- metadata: tu7gput4nd -->
-<!-- metadata: 2zxjilgp4x -->
-<!-- metadata: g35csjfq67 -->
-<!-- metadata: iv9oj17qc8 -->
-<!-- metadata: 6dkr1ym5y1 -->
 - [ ] Wire viem `writeContract` to `submitAudit` for real on-chain attestation
 - [ ] Replace stub inference with Akash / Render SDK
 - [ ] Add Groth16 verifier contract under `contracts/verifiers/`
