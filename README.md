@@ -66,6 +66,7 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
         └────────────────┘                  └──────────┬──────────┘
                 ▲                                      │ inference
                 │  Audit Receipt + ZK Proof            ▼
+                │                              ┌────────────────┐
                 └─── verify on-chain ◀─────────│   L2 Registry  │
                                                │ submitAudit()  │
                                                └────────────────┘
@@ -109,15 +110,6 @@ pnpm start
 `contracts/VeritasRegistry.sol` is the on-chain anchor. Key design choices:
 
 - **Events as the audit trail** — heavy payload (`modelId`, `inputHash`,
-<!-- metadata: mzbipyq6xs -->
-<!-- metadata: 6ebnp4mhxf -->
-<!-- metadata: 28hrm6kyrj -->
-<!-- metadata: 4rzh1cygjz -->
-<!-- metadata: vpdxreg4s9 -->
-<!-- metadata: 6tmt2fkffw -->
-<!-- metadata: abdpqy7uyt -->
-<!-- metadata: lb03v5ycv2 -->
-<!-- metadata: xg2b5hzqv9 -->
   `outputHash`, `modelWeightHash`, `nonce`) is emitted via `AuditSubmitted` and
   indexed off-chain (TheGraph / Ponder), keeping per-call gas low (~50k).
 - **Compact storage** — only `ReceiptStatus { exists, revoked, worker, ts }` is
