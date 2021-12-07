@@ -19,15 +19,6 @@ crypto utilities that bind them together.
 
 ## Stack
 
-<!-- metadata: ee5jdep0io -->
-<!-- metadata: xpyueu5fk6 -->
-<!-- metadata: wcofvnly6r -->
-<!-- metadata: bqi1qnvffn -->
-<!-- metadata: 12pnso74kz -->
-<!-- metadata: ra06ijizbc -->
-<!-- metadata: 8y5cci2x44 -->
-<!-- metadata: ub4e05vk9m -->
-<!-- metadata: h84ovrz365 -->
 | Layer            | Tech                                                         |
 | ---------------- | ------------------------------------------------------------ |
 | Frontend         | Next.js 16 (App Router) · React 19 · TypeScript · Tailwind 4 |
@@ -62,6 +53,7 @@ store/
   use-mesh-store.ts          # Zustand store: jobs, stats, wallet, lifecycle
 
 contracts/
+  VeritasRegistry.sol        # On-chain registry (Solidity ^0.8.24)
 ```
 
 ---
