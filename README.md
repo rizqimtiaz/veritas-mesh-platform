@@ -96,16 +96,6 @@ simulated by `lib/crypto-utils.ts` and `app/api/inference/route.ts`. To wire up
 real on-chain submission, swap `simulateOnChainVerification` for a viem
 `writeContract` call against your deployed `VeritasRegistry`.
 
-<!-- metadata: 2bcqntb7kg -->
-<!-- metadata: o1oep9euo5 -->
-<!-- metadata: 7c7mn90i0g -->
-<!-- metadata: ncyy6oj77i -->
-<!-- metadata: tjf2n4fayv -->
-<!-- metadata: ecj9omx910 -->
-<!-- metadata: gync92zgeg -->
-<!-- metadata: ryamuv4m9c -->
-<!-- metadata: gaua4bilhm -->
-<!-- metadata: 6r07wtu9mg -->
 ### Production build
 
 ```bash
@@ -155,6 +145,9 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 ## Roadmap
 
 - [ ] Wire viem `writeContract` to `submitAudit` for real on-chain attestation
+- [ ] Replace stub inference with Akash / Render SDK
+- [ ] Add Groth16 verifier contract under `contracts/verifiers/`
+- [ ] Subgraph (Ponder) for the public Audit Feed
 - [ ] Worker-side daemon (Rust) for attested-GPU inference
 
 ---
