@@ -7,6 +7,8 @@ every output with a SHA-256 **Audit Receipt** + a zero-knowledge **Proof-of-Infe
 The receipt is registered on-chain via the `VeritasRegistry` smart contract so any
 client can verify, in O(1) gas, that:
 
+1. The exact requested model was loaded (Merkle root over weights).
+2. The inference was run on a registered, non-slashed worker node.
 3. The output bytes were not tampered with after computation.
 
 This codebase is the reference implementation: a Next.js 16 dashboard ("Command
@@ -41,7 +43,6 @@ app/
 components/
   mesh-navigation.tsx        # Sticky command bar with live block height + wallet
   inference-terminal.tsx     # Prompt input + animated system log
-<!-- metadata: o6k58uzkfp -->
   verified-feed.tsx          # Real-time table of verified inferences
   mesh-stats.tsx             # Network telemetry cards
 
