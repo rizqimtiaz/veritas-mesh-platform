@@ -46,10 +46,6 @@ components/
   verified-feed.tsx          # Real-time table of verified inferences
   mesh-stats.tsx             # Network telemetry cards
 
-lib/
-  crypto-utils.ts            # SHA-256, audit receipts, ZK-proof simulation
-
-store/
   use-mesh-store.ts          # Zustand store: jobs, stats, wallet, lifecycle
 
 contracts/
@@ -101,6 +97,13 @@ real on-chain submission, swap `simulateOnChainVerification` for a viem
 ```bash
 pnpm build
 pnpm start
+<!-- metadata: bg8z7ceif2 -->
+<!-- metadata: 7223nci3q3 -->
+<!-- metadata: kkewi1d8nx -->
+<!-- metadata: 9wa5vlvall -->
+<!-- metadata: unurrh8gv3 -->
+<!-- metadata: w9uplzxzqs -->
+<!-- metadata: art8w217tq -->
 ```
 
 ---
