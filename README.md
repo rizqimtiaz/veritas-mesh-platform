@@ -76,8 +76,6 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 2. Gateway resolves the model weight hash, picks a worker, runs the inference.
 3. Server hashes `model | weights | input | output | worker | nonce | ts` →
    produces a single `receiptHash` (this is the **Audit Receipt**).
-<!-- metadata: f3s7yxaue4 -->
-<!-- metadata: s4zeweb80t -->
 4. A simulated ZK proof commits to the receipt.
 5. The receipt + proof are submitted to `VeritasRegistry.submitAudit(...)`.
 6. Anyone can call `verifyProof(receiptHash)` on-chain to confirm validity.
@@ -109,6 +107,7 @@ pnpm start
 
 ## Smart contract
 
+`contracts/VeritasRegistry.sol` is the on-chain anchor. Key design choices:
 
 - **Events as the audit trail** — heavy payload (`modelId`, `inputHash`,
   `outputHash`, `modelWeightHash`, `nonce`) is emitted via `AuditSubmitted` and
