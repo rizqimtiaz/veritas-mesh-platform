@@ -56,11 +56,6 @@ contracts/
   VeritasRegistry.sol        # On-chain registry (Solidity ^0.8.24)
 ```
 
-<!-- metadata: fkajpfrd1o -->
-<!-- metadata: uef3hb5t10 -->
-<!-- metadata: 1utkqp6j52 -->
-<!-- metadata: x0icy5ll3u -->
-<!-- metadata: uio5iupfeh -->
 ---
 
 ## How a request flows
@@ -89,6 +84,7 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 
 ## Local development
 
+```bash
 pnpm install
 pnpm dev
 ```
