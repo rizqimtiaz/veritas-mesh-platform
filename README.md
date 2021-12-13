@@ -34,7 +34,6 @@ crypto utilities that bind them together.
 ## Project layout
 
 ```
-<!-- metadata: 0k8nighbqp -->
 app/
   api/inference/route.ts     # Gateway: routes prompts to mesh + signs Audit Receipt
   layout.tsx                 # Root layout, fonts, metadata, navigation
@@ -54,6 +53,10 @@ store/
   use-mesh-store.ts          # Zustand store: jobs, stats, wallet, lifecycle
 
 contracts/
+  VeritasRegistry.sol        # On-chain registry (Solidity ^0.8.24)
+```
+
+---
 
 ## How a request flows
 
