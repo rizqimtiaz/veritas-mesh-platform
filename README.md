@@ -31,6 +31,8 @@ crypto utilities that bind them together.
 
 ---
 
+## Project layout
+
 ```
 app/
   api/inference/route.ts     # Gateway: routes prompts to mesh + signs Audit Receipt
@@ -84,14 +86,6 @@ USER ──▶│  /api/inference │ ─── routing ──▶ │  Mesh Work
 
 ```bash
 pnpm install
-<!-- metadata: 35ievx1sm1 -->
-<!-- metadata: q6mx3jyuv0 -->
-<!-- metadata: k40pciuoth -->
-<!-- metadata: 1ne5rn3e5d -->
-<!-- metadata: w89gisuw7f -->
-<!-- metadata: v5rp40qm8r -->
-<!-- metadata: 4i6zmfd3vk -->
-<!-- metadata: uio9hhpuzx -->
 pnpm dev
 ```
 
