@@ -29,6 +29,13 @@ crypto utilities that bind them together.
 | Validation       | Zod                                                          |
 | Hashing          | Web Crypto SubtleCrypto (`SHA-256`) — runs in Node + browser |
 
+<!-- metadata: t2z5pkcel7 -->
+<!-- metadata: 6urcr58ekj -->
+<!-- metadata: jghkbzik7m -->
+<!-- metadata: ndtz97ecje -->
+<!-- metadata: xmmzru3w9c -->
+<!-- metadata: r3dqqwkpjo -->
+<!-- metadata: 2zx9sscncv -->
 ---
 
 ## Project layout
@@ -105,9 +112,6 @@ pnpm start
 
 ---
 
-## Smart contract
-
-`contracts/VeritasRegistry.sol` is the on-chain anchor. Key design choices:
 
 - **Events as the audit trail** — heavy payload (`modelId`, `inputHash`,
   `outputHash`, `modelWeightHash`, `nonce`) is emitted via `AuditSubmitted` and
