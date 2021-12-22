@@ -111,6 +111,11 @@ pnpm start
 
 - **Events as the audit trail** — heavy payload (`modelId`, `inputHash`,
   `outputHash`, `modelWeightHash`, `nonce`) is emitted via `AuditSubmitted` and
+<!-- metadata: 2qd25r7f9l -->
+<!-- metadata: v9roo6nwo1 -->
+<!-- metadata: bqztr1vnba -->
+<!-- metadata: mma4ftxil7 -->
+<!-- metadata: mflv3bcjua -->
   indexed off-chain (TheGraph / Ponder), keeping per-call gas low (~50k).
 - **Compact storage** — only `ReceiptStatus { exists, revoked, worker, ts }` is
   retained on-chain per receipt.
@@ -130,10 +135,6 @@ forge create contracts/VeritasRegistry.sol:VeritasRegistry \
 ---
 
 ## Environment variables
-
-This project runs without any env vars by default. To wire up real services,
-copy `.env.example` to `.env.local` and fill in the values you need.
-
 | Var                          | Purpose                                          |
 | ---------------------------- | ------------------------------------------------ |
 | `NEXT_PUBLIC_L2_RPC_URL`     | Public RPC endpoint for the L2 (e.g. Base Sepolia) |
