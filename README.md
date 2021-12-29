@@ -59,6 +59,11 @@ contracts/
 ---
 
 ## How a request flows
+<!-- metadata: 3syek460mv -->
+<!-- metadata: herlll51fz -->
+<!-- metadata: 56na7w7wuj -->
+<!-- metadata: h0b4ig8n37 -->
+<!-- metadata: wcns4xmq50 -->
 
 ```
         ┌────────────────┐                  ┌─────────────────────┐
@@ -120,8 +125,6 @@ pnpm start
 
 Deploy with your preferred toolchain (Foundry / Hardhat). Example with Foundry:
 
-```bash
-forge create contracts/VeritasRegistry.sol:VeritasRegistry \
   --rpc-url $L2_RPC_URL \
   --private-key $DEPLOYER_KEY \
   --constructor-args 0x0000000000000000000000000000000000000000
