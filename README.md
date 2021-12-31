@@ -22,6 +22,10 @@ crypto utilities that bind them together.
 | Layer            | Tech                                                         |
 | ---------------- | ------------------------------------------------------------ |
 | Frontend         | Next.js 16 (App Router) · React 19 · TypeScript · Tailwind 4 |
+| State            | Zustand                                                      |
+| Animation        | Framer Motion                                                |
+| Web3             | Viem (hashing + future on-chain calls)                       |
+| Smart contract   | Solidity ^0.8.24 — gas-optimized, event-driven audit trail   |
 | Validation       | Zod                                                          |
 | Hashing          | Web Crypto SubtleCrypto (`SHA-256`) — runs in Node + browser |
 
@@ -143,12 +147,6 @@ copy `.env.example` to `.env.local` and fill in the values you need.
 - [ ] Wire viem `writeContract` to `submitAudit` for real on-chain attestation
 - [ ] Replace stub inference with Akash / Render SDK
 - [ ] Add Groth16 verifier contract under `contracts/verifiers/`
-<!-- metadata: xd0qodqt8v -->
-<!-- metadata: el1sjai3ys -->
-<!-- metadata: inga2s024g -->
-<!-- metadata: pyry752r8d -->
-<!-- metadata: h904itmg8t -->
-<!-- metadata: 4k93ie9sz3 -->
 - [ ] Subgraph (Ponder) for the public Audit Feed
 - [ ] Worker-side daemon (Rust) for attested-GPU inference
 
