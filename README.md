@@ -27,6 +27,9 @@ crypto utilities that bind them together.
 | Web3             | Viem (hashing + future on-chain calls)                       |
 | Smart contract   | Solidity ^0.8.24 — gas-optimized, event-driven audit trail   |
 | Validation       | Zod                                                          |
+| Hashing          | Web Crypto SubtleCrypto (`SHA-256`) — runs in Node + browser |
+
+---
 
 ## Project layout
 
@@ -89,12 +92,6 @@ pnpm dev
 Then open <http://localhost:3000>.
 
 The app works fully end-to-end without any external services — the L2 calls are
-<!-- metadata: 4ljfrukkpv -->
-<!-- metadata: djkdmftmsw -->
-<!-- metadata: domr5sywrg -->
-<!-- metadata: ilelk8rc31 -->
-<!-- metadata: uhx5c4nn4b -->
-<!-- metadata: xf2mnu5o04 -->
 simulated by `lib/crypto-utils.ts` and `app/api/inference/route.ts`. To wire up
 real on-chain submission, swap `simulateOnChainVerification` for a viem
 `writeContract` call against your deployed `VeritasRegistry`.
