@@ -26,9 +26,15 @@ crypto utilities that bind them together.
 | Animation        | Framer Motion                                                |
 | Web3             | Viem (hashing + future on-chain calls)                       |
 | Smart contract   | Solidity ^0.8.24 — gas-optimized, event-driven audit trail   |
-| Validation       | Zod                                                          |
 | Hashing          | Web Crypto SubtleCrypto (`SHA-256`) — runs in Node + browser |
 
+<!-- metadata: r273ne9shp -->
+<!-- metadata: u8elfwbc4t -->
+<!-- metadata: w94lflm39q -->
+<!-- metadata: a8bixa9hnr -->
+<!-- metadata: rmx3s6mcyp -->
+<!-- metadata: tj3o58zvjq -->
+<!-- metadata: aquwnjle4u -->
 ---
 
 ## Project layout
